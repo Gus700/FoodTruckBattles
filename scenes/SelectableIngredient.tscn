@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bxcpeosapmm1b"]
 
 [ext_resource type="Texture2D" uid="uid://g8kqh56cxtb7" path="res://assets/small_container.png" id="1_64lyj"]
-[ext_resource type="Script" path="res://scripts/ingredientButton.gd" id="2_1bcmr"]
+[ext_resource type="Script" path="res://scripts/selectableIngredient.gd" id="2_md488"]
 
 [node name="SelectableIngredient" type="TextureRect"]
 custom_minimum_size = Vector2(93, 127)
@@ -15,6 +15,7 @@ size_flags_vertical = 4
 texture = ExtResource("1_64lyj")
 expand_mode = 1
 stretch_mode = 5
+script = ExtResource("2_md488")
 
 [node name="IngredientButton" type="TextureButton" parent="."]
 layout_mode = 1
@@ -29,6 +30,5 @@ offset_right = 0.383911
 grow_horizontal = 2
 grow_vertical = 2
 stretch_mode = 5
-script = ExtResource("2_1bcmr")
 
-[connection signal="pressed" from="IngredientButton" to="IngredientButton" method="_on_pressed"]
+[connection signal="pressed" from="IngredientButton" to="." method="_on_ingredient_button_pressed"]

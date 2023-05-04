@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://lxe2jidu5o57"]
+[gd_scene load_steps=11 format=3 uid="uid://lxe2jidu5o57"]
 
 [ext_resource type="Script" path="res://scripts/orderArea.gd" id="1_qsrft"]
 [ext_resource type="Resource" uid="uid://buiojh341edde" path="res://resourceData/burger.tres" id="2_d3oaa"]
@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://ccgy2s607edvd" path="res://scenes/OrderCard.tscn" id="4_e8vaf"]
 [ext_resource type="Texture2D" uid="uid://ctss8d3jyqgoy" path="res://assets/bell.png" id="6_1qcec"]
 [ext_resource type="Script" path="res://scripts/craftingArea.gd" id="6_755mq"]
+[ext_resource type="Texture2D" uid="uid://cincguvpntqgu" path="res://assets/hotdog_bun.png" id="8_rt3ws"]
+[ext_resource type="Texture2D" uid="uid://dhpn4wjttsn3h" path="res://assets/hotdog.png" id="9_hb51t"]
+[ext_resource type="Texture2D" uid="uid://6m4q5hc5r4xa" path="res://assets/ketchup.png" id="10_1o1xx"]
 
 [node name="PrepArea" type="Control"]
 layout_mode = 3
@@ -68,12 +71,18 @@ stretch_mode = 5
 
 [node name="SelectableIngredient" parent="VBoxContainer/IngredientsArea" instance=ExtResource("4_5s7qt")]
 layout_mode = 2
+ingredientName = "hotDogBun"
+mainTexture = ExtResource("8_rt3ws")
 
 [node name="SelectableIngredient2" parent="VBoxContainer/IngredientsArea" instance=ExtResource("4_5s7qt")]
 layout_mode = 2
+ingredientName = "sausage"
+mainTexture = ExtResource("9_hb51t")
 
 [node name="SelectableIngredient3" parent="VBoxContainer/IngredientsArea" instance=ExtResource("4_5s7qt")]
 layout_mode = 2
+ingredientName = "ketchup"
+mainTexture = ExtResource("10_1o1xx")
 
 [connection signal="update_recipe" from="VBoxContainer/OrderArea" to="VBoxContainer/CraftingArea" method="_on_order_area_update_recipe"]
 [connection signal="pressed" from="VBoxContainer/IngredientsArea/CompletionBell" to="VBoxContainer/CraftingArea" method="_on_completion_bell_pressed"]
