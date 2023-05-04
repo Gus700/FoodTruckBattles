@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccgy2s607edvd"]
+
+[ext_resource type="Texture2D" uid="uid://1n58l11x7bwj" path="res://assets/ordercard.png" id="1_ybb72"]
+[ext_resource type="Script" path="res://scripts/orderCard.gd" id="2_wc401"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fr8j3"]
+font_color = Color(0, 0, 0, 1)
+
+[node name="OrderCard" type="TextureRect"]
+custom_minimum_size = Vector2(110, 83)
+anchors_preset = -1
+anchor_right = 0.719
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_ybb72")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("2_wc401")
+
+[node name="OrderImage" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.377
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextEdit" type="Label" parent="."]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.262
+anchor_right = 0.985
+anchor_bottom = 0.369
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 0
+text = "Order"
+label_settings = SubResource("LabelSettings_fr8j3")
+horizontal_alignment = 1
+vertical_alignment = 1

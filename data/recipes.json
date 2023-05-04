@@ -1,0 +1,15 @@
+{
+	"hotDog": {
+		"ingredients": [
+			"hotDogBun",
+			"sausage",
+			"ketchup"
+		]
+	},
+	"burger" : [
+		"topBurgerBun",
+		"patty",
+		"tomato",
+		"bottomburgerbun"
+	]
+}

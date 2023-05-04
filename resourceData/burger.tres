@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseOrder" load_steps=3 format=3 uid="uid://buiojh341edde"]
+
+[ext_resource type="Texture2D" uid="uid://bca38tghjqldy" path="res://assets/burger.png" id="1_v8rn1"]
+[ext_resource type="Script" path="res://scripts/baseOrder.gd" id="2_br4xh"]
+
+[resource]
+script = ExtResource("2_br4xh")
+ingredients = Array[String](["topBurgerBun", "cheese", "patty", "tomato", "lectuce", "bottomBurgerBun"])
+mainTexture = ExtResource("1_v8rn1")
