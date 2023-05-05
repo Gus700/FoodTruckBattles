@@ -87,4 +87,5 @@ ingredientName = "ketchup"
 mainTexture = ExtResource("10_1o1xx")
 
 [connection signal="update_recipe" from="VBoxContainer/OrderArea" to="VBoxContainer/CraftingArea" method="_on_order_area_update_recipe"]
+[connection signal="request_updated_order" from="VBoxContainer/CraftingArea" to="VBoxContainer/OrderArea" method="_on_crafting_area_request_updated_order"]
 [connection signal="pressed" from="VBoxContainer/IngredientsArea/CompletionBell" to="VBoxContainer/CraftingArea" method="_on_completion_bell_pressed"]
