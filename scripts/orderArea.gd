@@ -28,11 +28,13 @@ func _process(delta: float) -> void:
 
 #recieves message from crafting area that next order info is needed
 func _on_crafting_area_request_updated_order() -> void:
-	get_child(0).queue_free() #free the current order
-	emit_signal("update_recipe", get_child(0).recipe) #send info of new current order
+	#get_child(0).queue_free() #free the current order
+	#print(get_child(0).recipe)
+	emit_signal("update_recipe", get_child(1).recipe) #send info of new current order
 	var cardSceneInst = cardScene.instantiate() #make a new card order
 	var randOrderNum: int = randi_range (0, orderTypes.size()-1)
 	cardSceneInst.get_node("OrderImage").texture = orderTypes[randOrderNum].mainTexture
 	cardSceneInst.recipe = orderTypes[randOrderNum].ingredients
 	add_child(cardSceneInst)
+	get_child(0).queue_free() #free the current order
 	pass # Replace with function body.
