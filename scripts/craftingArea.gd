@@ -24,6 +24,8 @@ func _on_order_area_update_recipe(recipe) -> void:
 func _on_completion_bell_pressed() -> void:
 	print("recieved order complete signal in crafting area")
 	emit_signal("request_updated_order")
+	for ingr in get_children():
+		ingr.queue_free()
 
 # recieves global signal of ingredient button with the name of the selected ingredient
 func ingredient_selected (ingredient_name, ingredient_img) -> void:
@@ -32,5 +34,3 @@ func ingredient_selected (ingredient_name, ingredient_img) -> void:
 	itemSceneInst.texture = ingredient_img
 	add_child(itemSceneInst) #Add it as a child of this node.
 	userSelectedIngr.append(ingredient_name)#append ingredient name to userSelectedIngr Array
-	
-
