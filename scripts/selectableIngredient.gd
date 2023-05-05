@@ -16,4 +16,4 @@ func _process(delta: float) -> void:
 # when the button is pressed send signal of what ingredient was pressed
 func _on_ingredient_button_pressed() -> void:
 	print("user slected ingreient: ", ingredientName)
-	GlobalSig.emit_signal("ingredient_selected", ingredientName)
+	GlobalSig.emit_signal("ingredient_selected", ingredientName, mainTexture)
