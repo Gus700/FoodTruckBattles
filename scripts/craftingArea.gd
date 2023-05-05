@@ -29,7 +29,7 @@ func ingredient_selected (ingredient_name, ingredient_img) -> void:
 	var newCI = itemScene.instantiate() #create instance of Texture node
 	newCI.texture = ingredient_img
 	add_child(newCI) #Add it as a child of this node.
-	
-	#append ingredient name to userSelectedIngr Array
+	userSelectedIngr.append(ingredient_name)#append ingredient name to userSelectedIngr Array
+	print("current crafting area: ", userSelectedIngr)
 	
 
