@@ -38,3 +38,4 @@ func _on_crafting_area_request_updated_order() -> void:
 	add_child(cardSceneInst)
 	get_child(0).queue_free() #free the current order
 	pass # Replace with function body.
+	
