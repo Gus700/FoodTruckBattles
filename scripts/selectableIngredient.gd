@@ -2,11 +2,13 @@ extends TextureRect
 
 @export var ingredientName: String
 @export var mainTexture: Texture
+#var animation
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	get_node("IngredientButton").texture_normal = mainTexture
-	pass 
+	#animation = get_node("AnimationPlayer")
+	#animation.play("ingredientFloat")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -6,6 +6,7 @@ var recipeIngrIndx: int = 0 #index of currently needed ingredient from the recip
 var numCorrectIngr: int = 0 #keeps track of how many correct ingredients the user has selected
 var numCorrectIngrPos: int = 0 #keeps track of how many ingredients have been selected in correct order
 var itemScene #used to store the preloaded scene that displays the ingredient image
+var isCorrect: bool = false
 signal request_updated_order
 
 # Called when the node enters the scene tree for the first time.
@@ -25,10 +26,20 @@ func _on_order_area_update_recipe(recipe) -> void:
 # recieves completion signal
 func _on_completion_bell_pressed() -> void:
 	print("recieved order complete signal in crafting area")
+	#check if the ingredients are correct
+	if numCorrectIngr == currentOrderRecipe.size() && numCorrectIngrPos == currentOrderRecipe.size():
+		isCorrect = true
+	if isCorrect == true:
+		var correctLabel = Label.new()
+		correctLabel.text = "correct"
+		add_child(correctLabel)
 	emit_signal("request_updated_order")
 	for ingr in get_children():
 		ingr.queue_free()
-	#check if the ingredients are correct
+	recipeIngrIndx = 0
+	numCorrectIngr = 0
+	numCorrectIngrPos = 0
+	
 	
 
 # recieves global signal of ingredient button with the name of the selected ingredient
