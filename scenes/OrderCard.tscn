@@ -1,33 +1,37 @@
-[gd_scene load_steps=4 format=3 uid="uid://ccgy2s607edvd"]
+[gd_scene load_steps=5 format=3 uid="uid://ccgy2s607edvd"]
 
-[ext_resource type="Texture2D" uid="uid://1n58l11x7bwj" path="res://assets/ordercard.png" id="1_ybb72"]
+[ext_resource type="Texture2D" uid="uid://cqxkeynu1gl1p" path="res://assets/objects/order_paper_big.png" id="1_0api8"]
 [ext_resource type="Script" path="res://scripts/orderCard.gd" id="2_wc401"]
+[ext_resource type="Texture2D" uid="uid://i2s82jtvoed1" path="res://assets/food/starterFood/ketchup_hotdog.png" id="3_15lrm"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_fr8j3"]
 font_color = Color(0, 0, 0, 1)
 
 [node name="OrderCard" type="TextureRect"]
 custom_minimum_size = Vector2(110, 83)
-anchors_preset = -1
-anchor_right = 0.719
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture = ExtResource("1_ybb72")
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_0api8")
 expand_mode = 1
 stretch_mode = 5
 script = ExtResource("2_wc401")
 
 [node name="OrderImage" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(10, 10)
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.377
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.271
+anchor_top = 0.309
+anchor_right = 0.75
+anchor_bottom = 0.812
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("3_15lrm")
 expand_mode = 1
 stretch_mode = 5
 
@@ -35,9 +39,10 @@ stretch_mode = 5
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.262
-anchor_right = 0.985
-anchor_bottom = 0.369
+anchor_left = 0.264
+anchor_top = 0.111
+anchor_right = 0.743
+anchor_bottom = 0.272
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 0
@@ -45,3 +50,4 @@ text = "Order"
 label_settings = SubResource("LabelSettings_fr8j3")
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

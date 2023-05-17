@@ -1,0 +1,241 @@
+[gd_scene load_steps=12 format=3 uid="uid://cx2yslgi4y52x"]
+
+[ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
+[ext_resource type="Texture2D" uid="uid://c3h8mxfu75l6o" path="res://assets/objects/cutting_board.png" id="2_bx5sw"]
+[ext_resource type="Script" path="res://scripts/orderArea.gd" id="2_ieeiu"]
+[ext_resource type="Resource" uid="uid://buiojh341edde" path="res://resourceData/burger.tres" id="3_7xrgb"]
+[ext_resource type="PackedScene" uid="uid://bxcpeosapmm1b" path="res://scenes/SelectableIngredient.tscn" id="3_8wd3s"]
+[ext_resource type="Script" path="res://scripts/craftingArea.gd" id="3_go7q8"]
+[ext_resource type="PackedScene" uid="uid://ccgy2s607edvd" path="res://scenes/OrderCard.tscn" id="3_uxhdf"]
+[ext_resource type="Resource" uid="uid://dnpf515es6dr0" path="res://resourceData/hotDog.tres" id="4_4blqu"]
+[ext_resource type="Texture2D" uid="uid://dnd1rha6omwfu" path="res://assets/objects/bell_def.png" id="6_1ceec"]
+[ext_resource type="Texture2D" uid="uid://cw6nbeow33v8t" path="res://assets/objects/bell_rung.png" id="7_pit3t"]
+[ext_resource type="PackedScene" uid="uid://c010ce45gog67" path="res://scenes/EnemyProgress.tscn" id="11_rr48n"]
+
+[node name="Level" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_a7l8k")
+expand_mode = 1
+
+[node name="Order Area" type="Control" parent="."]
+layout_mode = 1
+anchor_right = 0.271
+anchor_bottom = 1.0
+script = ExtResource("2_ieeiu")
+orderTypes = Array[Resource]([ExtResource("3_7xrgb"), ExtResource("4_4blqu")])
+
+[node name="TabContainer" type="TabContainer" parent="Order Area"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.051
+anchor_top = 0.049
+anchor_right = 0.948
+anchor_bottom = 0.605
+offset_left = 0.0782061
+offset_top = 0.247999
+offset_bottom = -0.0400085
+
+[node name="CurrentOrder" type="AspectRatioContainer" parent="Order Area/TabContainer"]
+layout_mode = 2
+
+[node name="OrderCard" parent="Order Area/TabContainer/CurrentOrder" instance=ExtResource("3_uxhdf")]
+layout_mode = 2
+
+[node name="Recipe" type="HBoxContainer" parent="Order Area/TabContainer"]
+visible = false
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+alignment = 1
+
+[node name="TabContainer2" type="TabContainer" parent="Order Area"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.051
+anchor_top = 0.654
+anchor_right = 0.948
+anchor_bottom = 0.938
+
+[node name="NextOrders" type="HFlowContainer" parent="Order Area/TabContainer2"]
+layout_mode = 2
+alignment = 1
+
+[node name="OrderCard" parent="Order Area/TabContainer2/NextOrders" instance=ExtResource("3_uxhdf")]
+layout_mode = 2
+
+[node name="OrderCard2" parent="Order Area/TabContainer2/NextOrders" instance=ExtResource("3_uxhdf")]
+layout_mode = 2
+
+[node name="OrderCard3" parent="Order Area/TabContainer2/NextOrders" instance=ExtResource("3_uxhdf")]
+layout_mode = 2
+
+[node name="Crafting Area" type="Control" parent="."]
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 0.728
+anchor_right = 0.785
+anchor_bottom = 0.975
+script = ExtResource("3_go7q8")
+
+[node name="TextureRect" type="TextureRect" parent="Crafting Area"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bx5sw")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Crafting Area/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Ingredients Area" type="Control" parent="."]
+layout_mode = 1
+anchor_left = 0.285
+anchor_top = 0.552
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="LeftIngr" type="VBoxContainer" parent="Ingredients Area"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.3
+anchor_bottom = 1.0
+theme_override_constants/separation = -40
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Ingredients Area/LeftIngr"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Ingredients Area/LeftIngr"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer2" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer2" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer2" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Ingredients Area/LeftIngr"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer3" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer3" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer3" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="RightIngr" type="VBoxContainer" parent="Ingredients Area"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/separation = -40
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Ingredients Area/RightIngr"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Ingredients Area/RightIngr"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer2" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer2" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer2" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Ingredients Area/RightIngr"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer3" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer3" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer3" instance=ExtResource("3_8wd3s")]
+layout_mode = 2
+
+[node name="CompletionBell" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.389
+anchor_top = 0.309
+anchor_right = 0.458
+anchor_bottom = 0.42
+offset_top = -0.23201
+texture_normal = ExtResource("6_1ceec")
+texture_pressed = ExtResource("7_pit3t")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="EnemyProgress" parent="." instance=ExtResource("11_rr48n")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.812
+anchor_top = 0.025
+anchor_right = 0.986
+anchor_bottom = 0.074
+
+[connection signal="update_recipe" from="Order Area" to="Crafting Area" method="_on_order_area_update_recipe"]
+[connection signal="request_updated_order" from="Crafting Area" to="Order Area" method="_on_crafting_area_request_updated_order"]
+[connection signal="pressed" from="CompletionBell" to="Crafting Area" method="_on_completion_bell_pressed"]

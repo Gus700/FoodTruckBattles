@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://lxe2jidu5o57"]
+[gd_scene load_steps=11 format=3 uid="uid://grxikpbbqced"]
 
 [ext_resource type="Script" path="res://scripts/orderArea.gd" id="1_qsrft"]
 [ext_resource type="Resource" uid="uid://buiojh341edde" path="res://resourceData/burger.tres" id="2_d3oaa"]
