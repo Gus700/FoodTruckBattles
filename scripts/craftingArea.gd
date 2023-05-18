@@ -24,12 +24,12 @@ func _process(delta: float) -> void:
 # add an ingredient Scene in the IngredientContainer
 func addIngredient(ingrContainer, ingrScene, ingrName, ingrImg,) ->void:
 	var ingrScnInst = ingrScene.instantiate()
-	ingrScene.setImg(ingrImg)
+	ingrScnInst.setImg(ingrImg)
 	ingrContainer.add_child(ingrScnInst)
 	userSelectedIngrs.append(ingrName)
 
 func clearIngredients() -> void:
-	for ingr in get_children():
+	for ingr in ingredientContainer.get_children():
 		ingr.queue_free()
 	recipeIngrIndx = 0
 	numCorrectIngr = 0

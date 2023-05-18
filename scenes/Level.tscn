@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dhcru67t10068"]
+[gd_scene load_steps=13 format=3 uid="uid://dhcru67t10068"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Texture2D" uid="uid://c3h8mxfu75l6o" path="res://assets/objects/cutting_board.png" id="2_bx5sw"]
@@ -10,6 +10,7 @@
 [ext_resource type="Resource" uid="uid://dnpf515es6dr0" path="res://resourceData/hotDog.tres" id="4_4blqu"]
 [ext_resource type="Texture2D" uid="uid://dnd1rha6omwfu" path="res://assets/objects/bell_def.png" id="6_1ceec"]
 [ext_resource type="Texture2D" uid="uid://cw6nbeow33v8t" path="res://assets/objects/bell_rung.png" id="7_pit3t"]
+[ext_resource type="Texture2D" uid="uid://coy7h011r3o6g" path="res://assets/food/starterFood/ingredients/hotdog_bun.png" id="9_7ch3v"]
 [ext_resource type="PackedScene" uid="uid://c08erd8bbx7y2" path="res://scenes/EnemyProgress.tscn" id="11_rr48n"]
 
 [node name="Level" type="Control"]
@@ -129,6 +130,7 @@ alignment = 1
 
 [node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+mainTexture = ExtResource("9_7ch3v")
 
 [node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
