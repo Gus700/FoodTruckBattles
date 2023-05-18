@@ -12,7 +12,7 @@ grow_vertical = 2
 script = ExtResource("1_3ohtj")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 30.0
+wait_time = 120.0
 one_shot = true
 autostart = true
 
