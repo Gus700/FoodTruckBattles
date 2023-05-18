@@ -10,6 +10,7 @@ var numCorrectIngrPos: int = 0 #keeps track of how many ingredients have been se
 var isCorrect: bool = false
 
 signal request_updated_order
+signal show_completion_feedback(isCorrect: bool)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -50,11 +51,9 @@ func checkSelectedIngr(ingrName) -> void:
 func checkCorrectCompletion() ->void:
 	#check if the ingredients are correct
 	if numCorrectIngr == currentOrderRecipe.size() && numCorrectIngrPos == currentOrderRecipe.size():
-		isCorrect = true
-	if isCorrect == true:
-		var correctLabel = Label.new()
-		correctLabel.text = "correct"
-		add_child(correctLabel)
+		emit_signal("show_completion_feedback", true)
+	else:
+		emit_signal("show_completion_feedback", false)
 
 #_________________________________signal functions__________________________________________________
 
@@ -72,6 +71,7 @@ func _on_order_area_update_recipe(recipe) -> void:
 # recieves completion signal
 func _on_completion_bell_pressed() -> void:
 	print("recieved order complete signal in crafting area")
+	checkCorrectCompletion()
 	emit_signal("request_updated_order")
 	clearIngredients()
 	

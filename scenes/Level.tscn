@@ -1,7 +1,7 @@
-[gd_scene load_steps=31 format=3 uid="uid://dhcru67t10068"]
+[gd_scene load_steps=32 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
-[ext_resource type="Script" path="res://scripts/Level.gd" id="1_dfu78"]
+[ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
 [ext_resource type="Texture2D" uid="uid://c3h8mxfu75l6o" path="res://assets/objects/cutting_board.png" id="2_bx5sw"]
 [ext_resource type="Script" path="res://scripts/orderArea.gd" id="2_ieeiu"]
 [ext_resource type="Resource" uid="uid://cakvkdq02hsno" path="res://resourceData/orders/clownBurger.tres" id="3_7sijh"]
@@ -19,7 +19,7 @@
 [ext_resource type="Resource" uid="uid://d4jx5ix1s3b63" path="res://resourceData/ingredients/tigerBottomBun.tres" id="10_c2d4f"]
 [ext_resource type="Resource" uid="uid://d1o0v5g4mcipb" path="res://resourceData/ingredients/clownTopBun.tres" id="10_cksu0"]
 [ext_resource type="Resource" uid="uid://pk1tim3x7tr1" path="res://resourceData/ingredients/lettuce.tres" id="11_ql7bd"]
-[ext_resource type="PackedScene" uid="uid://c08erd8bbx7y2" path="res://scenes/EnemyProgress.tscn" id="11_rr48n"]
+[ext_resource type="PackedScene" uid="uid://djjiids4ekxok" path="res://scenes/EnemyProgress.tscn" id="11_rr48n"]
 [ext_resource type="Resource" uid="uid://pe1m662ee6as" path="res://resourceData/ingredients/clownBottomBun.tres" id="12_es8ic"]
 [ext_resource type="Resource" uid="uid://dp6bqwo157oj8" path="res://resourceData/ingredients/clownPatty.tres" id="12_gg3y8"]
 [ext_resource type="Resource" uid="uid://b6p234ih6kgaj" path="res://resourceData/ingredients/cheese.tres" id="13_dl28i"]
@@ -29,6 +29,7 @@
 [ext_resource type="Resource" uid="uid://bibtu1pp4xme5" path="res://resourceData/ingredients/sausage.tres" id="21_sly5d"]
 [ext_resource type="Resource" uid="uid://c70k6roidpm46" path="res://resourceData/ingredients/ketchup.tres" id="22_cwyyt"]
 [ext_resource type="Resource" uid="uid://d11s23kskfx4h" path="res://resourceData/ingredients/mustard.tres" id="23_u7615"]
+[ext_resource type="PackedScene" uid="uid://tejyi6h0ot45" path="res://scenes/CompletionFeedback.tscn" id="30_6cca4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_wkq44"]
 font_size = 50
@@ -43,7 +44,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_dfu78")
+script = ExtResource("1_ex6i6")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -286,13 +287,22 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 0
 text = "Time is up!
-Orders were not complete in time
+Orders were not completed in time
 :("
 label_settings = SubResource("LabelSettings_wkq44")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="CompletionFeedback" parent="." instance=ExtResource("30_6cca4")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.507
+anchor_top = 0.605
+anchor_right = 0.778
+anchor_bottom = 0.988
+
 [connection signal="update_recipe" from="Order Area" to="Crafting Area" method="_on_order_area_update_recipe"]
 [connection signal="request_updated_order" from="Crafting Area" to="Order Area" method="_on_crafting_area_request_updated_order"]
+[connection signal="show_completion_feedback" from="Crafting Area" to="." method="_on_crafting_area_show_completion_feedback"]
 [connection signal="pressed" from="CompletionBell" to="Crafting Area" method="_on_completion_bell_pressed"]
 [connection signal="game_over" from="EnemyProgress" to="." method="_on_enemy_progress_game_over"]
