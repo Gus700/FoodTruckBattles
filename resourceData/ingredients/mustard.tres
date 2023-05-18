@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://d11s23kskfx4h"]
+
+[ext_resource type="Texture2D" uid="uid://cli01pa4rducl" path="res://assets/food/starterFood/ingredients/mustard.png" id="1_0g1da"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_n8ood"]
+
+[resource]
+script = ExtResource("1_n8ood")
+ingrName = "mustard"
+mainTexture = ExtResource("1_0g1da")

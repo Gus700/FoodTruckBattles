@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseOrder" load_steps=3 format=3 uid="uid://bj4p0cuc5wbib"]
+
+[ext_resource type="Texture2D" uid="uid://cks26bbjdv7rb" path="res://assets/food/starterFood/mustard_hotdog.png" id="1_ahsk4"]
+[ext_resource type="Script" path="res://scripts/baseOrder.gd" id="1_o0156"]
+
+[resource]
+script = ExtResource("1_o0156")
+recipe = Array[String](["hotdogBun", "sausage", "mustard"])
+mainTexture = ExtResource("1_ahsk4")

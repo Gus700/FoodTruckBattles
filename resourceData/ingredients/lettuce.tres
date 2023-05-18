@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://pk1tim3x7tr1"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_jjgvp"]
+[ext_resource type="Texture2D" uid="uid://irjt0dcn2w77" path="res://assets/food/starterFood/ingredients/lettuce.png" id="1_uhp0p"]
+
+[resource]
+script = ExtResource("1_jjgvp")
+ingrName = "lettuce"
+mainTexture = ExtResource("1_uhp0p")

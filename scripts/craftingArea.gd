@@ -37,6 +37,7 @@ func clearIngredients() -> void:
 
 # check if the selected ingredient belongs in current recipe and if it was in the correct order
 func checkSelectedIngr(ingrName) -> void:
+	print("checking for ingredient:" , ingrName)
 	if recipeIngrIndx < currentOrderRecipe.size() && numCorrectIngr != currentOrderRecipe.size(): 
 		if currentOrderRecipe[recipeIngrIndx] == ingrName:
 			numCorrectIngrPos += 1

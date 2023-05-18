@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseOrder" load_steps=3 format=3 uid="uid://cakvkdq02hsno"]
+
+[ext_resource type="Texture2D" uid="uid://cuj16tusqwm6m" path="res://assets/food/starterFood/clown_burger.png" id="1_ov57d"]
+[ext_resource type="Script" path="res://scripts/baseOrder.gd" id="2_6h32y"]
+
+[resource]
+script = ExtResource("2_6h32y")
+recipe = Array[String](["clownTopBun", "lettuce", "clownPatty", "rainbowCheese", "tomato", "clownBottomBun"])
+mainTexture = ExtResource("1_ov57d")

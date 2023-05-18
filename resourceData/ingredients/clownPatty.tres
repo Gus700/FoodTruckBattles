@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://dp6bqwo157oj8"]
+
+[ext_resource type="Texture2D" uid="uid://bgf7wl84ckg3o" path="res://assets/food/starterFood/ingredients/clown_patty.png" id="1_eprt1"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_qqjlg"]
+
+[resource]
+script = ExtResource("1_qqjlg")
+ingrName = "clownPatty"
+mainTexture = ExtResource("1_eprt1")

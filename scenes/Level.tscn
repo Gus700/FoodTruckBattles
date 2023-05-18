@@ -1,17 +1,33 @@
-[gd_scene load_steps=13 format=3 uid="uid://dhcru67t10068"]
+[gd_scene load_steps=29 format=3 uid="uid://dhcru67t10068"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Texture2D" uid="uid://c3h8mxfu75l6o" path="res://assets/objects/cutting_board.png" id="2_bx5sw"]
 [ext_resource type="Script" path="res://scripts/orderArea.gd" id="2_ieeiu"]
-[ext_resource type="Resource" uid="uid://buiojh341edde" path="res://resourceData/burger.tres" id="3_7xrgb"]
+[ext_resource type="Resource" uid="uid://cakvkdq02hsno" path="res://resourceData/orders/clownBurger.tres" id="3_7sijh"]
 [ext_resource type="PackedScene" uid="uid://bxcpeosapmm1b" path="res://scenes/SelectableIngredient.tscn" id="3_8wd3s"]
 [ext_resource type="Script" path="res://scripts/craftingArea.gd" id="3_go7q8"]
 [ext_resource type="PackedScene" uid="uid://ccgy2s607edvd" path="res://scenes/OrderCard.tscn" id="3_uxhdf"]
-[ext_resource type="Resource" uid="uid://dnpf515es6dr0" path="res://resourceData/hotDog.tres" id="4_4blqu"]
+[ext_resource type="Resource" uid="uid://dkml5oga4fw0b" path="res://resourceData/orders/tigerBurger.tres" id="4_j3ovl"]
+[ext_resource type="Resource" uid="uid://ci77srx0w0he0" path="res://resourceData/orders/ketchupHotdog.tres" id="5_03f51"]
 [ext_resource type="Texture2D" uid="uid://dnd1rha6omwfu" path="res://assets/objects/bell_def.png" id="6_1ceec"]
+[ext_resource type="Resource" uid="uid://bj4p0cuc5wbib" path="res://resourceData/orders/mustardHotdog.tres" id="6_n2kio"]
 [ext_resource type="Texture2D" uid="uid://cw6nbeow33v8t" path="res://assets/objects/bell_rung.png" id="7_pit3t"]
-[ext_resource type="Texture2D" uid="uid://coy7h011r3o6g" path="res://assets/food/starterFood/ingredients/hotdog_bun.png" id="9_7ch3v"]
+[ext_resource type="Resource" uid="uid://dkeqkklgytq5d" path="res://resourceData/ingredients/rainbowCheese.tres" id="9_b5tuw"]
+[ext_resource type="Resource" uid="uid://bbhb507hrx6s6" path="res://resourceData/ingredients/tigerTopBun.tres" id="9_xd5ib"]
+[ext_resource type="Resource" uid="uid://jmfdb4rty8s5" path="res://resourceData/ingredients/tomato.tres" id="10_87jdr"]
+[ext_resource type="Resource" uid="uid://d4jx5ix1s3b63" path="res://resourceData/ingredients/tigerBottomBun.tres" id="10_c2d4f"]
+[ext_resource type="Resource" uid="uid://d1o0v5g4mcipb" path="res://resourceData/ingredients/clownTopBun.tres" id="10_cksu0"]
+[ext_resource type="Resource" uid="uid://pk1tim3x7tr1" path="res://resourceData/ingredients/lettuce.tres" id="11_ql7bd"]
 [ext_resource type="PackedScene" uid="uid://c08erd8bbx7y2" path="res://scenes/EnemyProgress.tscn" id="11_rr48n"]
+[ext_resource type="Resource" uid="uid://pe1m662ee6as" path="res://resourceData/ingredients/clownBottomBun.tres" id="12_es8ic"]
+[ext_resource type="Resource" uid="uid://dp6bqwo157oj8" path="res://resourceData/ingredients/clownPatty.tres" id="12_gg3y8"]
+[ext_resource type="Resource" uid="uid://b6p234ih6kgaj" path="res://resourceData/ingredients/cheese.tres" id="13_dl28i"]
+[ext_resource type="Resource" uid="uid://d2nj6j61nifs8" path="res://resourceData/ingredients/pickles.tres" id="16_ivwrr"]
+[ext_resource type="Resource" uid="uid://dg07q1t5rb8ye" path="res://resourceData/ingredients/hotdogBun.tres" id="18_g7wri"]
+[ext_resource type="Resource" uid="uid://dqgi8skhl0bfo" path="res://resourceData/ingredients/tigerPatty.tres" id="18_kakei"]
+[ext_resource type="Resource" uid="uid://bibtu1pp4xme5" path="res://resourceData/ingredients/sausage.tres" id="21_sly5d"]
+[ext_resource type="Resource" uid="uid://c70k6roidpm46" path="res://resourceData/ingredients/ketchup.tres" id="22_cwyyt"]
+[ext_resource type="Resource" uid="uid://d11s23kskfx4h" path="res://resourceData/ingredients/mustard.tres" id="23_u7615"]
 
 [node name="Level" type="Control"]
 layout_mode = 3
@@ -36,7 +52,7 @@ layout_mode = 1
 anchor_right = 0.271
 anchor_bottom = 1.0
 script = ExtResource("2_ieeiu")
-orderTypes = Array[Resource]([ExtResource("3_7xrgb"), ExtResource("4_4blqu")])
+orderTypes = Array[Resource]([ExtResource("3_7sijh"), ExtResource("4_j3ovl"), ExtResource("5_03f51"), ExtResource("6_n2kio")])
 
 [node name="TabContainer" type="TabContainer" parent="Order Area"]
 layout_mode = 1
@@ -130,13 +146,15 @@ alignment = 1
 
 [node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
-mainTexture = ExtResource("9_7ch3v")
+ingrResource = ExtResource("9_xd5ib")
 
 [node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+ingrResource = ExtResource("10_c2d4f")
 
 [node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+ingrResource = ExtResource("10_cksu0")
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Ingredients Area/LeftIngr"]
 layout_mode = 2
@@ -145,12 +163,15 @@ alignment = 1
 
 [node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer2" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+ingrResource = ExtResource("9_b5tuw")
 
 [node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer2" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+ingrResource = ExtResource("13_dl28i")
 
 [node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer2" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+ingrResource = ExtResource("10_87jdr")
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="Ingredients Area/LeftIngr"]
 layout_mode = 2
@@ -159,9 +180,11 @@ alignment = 1
 
 [node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer3" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+ingrResource = ExtResource("11_ql7bd")
 
 [node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer3" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+ingrResource = ExtResource("16_ivwrr")
 
 [node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer3" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
@@ -181,9 +204,11 @@ alignment = 1
 
 [node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+ingrResource = ExtResource("12_es8ic")
 
 [node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+ingrResource = ExtResource("18_g7wri")
 
 [node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
@@ -195,12 +220,15 @@ alignment = 1
 
 [node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer2" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+ingrResource = ExtResource("12_gg3y8")
 
 [node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer2" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+ingrResource = ExtResource("18_kakei")
 
 [node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer2" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+ingrResource = ExtResource("21_sly5d")
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="Ingredients Area/RightIngr"]
 layout_mode = 2
@@ -209,9 +237,11 @@ alignment = 1
 
 [node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer3" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+ingrResource = ExtResource("22_cwyyt")
 
 [node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer3" instance=ExtResource("3_8wd3s")]
 layout_mode = 2
+ingrResource = ExtResource("23_u7615")
 
 [node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer3" instance=ExtResource("3_8wd3s")]
 layout_mode = 2

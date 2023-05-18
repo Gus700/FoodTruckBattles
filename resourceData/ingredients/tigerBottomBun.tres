@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://d4jx5ix1s3b63"]
+
+[ext_resource type="Texture2D" uid="uid://d381b8jt7ddqi" path="res://assets/food/starterFood/ingredients/tiger_botbun.png" id="1_bntw5"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_i1yye"]
+
+[resource]
+script = ExtResource("1_i1yye")
+ingrName = "tigerBottomBun"
+mainTexture = ExtResource("1_bntw5")

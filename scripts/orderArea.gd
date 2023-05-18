@@ -61,9 +61,11 @@ func replaceCurrOrder(newCurrOrder: Node) -> Node:
 
 # function called to complete the current order
 func completeCurrOrder() -> void:
-	if currOrderContainer.get_child_count() != 0:
+	if nextOrdersContainer.get_child_count() != 0:
 		var oldOrder = replaceCurrOrder(getNextOrder())
 		oldOrder.queue_free()
+	elif currOrderContainer.get_child_count() != 0:
+		getCurrOrder().queue_free()
 
 #__________________________________Signal functions_______________________________________________
 

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://bibtu1pp4xme5"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_jl224"]
+[ext_resource type="Texture2D" uid="uid://c3fw0fwsg8wv7" path="res://assets/food/starterFood/ingredients/hotdog.png" id="1_rlek1"]
+
+[resource]
+script = ExtResource("1_jl224")
+ingrName = "sausage"
+mainTexture = ExtResource("1_rlek1")
