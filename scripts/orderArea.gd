@@ -4,6 +4,7 @@ extends Control
 @onready var cardScene :PackedScene = preload("res://scenes/OrderCard.tscn") #packed scene of order card scene
 @onready var currOrderContainer = $TabContainer/CurrentOrder #Node that holds the current order
 @onready var nextOrdersContainer = $TabContainer2/NextOrders #Node that holds all other orders
+@onready var recipeDisplay = $TabContainer/Recipe/Label
 var requiredOrderNum: int
 var orderNum: int
 
@@ -12,6 +13,7 @@ signal update_recipe(recipe: Array[String])
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	setOrderInfo(getCurrOrder()) #set curent order
+	setRecipeTab(getCurrOrder().getRecipe()) #set the recipe tab display
 	for orderC in getNextOrders(): #set all other orders
 		setOrderInfo(orderC)
 	emit_signal("update_recipe", getCurrOrder().getRecipe()) #send signal of current recipe needed
@@ -30,6 +32,10 @@ func setOrderInfo(orderScene) -> void:
 	orderScene.setImg(randOrderType.mainTexture)
 	orderScene.setRecipe(randOrderType.recipe)
 
+func setRecipeTab(ingredients: Array[String]) -> void:
+	for string in ingredients:
+		recipeDisplay.text += string + "\n"
+
 # get reference to to the current order
 func getCurrOrder() -> Node:
 	return currOrderContainer.get_child(0)
@@ -45,6 +51,9 @@ func getNextOrders() -> Array[Node]:
 		orders.append(order)
 	return orders
 
+func clearRecipeTab() -> void:
+	recipeDisplay.text = ""
+
 # creates an instance of a new Order Node
 func createNewOrder() ->Node:
 	var newOrder = cardScene.instantiate() #make a new card order
@@ -57,10 +66,12 @@ func replaceCurrOrder(newCurrOrder: Node) -> Node:
 	currOrderContainer.remove_child(oldCurrOrder)
 	nextOrdersContainer.remove_child(newCurrOrder)
 	currOrderContainer.add_child(newCurrOrder)
+	setRecipeTab(getCurrOrder().getRecipe())
 	return oldCurrOrder
 
 # function called to complete the current order
 func completeCurrOrder() -> void:
+	clearRecipeTab()
 	if nextOrdersContainer.get_child_count() != 0:
 		var oldOrder = replaceCurrOrder(getNextOrder())
 		oldOrder.queue_free()

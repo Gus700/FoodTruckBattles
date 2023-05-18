@@ -86,6 +86,9 @@ custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 alignment = 1
 
+[node name="Label" type="Label" parent="Order Area/TabContainer/Recipe"]
+layout_mode = 2
+
 [node name="TabContainer2" type="TabContainer" parent="Order Area"]
 layout_mode = 1
 anchors_preset = -1
