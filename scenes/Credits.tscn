@@ -27,6 +27,7 @@ offset_bottom = 648.0
 color = Color(0.184314, 0.054902, 0.145098, 1)
 
 [node name="Credits Label" type="Label" parent="."]
+layout_mode = 0
 offset_left = 493.0
 offset_top = 147.0
 offset_right = 683.0

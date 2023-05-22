@@ -44,7 +44,7 @@ offset_right = 711.0
 offset_bottom = 303.0
 text = "Play"
 script = ExtResource("1_osf7u")
-dest = "PrepArea"
+dest = "Level"
 
 [node name="Credits" type="Button" parent="."]
 layout_mode = 0
