@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://c4ruevjqne3aa"]
+[gd_scene load_steps=4 format=3 uid="uid://cv3tnjlpim0ks"]
 
-[ext_resource type="Script" path="res://scripts/globalScripts/scene.gd" id="1_mhper"]
-[ext_resource type="Script" path="res://scripts/globalScripts/ChangeSceneButton.gd" id="1_osf7u"]
+[ext_resource type="Script" path="res://scripts/SceneManager/scene.gd" id="1_cgfym"]
+[ext_resource type="Script" path="res://scripts/SceneManager/ChangeSceneButton.gd" id="2_64bw0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8faaw"]
 font_size = 33
@@ -18,7 +18,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_mhper")
+script = ExtResource("1_cgfym")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -43,7 +43,7 @@ anchor_top = 0.345679
 anchor_right = 0.617188
 anchor_bottom = 0.467593
 text = "Play"
-script = ExtResource("1_osf7u")
+script = ExtResource("2_64bw0")
 dest = "Level"
 
 [node name="Credits" type="Button" parent="."]
@@ -53,7 +53,7 @@ anchor_top = 0.728395
 anchor_right = 0.617188
 anchor_bottom = 0.850309
 text = "Credits"
-script = ExtResource("1_osf7u")
+script = ExtResource("2_64bw0")
 dest = "Credits"
 
 [node name="Memories" type="Button" parent="."]
@@ -63,7 +63,7 @@ anchor_top = 0.530864
 anchor_right = 0.617188
 anchor_bottom = 0.652778
 text = "Memories"
-script = ExtResource("1_osf7u")
+script = ExtResource("2_64bw0")
 dest = "Memories"
 
 [connection signal="get_dest" from="Play" to="." method="_on_change_scene_button_get_dest"]

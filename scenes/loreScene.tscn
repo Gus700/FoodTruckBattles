@@ -53,7 +53,7 @@ theme_override_constants/margin_bottom = 10
 
 [node name="Label" type="Label" parent="textBubble/MarginContainer"]
 layout_mode = 2
-text = "This is a test of the text that would apear for the story secction of the the lore scenes that would explore the  rest of the story about all of the trucks  that you meet along the way"
+text = "This is a test of the text that would apear for the story section of the the lore scenes that would explore the  rest of the story about all of the trucks  that you meet along the way"
 label_settings = SubResource("LabelSettings_j3wkt")
 vertical_alignment = 1
 autowrap_mode = 2

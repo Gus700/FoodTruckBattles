@@ -1,17 +1,18 @@
-[gd_scene load_steps=14 format=3 uid="uid://b8wy0w4hkxxif"]
+[gd_scene load_steps=16 format=3 uid="uid://b2pbtif4x6b3"]
 
-[ext_resource type="Script" path="res://scripts/globalScripts/scene.gd" id="1_6e2qw"]
-[ext_resource type="Script" path="res://scripts/globalScripts/ChangeSceneButton.gd" id="2_2rdn3"]
+[ext_resource type="Script" path="res://scripts/SceneManager/scene.gd" id="1_0noef"]
 [ext_resource type="Texture2D" uid="uid://0uovcm0xbouv" path="res://assets/loreScenes/photos/angel_food_locked.png" id="2_fmr6e"]
-[ext_resource type="Script" path="res://scripts/Mem.gd" id="3_gnium"]
+[ext_resource type="Script" path="res://scripts/Memories/Mem.gd" id="3_oufhp"]
 [ext_resource type="Texture2D" uid="uid://b1u2e2su6l0yu" path="res://assets/loreScenes/photos/bury_me_locked.png" id="4_c2t6x"]
 [ext_resource type="Texture2D" uid="uid://885ba6k7yymi" path="res://assets/loreScenes/photos/cheddorbendor_locked.png" id="5_oire6"]
 [ext_resource type="Texture2D" uid="uid://kh7eutasxwgr" path="res://assets/loreScenes/photos/corn_dog_locked.png" id="6_eg8ur"]
 [ext_resource type="Texture2D" uid="uid://cfo5n02kbbnlh" path="res://assets/loreScenes/photos/devil_s_tango_locked.png" id="7_20rel"]
 [ext_resource type="Texture2D" uid="uid://dg30lru0uqbp4" path="res://assets/loreScenes/photos/frosty_friends_locked.png" id="8_qa11f"]
 [ext_resource type="Texture2D" uid="uid://d0att6uhkbow6" path="res://assets/loreScenes/photos/tacobara_locked.png" id="9_u6b42"]
-[ext_resource type="Script" path="res://scripts/bigMem.gd" id="11_1p1ka"]
+[ext_resource type="Script" path="res://scripts/SceneManager/ChangeSceneButton.gd" id="10_top0h"]
+[ext_resource type="Script" path="res://scripts/Memories/bigMem.gd" id="11_mj4il"]
 [ext_resource type="Texture2D" uid="uid://dfkjhbkthdnhc" path="res://assets/loreScenes/full/deviled_food.png" id="12_lv7um"]
+[ext_resource type="Texture2D" uid="uid://bmh0n4fiiyjvg" path="res://assets/loreScenes/full/narrative_bubble.png" id="13_4q1tn"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_os62y"]
 font_size = 33
@@ -21,6 +22,10 @@ shadow_size = 16
 shadow_color = Color(0.0784314, 0.0784314, 0.0784314, 0.443137)
 shadow_offset = Vector2(6, 6)
 
+[sub_resource type="LabelSettings" id="LabelSettings_adltr"]
+font_size = 25
+font_color = Color(0, 0, 0, 1)
+
 [node name="Memories" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -28,9 +33,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_6e2qw")
+script = ExtResource("1_0noef")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
 color = Color(0.184314, 0.301961, 0.145098, 1)
@@ -57,7 +63,7 @@ size_flags_vertical = 3
 texture = ExtResource("2_fmr6e")
 expand_mode = 2
 stretch_mode = 4
-script = ExtResource("3_gnium")
+script = ExtResource("3_oufhp")
 img = "angel_food"
 big_img = "res://assets/loreScenes/full/angel_s_scripture.png"
 
@@ -79,7 +85,7 @@ size_flags_vertical = 3
 texture = ExtResource("4_c2t6x")
 expand_mode = 2
 stretch_mode = 4
-script = ExtResource("3_gnium")
+script = ExtResource("3_oufhp")
 img = "bury_me"
 big_img = "res://assets/loreScenes/full/hearse_to_be_you.png"
 
@@ -101,7 +107,7 @@ size_flags_vertical = 3
 texture = ExtResource("5_oire6")
 expand_mode = 2
 stretch_mode = 4
-script = ExtResource("3_gnium")
+script = ExtResource("3_oufhp")
 img = "cheddorbendor"
 big_img = "res://assets/loreScenes/full/gold_standard.png"
 
@@ -123,7 +129,7 @@ size_flags_vertical = 3
 texture = ExtResource("6_eg8ur")
 expand_mode = 2
 stretch_mode = 4
-script = ExtResource("3_gnium")
+script = ExtResource("3_oufhp")
 img = "corn_dog"
 big_img = "res://assets/loreScenes/full/operation_corn_dog.png"
 
@@ -163,7 +169,7 @@ size_flags_vertical = 3
 texture = ExtResource("7_20rel")
 expand_mode = 2
 stretch_mode = 4
-script = ExtResource("3_gnium")
+script = ExtResource("3_oufhp")
 img = "devil_s_tango"
 big_img = "res://assets/loreScenes/full/deviled_food.png"
 
@@ -185,7 +191,7 @@ size_flags_vertical = 3
 texture = ExtResource("8_qa11f")
 expand_mode = 2
 stretch_mode = 4
-script = ExtResource("3_gnium")
+script = ExtResource("3_oufhp")
 img = "frosty_friends"
 big_img = "res://assets/loreScenes/full/frosty_beginnings.png"
 
@@ -207,7 +213,7 @@ size_flags_vertical = 3
 texture = ExtResource("9_u6b42")
 expand_mode = 2
 stretch_mode = 4
-script = ExtResource("3_gnium")
+script = ExtResource("3_oufhp")
 img = "tacobara"
 big_img = "res://assets/loreScenes/full/tacobara.png"
 
@@ -236,20 +242,22 @@ label_settings = SubResource("LabelSettings_os62y")
 horizontal_alignment = 1
 
 [node name="Mem_Main Menu" type="Button" parent="."]
+layout_mode = 0
 offset_left = 35.0
 offset_top = 559.0
 offset_right = 275.0
 offset_bottom = 615.0
 text = "Return to Main Menu"
-script = ExtResource("2_2rdn3")
+script = ExtResource("10_top0h")
 dest = "MainMenu"
 
 [node name="BigImgBackground" type="ColorRect" parent="."]
+layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
 mouse_filter = 2
 color = Color(0, 0, 0, 0)
-script = ExtResource("11_1p1ka")
+script = ExtResource("11_mj4il")
 
 [node name="BigMem" type="TextureRect" parent="BigImgBackground"]
 modulate = Color(1, 1, 1, 0)
@@ -265,6 +273,36 @@ mouse_filter = 2
 texture = ExtResource("12_lv7um")
 expand_mode = 3
 stretch_mode = 5
+
+[node name="textBubble" type="TextureRect" parent="BigImgBackground/BigMem"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.167
+anchor_top = 0.031
+anchor_right = 0.833
+anchor_bottom = 0.198
+offset_right = 6.10352e-05
+texture = ExtResource("13_4q1tn")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="BigImgBackground/BigMem/textBubble"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 35
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 35
+theme_override_constants/margin_bottom = 10
+
+[node name="Label" type="Label" parent="BigImgBackground/BigMem/textBubble/MarginContainer"]
+layout_mode = 2
+text = "This is a test of the text that would apear for the story section of the the lore scenes that would explore the  rest of the story about all of the trucks  that you meet along the way"
+label_settings = SubResource("LabelSettings_adltr")
+vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="hide" type="Button" parent="BigImgBackground/BigMem"]
 modulate = Color(1, 1, 1, 0)

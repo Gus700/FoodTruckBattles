@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://nno8qp1w07v3"]
+[gd_scene load_steps=6 format=3 uid="uid://c2u0eyqatn0ya"]
 
-[ext_resource type="PackedScene" uid="uid://c4ruevjqne3aa" path="res://scenes/MainMenu.tscn" id="1_pqqtn"]
-[ext_resource type="Script" path="res://scripts/SceneSwitcher.gd" id="1_tm5p3"]
+[ext_resource type="Script" path="res://scripts/SceneManager/SceneSwitcher.gd" id="1_km3b1"]
+[ext_resource type="PackedScene" uid="uid://cv3tnjlpim0ks" path="res://scenes/MainMenu.tscn" id="1_pqqtn"]
 
 [sub_resource type="Animation" id="Animation_heenh"]
 resource_name = "FadeIn"
@@ -42,7 +42,7 @@ _data = {
 }
 
 [node name="SceneSwitcher" type="Node"]
-script = ExtResource("1_tm5p3")
+script = ExtResource("1_km3b1")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
