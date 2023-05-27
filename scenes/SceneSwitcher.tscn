@@ -1,9 +1,65 @@
-[gd_scene load_steps=3 format=3 uid="uid://nno8qp1w07v3"]
+[gd_scene load_steps=6 format=3 uid="uid://nno8qp1w07v3"]
 
 [ext_resource type="PackedScene" uid="uid://c4ruevjqne3aa" path="res://scenes/MainMenu.tscn" id="1_pqqtn"]
 [ext_resource type="Script" path="res://scripts/SceneSwitcher.gd" id="1_tm5p3"]
 
+[sub_resource type="Animation" id="Animation_heenh"]
+resource_name = "FadeIn"
+length = 0.375
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FadeOverlay:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 0.5),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_6hjo8"]
+resource_name = "FadeOut"
+length = 0.375
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FadeOverlay:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 0.5),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ivlmn"]
+_data = {
+"FadeIn": SubResource("Animation_heenh"),
+"FadeOut": SubResource("Animation_6hjo8")
+}
+
 [node name="SceneSwitcher" type="Node"]
 script = ExtResource("1_tm5p3")
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ivlmn")
+}
+
 [node name="Main Menu" parent="." instance=ExtResource("1_pqqtn")]
+
+[node name="FadeOverlay" type="ColorRect" parent="."]
+top_level = true
+z_index = 2
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

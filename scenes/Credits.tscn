@@ -36,7 +36,7 @@ text = "Credits"
 label_settings = SubResource("LabelSettings_8u650")
 horizontal_alignment = 1
 
-[node name="Main Menu" type="Button" parent="."]
+[node name="Cred_Main Menu" type="Button" parent="."]
 layout_mode = 0
 offset_left = 35.0
 offset_top = 559.0
@@ -46,5 +46,5 @@ text = "Return to Main Menu"
 script = ExtResource("1_lt7lk")
 dest = "MainMenu"
 
-[connection signal="get_dest" from="Main Menu" to="." method="_on_change_scene_button_get_dest"]
-[connection signal="pressed" from="Main Menu" to="Main Menu" method="_on_pressed"]
+[connection signal="get_dest" from="Cred_Main Menu" to="." method="_on_change_scene_button_get_dest"]
+[connection signal="pressed" from="Cred_Main Menu" to="Cred_Main Menu" method="_on_pressed"]

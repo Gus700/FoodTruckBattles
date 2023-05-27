@@ -1,0 +1,297 @@
+[gd_scene load_steps=14 format=3 uid="uid://b8wy0w4hkxxif"]
+
+[ext_resource type="Script" path="res://scripts/globalScripts/scene.gd" id="1_6e2qw"]
+[ext_resource type="Script" path="res://scripts/globalScripts/ChangeSceneButton.gd" id="2_2rdn3"]
+[ext_resource type="Texture2D" uid="uid://0uovcm0xbouv" path="res://assets/loreScenes/photos/angel_food_locked.png" id="2_fmr6e"]
+[ext_resource type="Script" path="res://scripts/Mem.gd" id="3_gnium"]
+[ext_resource type="Texture2D" uid="uid://b1u2e2su6l0yu" path="res://assets/loreScenes/photos/bury_me_locked.png" id="4_c2t6x"]
+[ext_resource type="Texture2D" uid="uid://885ba6k7yymi" path="res://assets/loreScenes/photos/cheddorbendor_locked.png" id="5_oire6"]
+[ext_resource type="Texture2D" uid="uid://kh7eutasxwgr" path="res://assets/loreScenes/photos/corn_dog_locked.png" id="6_eg8ur"]
+[ext_resource type="Texture2D" uid="uid://cfo5n02kbbnlh" path="res://assets/loreScenes/photos/devil_s_tango_locked.png" id="7_20rel"]
+[ext_resource type="Texture2D" uid="uid://dg30lru0uqbp4" path="res://assets/loreScenes/photos/frosty_friends_locked.png" id="8_qa11f"]
+[ext_resource type="Texture2D" uid="uid://d0att6uhkbow6" path="res://assets/loreScenes/photos/tacobara_locked.png" id="9_u6b42"]
+[ext_resource type="Script" path="res://scripts/bigMem.gd" id="11_1p1ka"]
+[ext_resource type="Texture2D" uid="uid://dfkjhbkthdnhc" path="res://assets/loreScenes/full/deviled_food.png" id="12_lv7um"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_os62y"]
+font_size = 33
+outline_size = 7
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 16
+shadow_color = Color(0.0784314, 0.0784314, 0.0784314, 0.443137)
+shadow_offset = Vector2(6, 6)
+
+[node name="Memories" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6e2qw")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.184314, 0.301961, 0.145098, 1)
+
+[node name="TopRow" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -432.0
+offset_top = 86.0
+offset_right = 432.0
+offset_bottom = 286.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_constants/h_separation = 25
+columns = 4
+
+[node name="AngelFood" type="TextureRect" parent="TopRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_fmr6e")
+expand_mode = 2
+stretch_mode = 4
+script = ExtResource("3_gnium")
+img = "angel_food"
+big_img = "res://assets/loreScenes/full/angel_s_scripture.png"
+
+[node name="Reveal" type="Button" parent="TopRow/AngelFood"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+icon_alignment = 1
+
+[node name="BuryMe" type="TextureRect" parent="TopRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_c2t6x")
+expand_mode = 2
+stretch_mode = 4
+script = ExtResource("3_gnium")
+img = "bury_me"
+big_img = "res://assets/loreScenes/full/hearse_to_be_you.png"
+
+[node name="Reveal" type="Button" parent="TopRow/BuryMe"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+icon_alignment = 1
+
+[node name="Cheddor" type="TextureRect" parent="TopRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_oire6")
+expand_mode = 2
+stretch_mode = 4
+script = ExtResource("3_gnium")
+img = "cheddorbendor"
+big_img = "res://assets/loreScenes/full/gold_standard.png"
+
+[node name="Reveal" type="Button" parent="TopRow/Cheddor"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+icon_alignment = 1
+
+[node name="CornDog" type="TextureRect" parent="TopRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_eg8ur")
+expand_mode = 2
+stretch_mode = 4
+script = ExtResource("3_gnium")
+img = "corn_dog"
+big_img = "res://assets/loreScenes/full/operation_corn_dog.png"
+
+[node name="Reveal" type="Button" parent="TopRow/CornDog"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+icon_alignment = 1
+
+[node name="BottomRow" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -325.0
+offset_top = -21.0
+offset_right = 325.0
+offset_bottom = 179.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_constants/h_separation = 25
+columns = 3
+
+[node name="Devil\'s Tango" type="TextureRect" parent="BottomRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("7_20rel")
+expand_mode = 2
+stretch_mode = 4
+script = ExtResource("3_gnium")
+img = "devil_s_tango"
+big_img = "res://assets/loreScenes/full/deviled_food.png"
+
+[node name="Reveal" type="Button" parent="BottomRow/Devil\'s Tango"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+icon_alignment = 1
+
+[node name="Frosty" type="TextureRect" parent="BottomRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("8_qa11f")
+expand_mode = 2
+stretch_mode = 4
+script = ExtResource("3_gnium")
+img = "frosty_friends"
+big_img = "res://assets/loreScenes/full/frosty_beginnings.png"
+
+[node name="Reveal" type="Button" parent="BottomRow/Frosty"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+icon_alignment = 1
+
+[node name="Tacobara" type="TextureRect" parent="BottomRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("9_u6b42")
+expand_mode = 2
+stretch_mode = 4
+script = ExtResource("3_gnium")
+img = "tacobara"
+big_img = "res://assets/loreScenes/full/tacobara.png"
+
+[node name="Reveal" type="Button" parent="BottomRow/Tacobara"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+icon_alignment = 1
+
+[node name="Memories Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -95.0
+offset_right = 95.0
+offset_bottom = 57.0
+grow_horizontal = 2
+text = "Memories"
+label_settings = SubResource("LabelSettings_os62y")
+horizontal_alignment = 1
+
+[node name="Mem_Main Menu" type="Button" parent="."]
+offset_left = 35.0
+offset_top = 559.0
+offset_right = 275.0
+offset_bottom = 615.0
+text = "Return to Main Menu"
+script = ExtResource("2_2rdn3")
+dest = "MainMenu"
+
+[node name="BigImgBackground" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+script = ExtResource("11_1p1ka")
+
+[node name="BigMem" type="TextureRect" parent="BigImgBackground"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+texture = ExtResource("12_lv7um")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="hide" type="Button" parent="BigImgBackground/BigMem"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+icon_alignment = 1
+
+[connection signal="showbig" from="TopRow/AngelFood" to="BigImgBackground" method="_on_showbig"]
+[connection signal="pressed" from="TopRow/AngelFood/Reveal" to="TopRow/AngelFood" method="_on_button_pressed"]
+[connection signal="showbig" from="TopRow/BuryMe" to="BigImgBackground" method="_on_showbig"]
+[connection signal="pressed" from="TopRow/BuryMe/Reveal" to="TopRow/BuryMe" method="_on_button_pressed"]
+[connection signal="showbig" from="TopRow/Cheddor" to="BigImgBackground" method="_on_showbig"]
+[connection signal="pressed" from="TopRow/Cheddor/Reveal" to="TopRow/Cheddor" method="_on_button_pressed"]
+[connection signal="showbig" from="TopRow/CornDog" to="BigImgBackground" method="_on_showbig"]
+[connection signal="pressed" from="TopRow/CornDog/Reveal" to="TopRow/CornDog" method="_on_button_pressed"]
+[connection signal="showbig" from="BottomRow/Devil's Tango" to="BigImgBackground" method="_on_showbig"]
+[connection signal="pressed" from="BottomRow/Devil's Tango/Reveal" to="BottomRow/Devil's Tango" method="_on_button_pressed"]
+[connection signal="showbig" from="BottomRow/Frosty" to="BigImgBackground" method="_on_showbig"]
+[connection signal="pressed" from="BottomRow/Frosty/Reveal" to="BottomRow/Frosty" method="_on_button_pressed"]
+[connection signal="showbig" from="BottomRow/Tacobara" to="BigImgBackground" method="_on_showbig"]
+[connection signal="pressed" from="BottomRow/Tacobara/Reveal" to="BottomRow/Tacobara" method="_on_button_pressed"]
+[connection signal="get_dest" from="Mem_Main Menu" to="." method="_on_change_scene_button_get_dest"]
+[connection signal="pressed" from="Mem_Main Menu" to="Mem_Main Menu" method="_on_pressed"]
+[connection signal="pressed" from="BigImgBackground/BigMem/hide" to="BigImgBackground" method="_on_hide_pressed"]
