@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 GlobalSig="*res://scripts/globalScripts/globalSig.gd"
 
+[gui]
+
+theme/custom_font="res://misc/Fredoka-VariableFont_wdth,wght.ttf"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

@@ -1,6 +1,5 @@
-[gd_scene load_steps=3 format=3 uid="uid://dr2dst2nyakd"]
+[gd_scene load_steps=2 format=3 uid="uid://dr2dst2nyakd"]
 
-[ext_resource type="Texture2D" uid="uid://dhpn4wjttsn3h" path="res://assets/hotdog.png" id="1_dowo3"]
 [ext_resource type="Script" path="res://scripts/craftingItem.gd" id="2_lbae5"]
 
 [node name="CraftingItem" type="TextureRect"]
@@ -12,7 +11,6 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource("1_dowo3")
 expand_mode = 1
 stretch_mode = 3
 script = ExtResource("2_lbae5")
