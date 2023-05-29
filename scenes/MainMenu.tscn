@@ -21,17 +21,25 @@ grow_vertical = 2
 script = ExtResource("1_cgfym")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 651.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0.172549, 0.172549, 0.172549, 1)
 
 [node name="Main Menu Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 480.0
-offset_top = 136.0
-offset_right = 670.0
-offset_bottom = 193.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.417
+anchor_top = 0.21
+anchor_right = 0.582
+anchor_bottom = 0.298
+offset_left = -0.384033
+offset_top = -0.0800018
+offset_right = -0.463989
+offset_bottom = -0.104004
 text = "Main Menu"
 label_settings = SubResource("LabelSettings_8faaw")
 horizontal_alignment = 1
