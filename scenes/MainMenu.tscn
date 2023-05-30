@@ -1,7 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://cv3tnjlpim0ks"]
+[gd_scene load_steps=10 format=3 uid="uid://cv3tnjlpim0ks"]
 
 [ext_resource type="Script" path="res://scripts/SceneManager/scene.gd" id="1_cgfym"]
 [ext_resource type="Script" path="res://scripts/SceneManager/ChangeSceneButton.gd" id="2_64bw0"]
+[ext_resource type="Texture2D" uid="uid://dtrctt0ob146j" path="res://assets/UI_buttons/play.png" id="3_dky2o"]
+[ext_resource type="Texture2D" uid="uid://chb8m61qyeywj" path="res://assets/UI_buttons/play_hover.png" id="4_y10lx"]
+[ext_resource type="Texture2D" uid="uid://x6gaq2ljw0gv" path="res://assets/UI_buttons/lore.png" id="5_gdpgf"]
+[ext_resource type="Texture2D" uid="uid://7e8s2gt7u2jq" path="res://assets/UI_buttons/lore_hover.png" id="6_yigwo"]
+[ext_resource type="Texture2D" uid="uid://cdwu4sogxaegd" path="res://assets/UI_buttons/credits.png" id="7_ysxlo"]
+[ext_resource type="Texture2D" uid="uid://p3vh0jwsrr3e" path="res://assets/UI_buttons/credits_hover.png" id="8_mmh0j"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8faaw"]
 font_size = 33
@@ -29,46 +35,72 @@ color = Color(0.172549, 0.172549, 0.172549, 1)
 [node name="Main Menu Label" type="Label" parent="."]
 layout_mode = 0
 offset_left = 480.0
-offset_top = 136.0
+offset_top = 68.0
 offset_right = 670.0
-offset_bottom = 193.0
+offset_bottom = 125.0
 text = "Main Menu"
 label_settings = SubResource("LabelSettings_8faaw")
 horizontal_alignment = 1
 
-[node name="Play" type="Button" parent="."]
-layout_mode = 0
-anchor_left = 0.381944
-anchor_top = 0.345679
-anchor_right = 0.617188
-anchor_bottom = 0.467593
-text = "Play"
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -154.0
+offset_right = 150.0
+offset_bottom = 154.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer3" type="CenterContainer" parent="GridContainer"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+
+[node name="Play" type="TextureButton" parent="GridContainer/CenterContainer3"]
+custom_minimum_size = Vector2(300, 88)
+layout_mode = 2
+texture_normal = ExtResource("3_dky2o")
+texture_hover = ExtResource("4_y10lx")
+ignore_texture_size = true
+stretch_mode = 5
 script = ExtResource("2_64bw0")
 dest = "Level"
 
-[node name="Credits" type="Button" parent="."]
-layout_mode = 0
-anchor_left = 0.381944
-anchor_top = 0.728395
-anchor_right = 0.617188
-anchor_bottom = 0.850309
-text = "Credits"
-script = ExtResource("2_64bw0")
-dest = "Credits"
+[node name="CenterContainer" type="CenterContainer" parent="GridContainer"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
 
-[node name="Memories" type="Button" parent="."]
-layout_mode = 0
-anchor_left = 0.381944
-anchor_top = 0.530864
-anchor_right = 0.617188
-anchor_bottom = 0.652778
-text = "Memories"
+[node name="Memories" type="TextureButton" parent="GridContainer/CenterContainer"]
+custom_minimum_size = Vector2(300, 88)
+layout_mode = 2
+texture_normal = ExtResource("5_gdpgf")
+texture_hover = ExtResource("6_yigwo")
+ignore_texture_size = true
+stretch_mode = 5
 script = ExtResource("2_64bw0")
 dest = "Memories"
 
-[connection signal="get_dest" from="Play" to="." method="_on_change_scene_button_get_dest"]
-[connection signal="pressed" from="Play" to="Play" method="_on_pressed"]
-[connection signal="get_dest" from="Credits" to="." method="_on_change_scene_button_get_dest"]
-[connection signal="pressed" from="Credits" to="Credits" method="_on_pressed"]
-[connection signal="get_dest" from="Memories" to="." method="_on_change_scene_button_get_dest"]
-[connection signal="pressed" from="Memories" to="Memories" method="_on_pressed"]
+[node name="CenterContainer2" type="CenterContainer" parent="GridContainer"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+
+[node name="Credits" type="TextureButton" parent="GridContainer/CenterContainer2"]
+custom_minimum_size = Vector2(300, 88)
+layout_mode = 2
+texture_normal = ExtResource("7_ysxlo")
+texture_hover = ExtResource("8_mmh0j")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("2_64bw0")
+dest = "Credits"
+
+[connection signal="get_dest" from="GridContainer/CenterContainer3/Play" to="." method="_on_change_scene_button_get_dest"]
+[connection signal="pressed" from="GridContainer/CenterContainer3/Play" to="GridContainer/CenterContainer3/Play" method="_on_pressed"]
+[connection signal="get_dest" from="GridContainer/CenterContainer/Memories" to="." method="_on_change_scene_button_get_dest"]
+[connection signal="pressed" from="GridContainer/CenterContainer/Memories" to="GridContainer/CenterContainer/Memories" method="_on_pressed"]
+[connection signal="get_dest" from="GridContainer/CenterContainer2/Credits" to="." method="_on_change_scene_button_get_dest"]
+[connection signal="pressed" from="GridContainer/CenterContainer2/Credits" to="GridContainer/CenterContainer2/Credits" method="_on_pressed"]

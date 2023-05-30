@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://b2pbtif4x6b3"]
+[gd_scene load_steps=17 format=3 uid="uid://b2pbtif4x6b3"]
 
 [ext_resource type="Script" path="res://scripts/SceneManager/scene.gd" id="1_0noef"]
 [ext_resource type="Texture2D" uid="uid://0uovcm0xbouv" path="res://assets/loreScenes/photos/angel_food_locked.png" id="2_fmr6e"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cfo5n02kbbnlh" path="res://assets/loreScenes/photos/devil_s_tango_locked.png" id="7_20rel"]
 [ext_resource type="Texture2D" uid="uid://dg30lru0uqbp4" path="res://assets/loreScenes/photos/frosty_friends_locked.png" id="8_qa11f"]
 [ext_resource type="Texture2D" uid="uid://d0att6uhkbow6" path="res://assets/loreScenes/photos/tacobara_locked.png" id="9_u6b42"]
+[ext_resource type="Texture2D" uid="uid://dtrctt0ob146j" path="res://assets/UI_buttons/play.png" id="10_rhvnv"]
 [ext_resource type="Script" path="res://scripts/SceneManager/ChangeSceneButton.gd" id="10_top0h"]
 [ext_resource type="Script" path="res://scripts/Memories/bigMem.gd" id="11_mj4il"]
 [ext_resource type="Texture2D" uid="uid://dfkjhbkthdnhc" path="res://assets/loreScenes/full/deviled_food.png" id="12_lv7um"]
@@ -241,13 +242,15 @@ text = "Memories"
 label_settings = SubResource("LabelSettings_os62y")
 horizontal_alignment = 1
 
-[node name="Mem_Main Menu" type="Button" parent="."]
+[node name="Mem_Main Menu" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 35.0
 offset_top = 559.0
 offset_right = 275.0
 offset_bottom = 615.0
-text = "Return to Main Menu"
+texture_normal = ExtResource("10_rhvnv")
+ignore_texture_size = true
+stretch_mode = 5
 script = ExtResource("10_top0h")
 dest = "MainMenu"
 
