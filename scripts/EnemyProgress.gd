@@ -20,6 +20,8 @@ func resizeProgressBar(timeLeft) -> void:
 	var newLAnchor :float = 1 - (timeLeft * waitTimeUnit)
 	progressBar.set_anchor(SIDE_LEFT, newLAnchor, true)
 
+func pauseTimer() -> void:
+	timer.paused = !timer.paused
 #______________________signal functions_________________________________________
 
 

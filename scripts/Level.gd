@@ -3,6 +3,7 @@ extends Control
 
 @onready var gameOverOverLay = $GameOverOverlay
 @onready var completionFeedBack = $CompletionFeedback
+@onready var timerBar = $EnemyProgress
 @export var tutorialDisplay: bool = false
 
 # Called when the node enters the scene tree for the first time.
@@ -24,3 +25,11 @@ func _on_crafting_area_show_completion_feedback(isCorrect) -> void:
 		completionFeedBack.showCorrectFeedback()
 	else:
 		completionFeedBack.showWrongFeedback()
+
+
+func _on_tutorial_overlay_draw() -> void:
+	timerBar.pauseTimer()
+
+
+func _on_tutorial_overlay_hidden() -> void:
+	timerBar.pauseTimer()

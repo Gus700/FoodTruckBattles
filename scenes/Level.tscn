@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=36 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -32,12 +32,17 @@
 [ext_resource type="PackedScene" uid="uid://tejyi6h0ot45" path="res://scenes/CompletionFeedback.tscn" id="30_6cca4"]
 [ext_resource type="Script" path="res://scripts/tutorialOverlay.gd" id="31_vytai"]
 [ext_resource type="Texture2D" uid="uid://b5gcuffddrpxd" path="res://assets/UI/tut_bubble.png" id="32_tqjk8"]
+[ext_resource type="Texture2D" uid="uid://cfc3o4swkbp3h" path="res://assets/UI/pointer.png" id="33_1kdry"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_wkq44"]
 font_size = 50
 font_color = Color(0.870588, 0.352941, 0.337255, 1)
 outline_size = 10
 outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_dy1m6"]
+font_size = 26
+font_color = Color(0, 0, 0, 1)
 
 [node name="Level" type="Control"]
 layout_mode = 3
@@ -322,7 +327,243 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.705882)
+color = Color(0, 0, 0, 0.54902)
+
+[node name="Steps" type="Control" parent="TutorialOverlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Intro" type="Control" parent="TutorialOverlay/Steps"]
+visible = false
+layout_mode = 1
+anchor_left = 0.104167
+anchor_top = 0.0493827
+anchor_right = 0.944444
+anchor_bottom = 0.217593
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="TutorialOverlay/Steps/Intro"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("32_tqjk8")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="TutorialOverlay/Steps/Intro/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Here are the basics on how to run a succesfull foodtruck workflow!"
+label_settings = SubResource("LabelSettings_dy1m6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Step1" type="Control" parent="TutorialOverlay/Steps"]
+visible = false
+layout_mode = 1
+anchor_left = 0.104167
+anchor_top = 0.0493827
+anchor_right = 0.944444
+anchor_bottom = 0.217593
+metadata/_edit_use_anchors_ = true
+
+[node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.256198
+anchor_right = 1.04959
+anchor_bottom = 1.02752
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("32_tqjk8")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="TutorialOverlay/Steps/Step1/TextBoxImg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "This is the order you need to build.
+The recipe button will display the ingredients you need.
+"
+label_settings = SubResource("LabelSettings_dy1m6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.272727
+anchor_top = 0.733945
+anchor_right = 0.429727
+anchor_bottom = 1.46795
+rotation = 2.64243
+texture = ExtResource("33_1kdry")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Step2" type="Control" parent="TutorialOverlay/Steps"]
+visible = false
+layout_mode = 1
+anchor_left = 0.104167
+anchor_top = 0.0493827
+anchor_right = 0.944444
+anchor_bottom = 0.217593
+metadata/_edit_use_anchors_ = true
+
+[node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.246901
+anchor_top = 1.76147
+anchor_right = 1.04029
+anchor_bottom = 2.78899
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("32_tqjk8")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="TutorialOverlay/Steps/Step2/TextBoxImg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Here you can select the ingredients.
+Remember, build in the correct order of the recipe!
+"
+label_settings = SubResource("LabelSettings_dy1m6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.165289
+anchor_top = 2.49541
+anchor_right = 0.322289
+anchor_bottom = 3.22941
+rotation = 1.0472
+texture = ExtResource("33_1kdry")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Step3" type="Control" parent="TutorialOverlay/Steps"]
+visible = false
+layout_mode = 1
+anchor_left = 0.104167
+anchor_top = 0.0493827
+anchor_right = 0.944444
+anchor_bottom = 0.217593
+metadata/_edit_use_anchors_ = true
+
+[node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.107438
+anchor_top = -0.220183
+anchor_right = 0.68595
+anchor_bottom = 0.807339
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("32_tqjk8")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="TutorialOverlay/Steps/Step3/TextBoxImg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Click dingus bell to signal an order as complete!
+"
+label_settings = SubResource("LabelSettings_dy1m6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.296488
+anchor_top = 0.587156
+anchor_right = 0.453488
+anchor_bottom = 1.32116
+rotation = 1.0472
+texture = ExtResource("33_1kdry")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Step4" type="Control" parent="TutorialOverlay/Steps"]
+visible = false
+layout_mode = 1
+anchor_left = 0.763889
+anchor_top = 0.0987654
+anchor_right = 1.60417
+anchor_bottom = 0.266975
+metadata/_edit_use_anchors_ = true
+
+[node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.538223
+anchor_top = 0.954128
+anchor_right = 0.255165
+anchor_bottom = 1.98165
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("32_tqjk8")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="TutorialOverlay/Steps/Step4/TextBoxImg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Complete all your orders before time runs out!"
+label_settings = SubResource("LabelSettings_dy1m6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.198347
+anchor_top = 1.02752
+anchor_right = 0.355347
+anchor_bottom = 1.76152
+rotation = -1.83259
+texture = ExtResource("33_1kdry")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="CloseTutorial" type="TextureButton" parent="TutorialOverlay"]
 layout_mode = 1
@@ -348,8 +589,38 @@ text = "Exit"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="NextButton" type="TextureButton" parent="TutorialOverlay"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.875
+anchor_top = 0.901235
+anchor_right = 0.978299
+anchor_bottom = 0.981481
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("32_tqjk8")
+ignore_texture_size = true
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="TutorialOverlay/NextButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Next Step"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="update_recipe" from="Order Area" to="Crafting Area" method="_on_order_area_update_recipe"]
 [connection signal="request_updated_order" from="Crafting Area" to="Order Area" method="_on_crafting_area_request_updated_order"]
 [connection signal="show_completion_feedback" from="Crafting Area" to="." method="_on_crafting_area_show_completion_feedback"]
 [connection signal="pressed" from="CompletionBell" to="Crafting Area" method="_on_completion_bell_pressed"]
 [connection signal="game_over" from="EnemyProgress" to="." method="_on_enemy_progress_game_over"]
+[connection signal="draw" from="TutorialOverlay" to="." method="_on_tutorial_overlay_draw"]
+[connection signal="hidden" from="TutorialOverlay" to="." method="_on_tutorial_overlay_hidden"]
+[connection signal="pressed" from="TutorialOverlay/CloseTutorial" to="TutorialOverlay" method="_on_close_tutorial_pressed"]
+[connection signal="pressed" from="TutorialOverlay/NextButton" to="TutorialOverlay" method="_on_next_button_pressed"]
