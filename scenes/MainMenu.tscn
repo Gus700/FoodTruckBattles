@@ -28,41 +28,38 @@ script = ExtResource("1_cgfym")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 651.0
+anchor_right = 1.0
+anchor_bottom = 1.00463
 color = Color(0.172549, 0.172549, 0.172549, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="Main Menu Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 480.0
-offset_top = 68.0
-offset_right = 670.0
-offset_bottom = 125.0
+anchor_left = 0.416667
+anchor_top = 0.104938
+anchor_right = 0.581597
+anchor_bottom = 0.192901
 text = "Main Menu"
 label_settings = SubResource("LabelSettings_8faaw")
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
-[node name="GridContainer" type="GridContainer" parent="."]
+[node name="GridContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -150.0
-offset_top = -154.0
-offset_right = 150.0
-offset_bottom = 154.0
+anchors_preset = -1
+anchor_left = 0.369792
+anchor_top = 0.262346
+anchor_right = 0.630208
+anchor_bottom = 0.737654
 grow_horizontal = 2
 grow_vertical = 2
+alignment = 1
+metadata/_edit_use_anchors_ = true
 
-[node name="CenterContainer3" type="CenterContainer" parent="GridContainer"]
+[node name="Play" type="TextureButton" parent="GridContainer"]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
-
-[node name="Play" type="TextureButton" parent="GridContainer/CenterContainer3"]
-custom_minimum_size = Vector2(300, 88)
-layout_mode = 2
+size_flags_vertical = 3
 texture_normal = ExtResource("3_dky2o")
 texture_hover = ExtResource("4_y10lx")
 ignore_texture_size = true
@@ -70,13 +67,10 @@ stretch_mode = 5
 script = ExtResource("2_64bw0")
 dest = "Level"
 
-[node name="CenterContainer" type="CenterContainer" parent="GridContainer"]
+[node name="Memories" type="TextureButton" parent="GridContainer"]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
-
-[node name="Memories" type="TextureButton" parent="GridContainer/CenterContainer"]
-custom_minimum_size = Vector2(300, 88)
-layout_mode = 2
+size_flags_vertical = 3
 texture_normal = ExtResource("5_gdpgf")
 texture_hover = ExtResource("6_yigwo")
 ignore_texture_size = true
@@ -84,13 +78,10 @@ stretch_mode = 5
 script = ExtResource("2_64bw0")
 dest = "Memories"
 
-[node name="CenterContainer2" type="CenterContainer" parent="GridContainer"]
+[node name="Credits" type="TextureButton" parent="GridContainer"]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
-
-[node name="Credits" type="TextureButton" parent="GridContainer/CenterContainer2"]
-custom_minimum_size = Vector2(300, 88)
-layout_mode = 2
+size_flags_vertical = 3
 texture_normal = ExtResource("7_ysxlo")
 texture_hover = ExtResource("8_mmh0j")
 ignore_texture_size = true
@@ -98,9 +89,9 @@ stretch_mode = 5
 script = ExtResource("2_64bw0")
 dest = "Credits"
 
-[connection signal="get_dest" from="GridContainer/CenterContainer3/Play" to="." method="_on_change_scene_button_get_dest"]
-[connection signal="pressed" from="GridContainer/CenterContainer3/Play" to="GridContainer/CenterContainer3/Play" method="_on_pressed"]
-[connection signal="get_dest" from="GridContainer/CenterContainer/Memories" to="." method="_on_change_scene_button_get_dest"]
-[connection signal="pressed" from="GridContainer/CenterContainer/Memories" to="GridContainer/CenterContainer/Memories" method="_on_pressed"]
-[connection signal="get_dest" from="GridContainer/CenterContainer2/Credits" to="." method="_on_change_scene_button_get_dest"]
-[connection signal="pressed" from="GridContainer/CenterContainer2/Credits" to="GridContainer/CenterContainer2/Credits" method="_on_pressed"]
+[connection signal="get_dest" from="GridContainer/Play" to="." method="_on_change_scene_button_get_dest"]
+[connection signal="pressed" from="GridContainer/Play" to="GridContainer/Play" method="_on_pressed"]
+[connection signal="get_dest" from="GridContainer/Memories" to="." method="_on_change_scene_button_get_dest"]
+[connection signal="pressed" from="GridContainer/Memories" to="GridContainer/Memories" method="_on_pressed"]
+[connection signal="get_dest" from="GridContainer/Credits" to="." method="_on_change_scene_button_get_dest"]
+[connection signal="pressed" from="GridContainer/Credits" to="GridContainer/Credits" method="_on_pressed"]
