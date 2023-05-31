@@ -2,7 +2,8 @@ extends ColorRect
 
 
 
-func _on_showbig(big_img):
+func _on_showbig(big_img,lore_text):
+	$BigMem/textBubble/MarginContainer/Label.text = lore_text
 	$BigMem.texture = load(big_img)
 	self.color = Color(0, 0, 0, 1)
 	$BigMem.set_modulate(Color(1, 1, 1, 1))

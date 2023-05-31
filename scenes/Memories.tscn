@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://b2pbtif4x6b3"]
+[gd_scene load_steps=17 format=3 uid="uid://b2pbtif4x6b3"]
 
 [ext_resource type="Script" path="res://scripts/SceneManager/scene.gd" id="1_0noef"]
 [ext_resource type="Texture2D" uid="uid://0uovcm0xbouv" path="res://assets/loreScenes/photos/angel_food_locked.png" id="2_fmr6e"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cfo5n02kbbnlh" path="res://assets/loreScenes/photos/devil_s_tango_locked.png" id="7_20rel"]
 [ext_resource type="Texture2D" uid="uid://dg30lru0uqbp4" path="res://assets/loreScenes/photos/frosty_friends_locked.png" id="8_qa11f"]
 [ext_resource type="Texture2D" uid="uid://d0att6uhkbow6" path="res://assets/loreScenes/photos/tacobara_locked.png" id="9_u6b42"]
+[ext_resource type="Texture2D" uid="uid://dtrctt0ob146j" path="res://assets/UI_buttons/play.png" id="10_rhvnv"]
 [ext_resource type="Script" path="res://scripts/SceneManager/ChangeSceneButton.gd" id="10_top0h"]
 [ext_resource type="Script" path="res://scripts/Memories/bigMem.gd" id="11_mj4il"]
 [ext_resource type="Texture2D" uid="uid://dfkjhbkthdnhc" path="res://assets/loreScenes/full/deviled_food.png" id="12_lv7um"]
@@ -37,24 +38,26 @@ script = ExtResource("1_0noef")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 648.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 color = Color(0.184314, 0.301961, 0.145098, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="TopRow" type="GridContainer" parent="."]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -432.0
-offset_top = 86.0
-offset_right = 432.0
-offset_bottom = 286.0
+anchors_preset = -1
+anchor_left = 0.120226
+anchor_top = 0.132716
+anchor_right = 0.879774
+anchor_bottom = 0.441358
+offset_left = 5.5
+offset_right = -5.5
 grow_horizontal = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 theme_override_constants/h_separation = 25
 columns = 4
+metadata/_edit_use_anchors_ = true
 
 [node name="AngelFood" type="TextureRect" parent="TopRow"]
 layout_mode = 2
@@ -66,6 +69,7 @@ stretch_mode = 4
 script = ExtResource("3_oufhp")
 img = "angel_food"
 big_img = "res://assets/loreScenes/full/angel_s_scripture.png"
+lore_text = "angel food cake mythos"
 
 [node name="Reveal" type="Button" parent="TopRow/AngelFood"]
 modulate = Color(1, 1, 1, 0)
@@ -88,6 +92,7 @@ stretch_mode = 4
 script = ExtResource("3_oufhp")
 img = "bury_me"
 big_img = "res://assets/loreScenes/full/hearse_to_be_you.png"
+lore_text = "bats practice dark magic via skeleton sacrifices lured in by burrito bait"
 
 [node name="Reveal" type="Button" parent="TopRow/BuryMe"]
 modulate = Color(1, 1, 1, 0)
@@ -110,6 +115,7 @@ stretch_mode = 4
 script = ExtResource("3_oufhp")
 img = "cheddorbendor"
 big_img = "res://assets/loreScenes/full/gold_standard.png"
+lore_text = "cheddorbendor businessmen secretly buy gold cheese wheels from gold cows"
 
 [node name="Reveal" type="Button" parent="TopRow/Cheddor"]
 modulate = Color(1, 1, 1, 0)
@@ -132,6 +138,7 @@ stretch_mode = 4
 script = ExtResource("3_oufhp")
 img = "corn_dog"
 big_img = "res://assets/loreScenes/full/operation_corn_dog.png"
+lore_text = "corn on da dog is a front for the cool cats to catch the elusive dog burglar"
 
 [node name="Reveal" type="Button" parent="TopRow/CornDog"]
 modulate = Color(1, 1, 1, 0)
@@ -146,21 +153,18 @@ icon_alignment = 1
 
 [node name="BottomRow" type="GridContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -325.0
-offset_top = -21.0
-offset_right = 325.0
-offset_bottom = 179.0
+anchors_preset = -1
+anchor_left = 0.217882
+anchor_top = 0.467593
+anchor_right = 0.782118
+anchor_bottom = 0.776235
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 theme_override_constants/h_separation = 25
 columns = 3
+metadata/_edit_use_anchors_ = true
 
 [node name="Devil\'s Tango" type="TextureRect" parent="BottomRow"]
 layout_mode = 2
@@ -172,6 +176,7 @@ stretch_mode = 4
 script = ExtResource("3_oufhp")
 img = "devil_s_tango"
 big_img = "res://assets/loreScenes/full/deviled_food.png"
+lore_text = "devil’s tango + its poor beginnings"
 
 [node name="Reveal" type="Button" parent="BottomRow/Devil\'s Tango"]
 modulate = Color(1, 1, 1, 0)
@@ -194,6 +199,7 @@ stretch_mode = 4
 script = ExtResource("3_oufhp")
 img = "frosty_friends"
 big_img = "res://assets/loreScenes/full/frosty_beginnings.png"
+lore_text = "frosty friends open shop to cats for the first time in their 84 years of operation"
 
 [node name="Reveal" type="Button" parent="BottomRow/Frosty"]
 modulate = Color(1, 1, 1, 0)
@@ -216,6 +222,7 @@ stretch_mode = 4
 script = ExtResource("3_oufhp")
 img = "tacobara"
 big_img = "res://assets/loreScenes/full/tacobara.png"
+lore_text = "capybaras get stuck in desert + lose sanity"
 
 [node name="Reveal" type="Button" parent="BottomRow/Tacobara"]
 modulate = Color(1, 1, 1, 0)
@@ -230,31 +237,37 @@ icon_alignment = 1
 
 [node name="Memories Label" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -95.0
-offset_right = 95.0
-offset_bottom = 57.0
+anchors_preset = -1
+anchor_left = 0.417535
+anchor_right = 0.582465
+anchor_bottom = 0.087963
 grow_horizontal = 2
+grow_vertical = 2
 text = "Memories"
 label_settings = SubResource("LabelSettings_os62y")
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
-[node name="Mem_Main Menu" type="Button" parent="."]
+[node name="Mem_Main Menu" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 35.0
-offset_top = 559.0
-offset_right = 275.0
-offset_bottom = 615.0
-text = "Return to Main Menu"
+anchor_left = 0.0303819
+anchor_top = 0.862654
+anchor_right = 0.238715
+anchor_bottom = 0.949074
+texture_normal = ExtResource("10_rhvnv")
+ignore_texture_size = true
+stretch_mode = 5
 script = ExtResource("10_top0h")
 dest = "MainMenu"
+metadata/_edit_use_anchors_ = true
 
 [node name="BigImgBackground" type="ColorRect" parent="."]
-layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 648.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 0)
 script = ExtResource("11_mj4il")
