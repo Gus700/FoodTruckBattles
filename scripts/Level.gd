@@ -15,6 +15,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+#_____________________________________signal functions______________________________________________
 
 func _on_enemy_progress_game_over() -> void:
 	gameOverOverLay.show()

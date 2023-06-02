@@ -636,6 +636,7 @@ vertical_alignment = 1
 [connection signal="request_updated_order" from="Crafting Area" to="Order Area" method="_on_crafting_area_request_updated_order"]
 [connection signal="show_completion_feedback" from="Crafting Area" to="." method="_on_crafting_area_show_completion_feedback"]
 [connection signal="pressed" from="CompletionBell" to="Crafting Area" method="_on_completion_bell_pressed"]
+[connection signal="pressed" from="TrashCan" to="Crafting Area" method="_on_trash_can_pressed"]
 [connection signal="game_over" from="EnemyProgress" to="." method="_on_enemy_progress_game_over"]
 [connection signal="draw" from="TutorialOverlay" to="." method="_on_tutorial_overlay_draw"]
 [connection signal="hidden" from="TutorialOverlay" to="." method="_on_tutorial_overlay_hidden"]

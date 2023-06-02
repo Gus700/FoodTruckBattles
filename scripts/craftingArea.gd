@@ -74,5 +74,6 @@ func _on_completion_bell_pressed() -> void:
 	checkCorrectCompletion()
 	emit_signal("request_updated_order")
 	clearIngredients()
-	
 
+func _on_trash_can_pressed() -> void:
+	clearIngredients()
