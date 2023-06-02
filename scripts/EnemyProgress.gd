@@ -1,7 +1,7 @@
 extends Control
 
 @onready var timer :Node = $Timer
-@onready var progressBar :Node = $ProgressBar
+@onready var progressBar :Node = $TextureRect/ProgressBar
 @onready var waitTimeUnit:float = 1/timer.wait_time
 signal game_over()
 

@@ -297,10 +297,11 @@ metadata/_edit_use_anchors_ = true
 [node name="EnemyProgress" parent="." instance=ExtResource("11_rr48n")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.312
-anchor_top = 0.012
-anchor_right = 0.951
-anchor_bottom = 0.062
+anchor_left = 0.319444
+anchor_top = 0.0123457
+anchor_right = 0.944444
+anchor_bottom = 0.111111
+metadata/_edit_use_anchors_ = true
 
 [node name="GameOverOverlay" type="Label" parent="."]
 visible = false
@@ -327,6 +328,7 @@ anchor_right = 0.778
 anchor_bottom = 0.988
 
 [node name="TutorialOverlay" type="Control" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
