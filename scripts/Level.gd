@@ -32,4 +32,4 @@ func _on_tutorial_overlay_draw() -> void:
 
 
 func _on_tutorial_overlay_hidden() -> void:
-	timerBar.pauseTimer()
+	timerBar.unpauseTimer()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=38 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -29,7 +29,9 @@
 [ext_resource type="Resource" uid="uid://bibtu1pp4xme5" path="res://resourceData/ingredients/sausage.tres" id="21_sly5d"]
 [ext_resource type="Resource" uid="uid://c70k6roidpm46" path="res://resourceData/ingredients/ketchup.tres" id="22_cwyyt"]
 [ext_resource type="Resource" uid="uid://d11s23kskfx4h" path="res://resourceData/ingredients/mustard.tres" id="23_u7615"]
+[ext_resource type="Texture2D" uid="uid://jaegq33ef8cl" path="res://assets/objects/trash_def.png" id="29_2c5js"]
 [ext_resource type="PackedScene" uid="uid://tejyi6h0ot45" path="res://scenes/CompletionFeedback.tscn" id="30_6cca4"]
+[ext_resource type="Texture2D" uid="uid://t43vrwsy8d6k" path="res://assets/objects/trash_full.png" id="30_wvnbc"]
 [ext_resource type="Script" path="res://scripts/tutorialOverlay.gd" id="31_vytai"]
 [ext_resource type="Texture2D" uid="uid://b5gcuffddrpxd" path="res://assets/UI/tut_bubble.png" id="32_tqjk8"]
 [ext_resource type="Texture2D" uid="uid://cfc3o4swkbp3h" path="res://assets/UI/pointer.png" id="33_1kdry"]
@@ -275,6 +277,19 @@ anchor_bottom = 0.42
 offset_top = -0.23201
 texture_normal = ExtResource("6_1ceec")
 texture_pressed = ExtResource("7_pit3t")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="TrashCan" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.798611
+anchor_top = 0.217593
+anchor_right = 0.915799
+anchor_bottom = 0.419753
+texture_normal = ExtResource("29_2c5js")
+texture_pressed = ExtResource("30_wvnbc")
 ignore_texture_size = true
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true

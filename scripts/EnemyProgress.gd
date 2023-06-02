@@ -21,7 +21,10 @@ func resizeProgressBar(timeLeft) -> void:
 	progressBar.set_anchor(SIDE_LEFT, newLAnchor, true)
 
 func pauseTimer() -> void:
-	timer.paused = !timer.paused
+	timer.paused = true
+	
+func unpauseTimer() -> void:
+	timer.paused = false
 #______________________signal functions_________________________________________
 
 

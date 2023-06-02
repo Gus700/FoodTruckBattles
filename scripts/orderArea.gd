@@ -46,7 +46,7 @@ func getNextOrder() -> Node:
 
 # get a list of references to all other orders that are not the current one
 func getNextOrders() -> Array[Node]:
-	var orders: Array[Node]
+	var orders: Array[Node] = []
 	for order in nextOrdersContainer.get_children():
 		orders.append(order)
 	return orders
