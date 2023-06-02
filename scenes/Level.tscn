@@ -328,7 +328,6 @@ anchor_right = 0.778
 anchor_bottom = 0.988
 
 [node name="TutorialOverlay" type="Control" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -380,7 +379,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Here are the basics on how to run a succesfull foodtruck workflow!"
+text = "Alright newbie, listen up cos i won’t say this again. I have a cruise to catch!"
 label_settings = SubResource("LabelSettings_dy1m6")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -414,9 +413,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "This is the order you need to build.
-The recipe button will display the ingredients you need.
-"
+text = "Orders show up here, and if you dont know how to make an order, check the recipe. Click on the ingredients in the correct order to make it."
 label_settings = SubResource("LabelSettings_dy1m6")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -465,7 +462,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Here you can select the ingredients.
-Remember, build in the correct order of the recipe!
+Remember!
 "
 label_settings = SubResource("LabelSettings_dy1m6")
 horizontal_alignment = 1
@@ -537,19 +534,19 @@ metadata/_edit_use_anchors_ = true
 [node name="Step4" type="Control" parent="TutorialOverlay/Steps"]
 visible = false
 layout_mode = 1
-anchor_left = 0.763889
-anchor_top = 0.0987654
-anchor_right = 1.60417
-anchor_bottom = 0.266975
+anchor_left = 0.104167
+anchor_top = 0.0493827
+anchor_right = 0.944444
+anchor_bottom = 0.217593
 metadata/_edit_use_anchors_ = true
 
 [node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step4"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.538223
-anchor_top = 0.954128
-anchor_right = 0.255165
-anchor_bottom = 1.98165
+anchor_left = 0.206611
+anchor_top = -0.220183
+anchor_right = 0.999999
+anchor_bottom = 0.807339
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("32_tqjk8")
@@ -563,13 +560,62 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Complete all your orders before time runs out!"
+text = "If ya mess up leave it to the trash can to take care of itw!
+"
 label_settings = SubResource("LabelSettings_dy1m6")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.793389
+anchor_top = 0.513761
+anchor_right = 0.950389
+anchor_bottom = 1.24776
+rotation = 1.0472
+texture = ExtResource("33_1kdry")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Step5" type="Control" parent="TutorialOverlay/Steps"]
+visible = false
+layout_mode = 1
+anchor_left = 0.763889
+anchor_top = 0.0987654
+anchor_right = 1.60417
+anchor_bottom = 0.266975
+metadata/_edit_use_anchors_ = true
+
+[node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step5"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.538223
+anchor_top = 0.954128
+anchor_right = 0.255165
+anchor_bottom = 1.98165
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("32_tqjk8")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="TutorialOverlay/Steps/Step5/TextBoxImg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "You gotta hit as many orders ASAP otherwise customers leave! this isn’t the ritz or whatever, y’know?!"
+label_settings = SubResource("LabelSettings_dy1m6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step5"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.198347
