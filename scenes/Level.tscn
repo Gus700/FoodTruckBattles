@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=42 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -35,6 +35,10 @@
 [ext_resource type="Script" path="res://scripts/tutorialOverlay.gd" id="31_vytai"]
 [ext_resource type="Texture2D" uid="uid://b5gcuffddrpxd" path="res://assets/UI/tut_bubble.png" id="32_tqjk8"]
 [ext_resource type="Texture2D" uid="uid://cfc3o4swkbp3h" path="res://assets/UI/pointer.png" id="33_1kdry"]
+[ext_resource type="Texture2D" uid="uid://b6ikysvjo7odr" path="res://assets/UI/tut_bubble_big.png" id="34_yvpwa"]
+[ext_resource type="Texture2D" uid="uid://cqxkeynu1gl1p" path="res://assets/objects/order_paper_big.png" id="35_kl1hg"]
+[ext_resource type="Texture2D" uid="uid://i2s82jtvoed1" path="res://assets/food/starterFood/ketchup_hotdog.png" id="36_qkj61"]
+[ext_resource type="Texture2D" uid="uid://dcmqycrnh0423" path="res://assets/UI/timer_bar.png" id="39_nkydd"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_wkq44"]
 font_size = 50
@@ -284,9 +288,9 @@ metadata/_edit_use_anchors_ = true
 [node name="TrashCan" type="TextureButton" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.798611
+anchor_left = 0.797743
 anchor_top = 0.217593
-anchor_right = 0.915799
+anchor_right = 0.914931
 anchor_bottom = 0.419753
 texture_normal = ExtResource("29_2c5js")
 texture_pressed = ExtResource("30_wvnbc")
@@ -367,9 +371,13 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 145.0
+offset_top = 429.0
+offset_right = -197.0
+offset_bottom = 470.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("32_tqjk8")
+texture = ExtResource("34_yvpwa")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="TutorialOverlay/Steps/Intro/TextureRect"]
@@ -377,9 +385,14 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 2.00002
+offset_right = 4.0
+offset_bottom = 2.00002
 grow_horizontal = 2
 grow_vertical = 2
-text = "Alright newbie, listen up cos i won’t say this again. I have a cruise to catch!"
+text = "Alright newbie, listen up cos i won’t say this again.
+I have a cruise to catch!"
 label_settings = SubResource("LabelSettings_dy1m6")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -397,12 +410,12 @@ metadata/_edit_use_anchors_ = true
 [node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step1"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.256198
+anchor_left = 0.256199
 anchor_right = 1.04959
-anchor_bottom = 1.02752
+anchor_bottom = 1.58715
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("32_tqjk8")
+texture = ExtResource("34_yvpwa")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -411,21 +424,36 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 4.9996
+offset_top = -5.99999
+offset_right = 4.99683
+offset_bottom = 7.00008
 grow_horizontal = 2
 grow_vertical = 2
-text = "Orders show up here, and if you dont know how to make an order, check the recipe. Click on the ingredients in the correct order to make it."
+text = "Orders show up here. If you dont know how to make an order, check the recipe. 
+Click on the ingredients in the correct order to make it."
 label_settings = SubResource("LabelSettings_dy1m6")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
+[node name="OrderPaperBig" type="Sprite2D" parent="TutorialOverlay/Steps/Step1"]
+position = Vector2(36.9996, 193)
+scale = Vector2(1.13949, 1.139)
+texture = ExtResource("35_kl1hg")
+
+[node name="KetchupHotdog" type="Sprite2D" parent="TutorialOverlay/Steps/Step1"]
+position = Vector2(38.9996, 181)
+scale = Vector2(0.778169, 0.74005)
+texture = ExtResource("36_qkj61")
+
 [node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step1"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.272727
-anchor_top = 0.733945
-anchor_right = 0.429727
-anchor_bottom = 1.46795
+anchor_left = 0.305785
+anchor_top = 0.770641
+anchor_right = 0.55062
+anchor_bottom = 2.02752
 rotation = 2.64243
 texture = ExtResource("33_1kdry")
 expand_mode = 1
@@ -444,10 +472,10 @@ metadata/_edit_use_anchors_ = true
 [node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step2"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.246901
-anchor_top = 1.76147
-anchor_right = 1.04029
-anchor_bottom = 2.78899
+anchor_left = 0.407025
+anchor_top = 1.11926
+anchor_right = 0.856405
+anchor_bottom = 2.66054
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("32_tqjk8")
@@ -459,10 +487,12 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -1.99998
+offset_bottom = -1.99998
 grow_horizontal = 2
 grow_vertical = 2
-text = "Here you can select the ingredients.
-Remember!
+text = "Here, you can select 
+the ingredients. You with me?
 "
 label_settings = SubResource("LabelSettings_dy1m6")
 horizontal_alignment = 1
@@ -472,10 +502,10 @@ autowrap_mode = 2
 [node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step2"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.165289
-anchor_top = 2.49541
-anchor_right = 0.322289
-anchor_bottom = 3.22941
+anchor_left = 0.200413
+anchor_top = 1.75229
+anchor_right = 0.402893
+anchor_bottom = 3.01834
 rotation = 1.0472
 texture = ExtResource("33_1kdry")
 expand_mode = 1
@@ -494,13 +524,13 @@ metadata/_edit_use_anchors_ = true
 [node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step3"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.107438
-anchor_top = -0.220183
-anchor_right = 0.68595
-anchor_bottom = 0.807339
+anchor_left = 0.367769
+anchor_top = 0.100917
+anchor_right = 0.957645
+anchor_bottom = 1.16513
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("32_tqjk8")
+texture = ExtResource("34_yvpwa")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -509,9 +539,14 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = -1.0
+offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Click dingus bell to signal an order as complete!
+text = "This is Dingus, the bell. 
+Click on him to finish an order.
 "
 label_settings = SubResource("LabelSettings_dy1m6")
 horizontal_alignment = 1
@@ -521,15 +556,20 @@ autowrap_mode = 2
 [node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step3"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.296488
-anchor_top = 0.587156
-anchor_right = 0.453488
-anchor_bottom = 1.32116
+anchor_left = 0.292355
+anchor_top = 0.146789
+anchor_right = 0.484504
+anchor_bottom = 1.22936
 rotation = 1.0472
 texture = ExtResource("33_1kdry")
 expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
+
+[node name="BellDef" type="Sprite2D" parent="TutorialOverlay/Steps/Step3"]
+position = Vector2(368, 204)
+scale = Vector2(0.431122, 0.416667)
+texture = ExtResource("6_1ceec")
 
 [node name="Step4" type="Control" parent="TutorialOverlay/Steps"]
 visible = false
@@ -543,13 +583,13 @@ metadata/_edit_use_anchors_ = true
 [node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step4"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.206611
-anchor_top = -0.220183
-anchor_right = 0.999999
-anchor_bottom = 0.807339
+anchor_left = 0.224173
+anchor_top = 1.65137
+anchor_right = 0.81405
+anchor_bottom = 2.73394
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("32_tqjk8")
+texture = ExtResource("34_yvpwa")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -558,9 +598,13 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 17.0
+offset_top = -17.0
+offset_right = -12.0
+offset_bottom = 18.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "If ya mess up leave it to the trash can to take care of itw!
+text = "This is Deletus, the trash can. Eats your mistakes, but I wouldn't rely on him much.
 "
 label_settings = SubResource("LabelSettings_dy1m6")
 horizontal_alignment = 1
@@ -570,15 +614,20 @@ autowrap_mode = 2
 [node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step4"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.793389
-anchor_top = 0.513761
-anchor_right = 0.950389
-anchor_bottom = 1.24776
+anchor_left = 0.779959
+anchor_top = -0.137614
+anchor_right = 0.966943
+anchor_bottom = 1.00917
 rotation = 1.0472
 texture = ExtResource("33_1kdry")
 expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
+
+[node name="TrashDef" type="Sprite2D" parent="TutorialOverlay/Steps/Step4"]
+position = Vector2(868.5, 174.75)
+scale = Vector2(0.609589, 0.571739)
+texture = ExtResource("29_2c5js")
 
 [node name="Step5" type="Control" parent="TutorialOverlay/Steps"]
 visible = false
@@ -592,13 +641,13 @@ metadata/_edit_use_anchors_ = true
 [node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step5"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.538223
-anchor_top = 0.954128
-anchor_right = 0.255165
-anchor_bottom = 1.98165
+anchor_left = -0.71694
+anchor_top = 3.65138
+anchor_right = 0.0816111
+anchor_bottom = 5.02753
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("32_tqjk8")
+texture = ExtResource("34_yvpwa")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -607,9 +656,12 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 1.52588e-05
+offset_right = 3.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "You gotta hit as many orders ASAP otherwise customers leave! this isn’t the ritz or whatever, y’know?!"
+text = "Most important thing, SPEED. Hit as many orders as ya can. No need to be neat. This ain't the Ritz."
 label_settings = SubResource("LabelSettings_dy1m6")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -618,15 +670,20 @@ autowrap_mode = 2
 [node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step5"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.198347
-anchor_top = 1.02752
-anchor_right = 0.355347
-anchor_bottom = 1.76152
+anchor_left = 0.112603
+anchor_top = 1.96331
+anchor_right = 0.324379
+anchor_bottom = 3.27524
 rotation = -1.83259
 texture = ExtResource("33_1kdry")
 expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
+
+[node name="TimerBar" type="Sprite2D" parent="TutorialOverlay/Steps/Step5"]
+position = Vector2(-151.375, -24.8125)
+scale = Vector2(0.400637, 0.438793)
+texture = ExtResource("39_nkydd")
 
 [node name="CloseTutorial" type="TextureButton" parent="TutorialOverlay"]
 layout_mode = 1
