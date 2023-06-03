@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=51 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -33,16 +33,20 @@
 [ext_resource type="PackedScene" uid="uid://tejyi6h0ot45" path="res://scenes/CompletionFeedback.tscn" id="30_6cca4"]
 [ext_resource type="Texture2D" uid="uid://t43vrwsy8d6k" path="res://assets/objects/trash_full.png" id="30_wvnbc"]
 [ext_resource type="Script" path="res://scripts/tutorialOverlay.gd" id="31_vytai"]
-[ext_resource type="Texture2D" uid="uid://b5gcuffddrpxd" path="res://assets/UI/tut_bubble.png" id="32_tqjk8"]
 [ext_resource type="Texture2D" uid="uid://cfc3o4swkbp3h" path="res://assets/UI/pointer.png" id="33_1kdry"]
-[ext_resource type="Texture2D" uid="uid://b6ikysvjo7odr" path="res://assets/UI/tut_bubble_big.png" id="34_yvpwa"]
+[ext_resource type="Texture2D" uid="uid://cwsdtso0wlm46" path="res://assets/UI/tutorial1.png" id="34_oqupw"]
 [ext_resource type="FontFile" uid="uid://c1vtnd0t0k2t4" path="res://assets/fonts/Fredoka-Medium.ttf" id="35_jmqed"]
 [ext_resource type="Texture2D" uid="uid://cqxkeynu1gl1p" path="res://assets/objects/order_paper_big.png" id="35_kl1hg"]
+[ext_resource type="Texture2D" uid="uid://gdombg4r0w3h" path="res://assets/UI/tutorial2.png" id="36_e0ejb"]
 [ext_resource type="Texture2D" uid="uid://i2s82jtvoed1" path="res://assets/food/starterFood/ketchup_hotdog.png" id="36_qkj61"]
 [ext_resource type="Texture2D" uid="uid://dcmqycrnh0423" path="res://assets/UI/timer_bar.png" id="39_nkydd"]
 [ext_resource type="Texture2D" uid="uid://bcpqovcvvvdbl" path="res://assets/UI_buttons/skip.png" id="40_c6v7u"]
+[ext_resource type="Texture2D" uid="uid://eml7fhsg1v5q" path="res://assets/UI/tutorial3.png" id="40_pyqf8"]
 [ext_resource type="Texture2D" uid="uid://bmy5vjaw6kdpw" path="res://assets/UI_buttons/skip_hover.png" id="41_ewn4c"]
+[ext_resource type="Texture2D" uid="uid://dk7k6ynbhrsqq" path="res://assets/UI/tutorial4.png" id="41_wqn2j"]
+[ext_resource type="Texture2D" uid="uid://bf7y2qm8vi6ff" path="res://assets/UI/tutorial5.png" id="42_0lo6e"]
 [ext_resource type="Texture2D" uid="uid://cgfelblnvakg5" path="res://assets/UI_buttons/next.png" id="42_mrn5o"]
+[ext_resource type="Texture2D" uid="uid://cvdbevoymvmgs" path="res://assets/UI/tutorial6.png" id="43_gaicr"]
 [ext_resource type="Texture2D" uid="uid://c6dwth7evsdyw" path="res://assets/UI_buttons/next_hover.png" id="43_i7dqr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_wkq44"]
@@ -363,43 +367,42 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Intro" type="Control" parent="TutorialOverlay/Steps"]
-visible = false
 layout_mode = 1
-anchor_left = 0.104167
+anchor_left = 0.104
 anchor_top = 0.0493827
 anchor_right = 0.944444
-anchor_bottom = 0.217593
+anchor_bottom = 0.235
+offset_left = 0.192383
+offset_bottom = -11.2798
 metadata/_edit_use_anchors_ = true
 
-[node name="TextureRect" type="TextureRect" parent="TutorialOverlay/Steps/Intro"]
+[node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Intro"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 145.0
-offset_top = 429.0
-offset_right = -197.0
-offset_bottom = 470.0
+anchors_preset = -1
+anchor_left = 0.110537
+anchor_top = 3.61467
+anchor_right = 0.822311
+anchor_bottom = 4.99082
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("34_yvpwa")
+texture = ExtResource("34_oqupw")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="TutorialOverlay/Steps/Intro/TextureRect"]
+[node name="Label" type="Label" parent="TutorialOverlay/Steps/Intro/TextBoxImg"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 4.0
-offset_top = 2.00002
-offset_right = 4.0
-offset_bottom = 2.00002
+offset_left = 3.0
+offset_top = 1.52588e-05
+offset_right = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("35_jmqed")
 theme_override_font_sizes/font_size = 12
-text = "Alright newbie, listen up cos I won’t say this again.
-I have a cruise to catch!"
+text = "Most important thing, SPEED. Hit as many orders as ya can. No need to be neat. This ain't the Ritz."
 label_settings = SubResource("LabelSettings_dy1m6")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -422,11 +425,12 @@ anchor_right = 1.04959
 anchor_bottom = 1.58715
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("34_yvpwa")
+texture = ExtResource("36_e0ejb")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/Steps/Step1/TextBoxImg"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -483,17 +487,18 @@ metadata/_edit_use_anchors_ = true
 [node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step2"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.407025
-anchor_top = 1.11926
-anchor_right = 0.856405
-anchor_bottom = 2.66054
+anchor_left = 0.275826
+anchor_top = 1.47706
+anchor_right = 0.974174
+anchor_bottom = 2.95412
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("32_tqjk8")
+texture = ExtResource("40_pyqf8")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/Steps/Step2/TextBoxImg"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -537,17 +542,18 @@ metadata/_edit_use_anchors_ = true
 [node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step3"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.367769
-anchor_top = 0.100917
-anchor_right = 0.957645
-anchor_bottom = 1.16513
+anchor_left = 0.417355
+anchor_top = 0.660549
+anchor_right = 1.02893
+anchor_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("34_yvpwa")
+texture = ExtResource("41_wqn2j")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/Steps/Step3/TextBoxImg"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -571,10 +577,10 @@ autowrap_mode = 2
 [node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step3"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.292355
-anchor_top = 0.146789
-anchor_right = 0.484504
-anchor_bottom = 1.22936
+anchor_left = 0.28719
+anchor_top = 0.165137
+anchor_right = 0.479339
+anchor_bottom = 1.24771
 rotation = 1.0472
 texture = ExtResource("33_1kdry")
 expand_mode = 1
@@ -586,6 +592,20 @@ visible = false
 position = Vector2(368, 204)
 scale = Vector2(0.431122, 0.416667)
 texture = ExtResource("6_1ceec")
+
+[node name="CompletionBell" type="TextureButton" parent="TutorialOverlay/Steps/Step3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.388889
+anchor_top = 0.309
+anchor_right = 0.457889
+anchor_bottom = 0.42
+offset_top = -0.23201
+texture_normal = ExtResource("6_1ceec")
+texture_pressed = ExtResource("7_pit3t")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="Step4" type="Control" parent="TutorialOverlay/Steps"]
 visible = false
@@ -599,17 +619,18 @@ metadata/_edit_use_anchors_ = true
 [node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step4"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.224173
-anchor_top = 1.65137
-anchor_right = 0.81405
-anchor_bottom = 2.73394
+anchor_left = 0.210744
+anchor_top = 1.6422
+anchor_right = 0.809918
+anchor_bottom = 2.87155
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("34_yvpwa")
+texture = ExtResource("42_0lo6e")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/Steps/Step4/TextBoxImg"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -660,17 +681,18 @@ metadata/_edit_use_anchors_ = true
 [node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step5"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.71694
-anchor_top = 3.65138
-anchor_right = 0.0816111
-anchor_bottom = 5.02753
+anchor_left = -0.667353
+anchor_top = 3.63303
+anchor_right = 0.0444212
+anchor_bottom = 5.00918
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("34_yvpwa")
+texture = ExtResource("43_gaicr")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/Steps/Step5/TextBoxImg"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -691,9 +713,9 @@ autowrap_mode = 2
 [node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step5"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.112603
+anchor_left = 0.09814
 anchor_top = 1.96331
-anchor_right = 0.324379
+anchor_right = 0.309916
 anchor_bottom = 3.27524
 rotation = -1.83259
 texture = ExtResource("33_1kdry")
@@ -712,7 +734,7 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.0147569
 anchor_top = 0.901235
-anchor_right = 0.151042
+anchor_right = 0.145833
 anchor_bottom = 0.975309
 texture_normal = ExtResource("40_c6v7u")
 texture_hover = ExtResource("41_ewn4c")
@@ -736,7 +758,7 @@ vertical_alignment = 1
 [node name="NextButton" type="TextureButton" parent="TutorialOverlay"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.840278
+anchor_left = 0.845486
 anchor_top = 0.901235
 anchor_right = 0.978299
 anchor_bottom = 0.981481
@@ -769,5 +791,6 @@ vertical_alignment = 1
 [connection signal="game_over" from="EnemyProgress" to="." method="_on_enemy_progress_game_over"]
 [connection signal="draw" from="TutorialOverlay" to="." method="_on_tutorial_overlay_draw"]
 [connection signal="hidden" from="TutorialOverlay" to="." method="_on_tutorial_overlay_hidden"]
+[connection signal="pressed" from="TutorialOverlay/Steps/Step3/CompletionBell" to="Crafting Area" method="_on_completion_bell_pressed"]
 [connection signal="pressed" from="TutorialOverlay/CloseTutorial" to="TutorialOverlay" method="_on_close_tutorial_pressed"]
 [connection signal="pressed" from="TutorialOverlay/NextButton" to="TutorialOverlay" method="_on_next_button_pressed"]
