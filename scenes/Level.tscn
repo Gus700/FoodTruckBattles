@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=47 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -36,9 +36,14 @@
 [ext_resource type="Texture2D" uid="uid://b5gcuffddrpxd" path="res://assets/UI/tut_bubble.png" id="32_tqjk8"]
 [ext_resource type="Texture2D" uid="uid://cfc3o4swkbp3h" path="res://assets/UI/pointer.png" id="33_1kdry"]
 [ext_resource type="Texture2D" uid="uid://b6ikysvjo7odr" path="res://assets/UI/tut_bubble_big.png" id="34_yvpwa"]
+[ext_resource type="FontFile" uid="uid://c1vtnd0t0k2t4" path="res://assets/fonts/Fredoka-Medium.ttf" id="35_jmqed"]
 [ext_resource type="Texture2D" uid="uid://cqxkeynu1gl1p" path="res://assets/objects/order_paper_big.png" id="35_kl1hg"]
 [ext_resource type="Texture2D" uid="uid://i2s82jtvoed1" path="res://assets/food/starterFood/ketchup_hotdog.png" id="36_qkj61"]
 [ext_resource type="Texture2D" uid="uid://dcmqycrnh0423" path="res://assets/UI/timer_bar.png" id="39_nkydd"]
+[ext_resource type="Texture2D" uid="uid://bcpqovcvvvdbl" path="res://assets/UI_buttons/skip.png" id="40_c6v7u"]
+[ext_resource type="Texture2D" uid="uid://bmy5vjaw6kdpw" path="res://assets/UI_buttons/skip_hover.png" id="41_ewn4c"]
+[ext_resource type="Texture2D" uid="uid://cgfelblnvakg5" path="res://assets/UI_buttons/next.png" id="42_mrn5o"]
+[ext_resource type="Texture2D" uid="uid://c6dwth7evsdyw" path="res://assets/UI_buttons/next_hover.png" id="43_i7dqr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_wkq44"]
 font_size = 50
@@ -391,7 +396,9 @@ offset_right = 4.0
 offset_bottom = 2.00002
 grow_horizontal = 2
 grow_vertical = 2
-text = "Alright newbie, listen up cos i won’t say this again.
+theme_override_fonts/font = ExtResource("35_jmqed")
+theme_override_font_sizes/font_size = 12
+text = "Alright newbie, listen up cos I won’t say this again.
 I have a cruise to catch!"
 label_settings = SubResource("LabelSettings_dy1m6")
 horizontal_alignment = 1
@@ -430,6 +437,8 @@ offset_right = 4.99683
 offset_bottom = 7.00008
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("35_jmqed")
+theme_override_font_sizes/font_size = 12
 text = "Orders show up here. If you dont know how to make an order, check the recipe. 
 Click on the ingredients in the correct order to make it."
 label_settings = SubResource("LabelSettings_dy1m6")
@@ -491,6 +500,8 @@ offset_top = -1.99998
 offset_bottom = -1.99998
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("35_jmqed")
+theme_override_font_sizes/font_size = 12
 text = "Here, you can select 
 the ingredients. You with me?
 "
@@ -545,6 +556,8 @@ offset_right = -1.0
 offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("35_jmqed")
+theme_override_font_sizes/font_size = 12
 text = "This is Dingus, the bell. 
 Click on him to finish an order.
 "
@@ -604,6 +617,8 @@ offset_right = -12.0
 offset_bottom = 18.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("35_jmqed")
+theme_override_font_sizes/font_size = 12
 text = "This is Deletus, the trash can. Eats your mistakes, but I wouldn't rely on him much.
 "
 label_settings = SubResource("LabelSettings_dy1m6")
@@ -661,6 +676,8 @@ offset_top = 1.52588e-05
 offset_right = 3.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("35_jmqed")
+theme_override_font_sizes/font_size = 12
 text = "Most important thing, SPEED. Hit as many orders as ya can. No need to be neat. This ain't the Ritz."
 label_settings = SubResource("LabelSettings_dy1m6")
 horizontal_alignment = 1
@@ -690,14 +707,16 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.0147569
 anchor_top = 0.901235
-anchor_right = 0.111111
+anchor_right = 0.151042
 anchor_bottom = 0.975309
-texture_normal = ExtResource("32_tqjk8")
+texture_normal = ExtResource("40_c6v7u")
+texture_hover = ExtResource("41_ewn4c")
 ignore_texture_size = true
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/CloseTutorial"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -712,18 +731,20 @@ vertical_alignment = 1
 [node name="NextButton" type="TextureButton" parent="TutorialOverlay"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.875
+anchor_left = 0.840278
 anchor_top = 0.901235
 anchor_right = 0.978299
 anchor_bottom = 0.981481
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("32_tqjk8")
+texture_normal = ExtResource("42_mrn5o")
+texture_hover = ExtResource("43_i7dqr")
 ignore_texture_size = true
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/NextButton"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
