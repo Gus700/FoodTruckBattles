@@ -447,11 +447,13 @@ vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="OrderPaperBig" type="Sprite2D" parent="TutorialOverlay/Steps/Step1"]
+visible = false
 position = Vector2(36.9996, 193)
 scale = Vector2(1.13949, 1.139)
 texture = ExtResource("35_kl1hg")
 
 [node name="KetchupHotdog" type="Sprite2D" parent="TutorialOverlay/Steps/Step1"]
+visible = false
 position = Vector2(38.9996, 181)
 scale = Vector2(0.778169, 0.74005)
 texture = ExtResource("36_qkj61")
@@ -580,6 +582,7 @@ stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
 [node name="BellDef" type="Sprite2D" parent="TutorialOverlay/Steps/Step3"]
+visible = false
 position = Vector2(368, 204)
 scale = Vector2(0.431122, 0.416667)
 texture = ExtResource("6_1ceec")
@@ -640,6 +643,7 @@ stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
 [node name="TrashDef" type="Sprite2D" parent="TutorialOverlay/Steps/Step4"]
+visible = false
 position = Vector2(868.5, 174.75)
 scale = Vector2(0.609589, 0.571739)
 texture = ExtResource("29_2c5js")
@@ -698,6 +702,7 @@ stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
 [node name="TimerBar" type="Sprite2D" parent="TutorialOverlay/Steps/Step5"]
+visible = false
 position = Vector2(-151.375, -24.8125)
 scale = Vector2(0.400637, 0.438793)
 texture = ExtResource("39_nkydd")
