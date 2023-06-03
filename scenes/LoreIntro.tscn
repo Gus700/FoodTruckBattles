@@ -1,0 +1,77 @@
+[gd_scene load_steps=3 format=3 uid="uid://xgnaoqvxarvc"]
+
+[ext_resource type="Texture2D" uid="uid://b5gcuffddrpxd" path="res://assets/UI/tut_bubble.png" id="1_otggd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_74jix"]
+font_size = 26
+font_color = Color(0, 0, 0, 1)
+
+[node name="LoreIntro" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Scene" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background Image" type="TextureRect" parent="Scene"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextBox" type="TextureRect" parent="Scene"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Scene/TextBox"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 20.0
+
+[node name="Scene1" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect2" type="TextureRect" parent="Scene1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Scene1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0416667
+anchor_top = 0.753086
+anchor_right = 0.951389
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_otggd")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Scene1/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "brrrrrr…brrrrrr. your phone gently buzzes you awake, but the moment is interrupted by a text from doug….your (literally a) clown boss & owner of the very food truck you were sleeping in."
+label_settings = SubResource("LabelSettings_74jix")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
