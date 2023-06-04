@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://tejyi6h0ot45"]
 
 [ext_resource type="Script" path="res://scripts/completionFeedback.gd" id="1_w41g6"]
-[ext_resource type="Texture2D" uid="uid://c4lr3s1yf533j" path="res://assets/temp/check.png" id="2_5tfxo"]
-[ext_resource type="Texture2D" uid="uid://b1frltqut72wp" path="res://assets/temp/wrong.png" id="3_1vejm"]
+[ext_resource type="Texture2D" uid="uid://dvy2k0erj7o6p" path="res://assets/UI/correct.svg" id="2_6jy81"]
+[ext_resource type="Texture2D" uid="uid://bqthe0f1iuu8" path="res://assets/UI/incorrect.svg" id="3_1xdvi"]
 
 [node name="CompletionFeedback" type="Control"]
 layout_mode = 3
@@ -16,23 +16,35 @@ script = ExtResource("1_w41g6")
 [node name="Correct" type="TextureRect" parent="."]
 visible = false
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = -1
+anchor_left = 0.251
+anchor_top = 0.343
+anchor_right = 0.749
+anchor_bottom = 0.852
+offset_left = -0.152008
+offset_top = -0.264023
+offset_right = 0.151978
+offset_bottom = -0.0960083
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_5tfxo")
+texture = ExtResource("2_6jy81")
 stretch_mode = 5
 
 [node name="Wrong" type="TextureRect" parent="."]
 visible = false
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = -1
+anchor_left = 0.345
+anchor_top = 0.352
+anchor_right = 0.674
+anchor_bottom = 0.877
+offset_left = -0.440033
+offset_top = -0.0960236
+offset_right = 0.552002
+offset_bottom = -0.296021
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_1vejm")
+texture = ExtResource("3_1xdvi")
 stretch_mode = 5
 
 [node name="Timer" type="Timer" parent="."]

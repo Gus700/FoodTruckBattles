@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="143.021" height="127.01" viewBox="0 0 143.021 127.01">
+  <g id="Group_139" data-name="Group 139" transform="translate(-762.49 -542.49)">
+    <g id="Group_135" data-name="Group 135" transform="translate(-194 306)">
+      <path id="Line_3" data-name="Line 3" d="M101,91a5.975,5.975,0,0,1-3.86-1.41l-101-85a6,6,0,0,1-.727-8.454,6,6,0,0,1,8.454-.727l101,85A6,6,0,0,1,101,91Z" transform="translate(977.5 257.5)" fill="none" stroke="#d02f47" stroke-linecap="round" stroke-width="30"/>
+      <path id="Line_4" data-name="Line 4" d="M0,91a5.987,5.987,0,0,1-4.594-2.137,6,6,0,0,1,.727-8.454l101-85a6,6,0,0,1,8.454.727,6,6,0,0,1-.727,8.454l-50.5,42.5-50.5,42.5A5.976,5.976,0,0,1,0,91Z" transform="translate(977.5 257.5)" fill="none" stroke="#d02f47" stroke-linecap="round" stroke-width="30"/>
+    </g>
+    <g id="Group_136" data-name="Group 136" transform="translate(-210 299.225)">
+      <path id="Line_3-2" data-name="Line 3" d="M102.291,92.263a6.044,6.044,0,0,1-3.907-1.428L-3.838,4.729a6.082,6.082,0,0,1-.736-8.564,6.069,6.069,0,0,1,8.556-.737L106.2,81.535a6.079,6.079,0,0,1-3.913,10.729Z" transform="translate(993.5 264.275)" fill="#ff3ead"/>
+      <path id="Line_4-2" data-name="Line 4" d="M-.048,92.263A5.885,5.885,0,0,1-4.6,90.1a6.17,6.17,0,0,1,.721-8.564L96.258-4.572a5.862,5.862,0,0,1,8.382.737,6.17,6.17,0,0,1-.721,8.564L53.854,47.778,3.779,90.836A5.85,5.85,0,0,1-.048,92.263Z" transform="translate(993.5 264.275)" fill="#ff3ead"/>
+    </g>
+  </g>
+</svg>

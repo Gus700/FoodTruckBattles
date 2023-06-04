@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="169.599" height="128.265" viewBox="0 0 169.599 128.265">
+  <g id="Group_138" data-name="Group 138" transform="translate(-436.492 -567.499)">
+    <g id="Group_134" data-name="Group 134" transform="translate(451.5 582.5)">
+      <path id="Line_1" data-name="Line 1" d="M43,43a5.976,5.976,0,0,1-3.911-1.452l-43-37a6,6,0,0,1-.635-8.462,6,6,0,0,1,8.462-.635l43,37A6,6,0,0,1,43,43Z" transform="translate(6 55.264)" fill="#bbff5d" stroke="#1fe62b" stroke-linecap="round" stroke-width="30"/>
+      <path id="Line_2" data-name="Line 2" d="M.3,92.264a6.4,6.4,0,0,1-4.316-1.652,5.929,5.929,0,0,1-.27-8.592L79.7-4.088a6.462,6.462,0,0,1,8.9-.26,5.929,5.929,0,0,1,.27,8.592L4.886,90.351A6.393,6.393,0,0,1,.3,92.264Z" transform="translate(49 6)" fill="#bbff5d" stroke="#1fe62b" stroke-linecap="round" stroke-width="30" opacity="0.997"/>
+    </g>
+    <g id="Group_137" data-name="Group 137" transform="translate(451.5 582.5)">
+      <path id="Line_1-2" data-name="Line 1" d="M43,43a5.976,5.976,0,0,1-3.911-1.452l-43-37a6,6,0,0,1-.635-8.462,6,6,0,0,1,8.462-.635l43,37A6,6,0,0,1,43,43Z" transform="translate(6 55.264)" fill="#bbff5d"/>
+      <path id="Line_2-2" data-name="Line 2" d="M.3,92.264a6.4,6.4,0,0,1-4.316-1.652,5.929,5.929,0,0,1-.27-8.592L79.7-4.088a6.462,6.462,0,0,1,8.9-.26,5.929,5.929,0,0,1,.27,8.592L4.886,90.351A6.393,6.393,0,0,1,.3,92.264Z" transform="translate(49 6)" fill="#bbff5d" opacity="0.997"/>
+    </g>
+  </g>
+</svg>
