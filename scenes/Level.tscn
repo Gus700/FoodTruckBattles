@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=52 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://dnd1rha6omwfu" path="res://assets/objects/bell_def.png" id="6_1ceec"]
 [ext_resource type="Resource" uid="uid://bj4p0cuc5wbib" path="res://resourceData/orders/mustardHotdog.tres" id="6_n2kio"]
 [ext_resource type="Texture2D" uid="uid://cw6nbeow33v8t" path="res://assets/objects/bell_rung.png" id="7_pit3t"]
+[ext_resource type="FontFile" uid="uid://ywscpgddy83r" path="res://assets/fonts/Fredoka-Bold.ttf" id="8_m1ay7"]
 [ext_resource type="Resource" uid="uid://dkeqkklgytq5d" path="res://resourceData/ingredients/rainbowCheese.tres" id="9_b5tuw"]
 [ext_resource type="Resource" uid="uid://bbhb507hrx6s6" path="res://resourceData/ingredients/tigerTopBun.tres" id="9_xd5ib"]
 [ext_resource type="Resource" uid="uid://jmfdb4rty8s5" path="res://resourceData/ingredients/tomato.tres" id="10_87jdr"]
@@ -95,20 +96,21 @@ anchor_bottom = 0.605
 offset_left = 0.0782061
 offset_top = 0.247999
 offset_bottom = -0.0400085
+theme_override_fonts/font = ExtResource("8_m1ay7")
 
-[node name="CurrentOrder" type="AspectRatioContainer" parent="Order Area/TabContainer"]
+[node name="order" type="AspectRatioContainer" parent="Order Area/TabContainer"]
 layout_mode = 2
 
-[node name="OrderCard" parent="Order Area/TabContainer/CurrentOrder" instance=ExtResource("3_uxhdf")]
+[node name="OrderCard" parent="Order Area/TabContainer/order" instance=ExtResource("3_uxhdf")]
 layout_mode = 2
 
-[node name="Recipe" type="HBoxContainer" parent="Order Area/TabContainer"]
+[node name="recipe" type="HBoxContainer" parent="Order Area/TabContainer"]
 visible = false
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="Order Area/TabContainer/Recipe"]
+[node name="Label" type="Label" parent="Order Area/TabContainer/recipe"]
 layout_mode = 2
 
 [node name="TabContainer2" type="TabContainer" parent="Order Area"]
@@ -118,18 +120,19 @@ anchor_left = 0.051
 anchor_top = 0.654
 anchor_right = 0.948
 anchor_bottom = 0.938
+theme_override_fonts/font = ExtResource("8_m1ay7")
 
-[node name="NextOrders" type="HFlowContainer" parent="Order Area/TabContainer2"]
+[node name="upcoming" type="HFlowContainer" parent="Order Area/TabContainer2"]
 layout_mode = 2
 alignment = 1
 
-[node name="OrderCard" parent="Order Area/TabContainer2/NextOrders" instance=ExtResource("3_uxhdf")]
+[node name="OrderCard" parent="Order Area/TabContainer2/upcoming" instance=ExtResource("3_uxhdf")]
 layout_mode = 2
 
-[node name="OrderCard2" parent="Order Area/TabContainer2/NextOrders" instance=ExtResource("3_uxhdf")]
+[node name="OrderCard2" parent="Order Area/TabContainer2/upcoming" instance=ExtResource("3_uxhdf")]
 layout_mode = 2
 
-[node name="OrderCard3" parent="Order Area/TabContainer2/NextOrders" instance=ExtResource("3_uxhdf")]
+[node name="OrderCard3" parent="Order Area/TabContainer2/upcoming" instance=ExtResource("3_uxhdf")]
 layout_mode = 2
 
 [node name="Crafting Area" type="Control" parent="."]
@@ -593,20 +596,6 @@ position = Vector2(368, 204)
 scale = Vector2(0.431122, 0.416667)
 texture = ExtResource("6_1ceec")
 
-[node name="CompletionBell" type="TextureButton" parent="TutorialOverlay/Steps/Step3"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.388889
-anchor_top = 0.309
-anchor_right = 0.457889
-anchor_bottom = 0.42
-offset_top = -0.23201
-texture_normal = ExtResource("6_1ceec")
-texture_pressed = ExtResource("7_pit3t")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
 [node name="Step4" type="Control" parent="TutorialOverlay/Steps"]
 visible = false
 layout_mode = 1
@@ -758,7 +747,7 @@ vertical_alignment = 1
 [node name="NextButton" type="TextureButton" parent="TutorialOverlay"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.845486
+anchor_left = 0.83941
 anchor_top = 0.901235
 anchor_right = 0.978299
 anchor_bottom = 0.981481
@@ -791,6 +780,5 @@ vertical_alignment = 1
 [connection signal="game_over" from="EnemyProgress" to="." method="_on_enemy_progress_game_over"]
 [connection signal="draw" from="TutorialOverlay" to="." method="_on_tutorial_overlay_draw"]
 [connection signal="hidden" from="TutorialOverlay" to="." method="_on_tutorial_overlay_hidden"]
-[connection signal="pressed" from="TutorialOverlay/Steps/Step3/CompletionBell" to="Crafting Area" method="_on_completion_bell_pressed"]
 [connection signal="pressed" from="TutorialOverlay/CloseTutorial" to="TutorialOverlay" method="_on_close_tutorial_pressed"]
 [connection signal="pressed" from="TutorialOverlay/NextButton" to="TutorialOverlay" method="_on_next_button_pressed"]

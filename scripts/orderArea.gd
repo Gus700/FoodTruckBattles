@@ -2,9 +2,9 @@ extends Control
 
 @export var orderTypes: Array[Resource]
 @onready var cardScene :PackedScene = preload("res://scenes/OrderCard.tscn") #packed scene of order card scene
-@onready var currOrderContainer = $TabContainer/CurrentOrder #Node that holds the current order
-@onready var nextOrdersContainer = $TabContainer2/NextOrders #Node that holds all other orders
-@onready var recipeDisplay = $TabContainer/Recipe/Label
+@onready var currOrderContainer = $TabContainer/order #Node that holds the current order
+@onready var nextOrdersContainer = $TabContainer2/upcoming #Node that holds all other orders
+@onready var recipeDisplay = $TabContainer/recipe/Label
 var requiredOrderNum: int
 var orderNum: int
 
