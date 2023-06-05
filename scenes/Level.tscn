@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=53 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -49,6 +49,9 @@
 [ext_resource type="Texture2D" uid="uid://cgfelblnvakg5" path="res://assets/UI_buttons/next.png" id="42_mrn5o"]
 [ext_resource type="Texture2D" uid="uid://cvdbevoymvmgs" path="res://assets/UI/tutorial6.png" id="43_gaicr"]
 [ext_resource type="Texture2D" uid="uid://c6dwth7evsdyw" path="res://assets/UI_buttons/next_hover.png" id="43_i7dqr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_gsada"]
+font_size = 26
 
 [sub_resource type="LabelSettings" id="LabelSettings_wkq44"]
 font_size = 50
@@ -113,6 +116,9 @@ alignment = 1
 
 [node name="Label" type="Label" parent="Order Area/TabContainer/recipe"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("35_jmqed")
+theme_override_font_sizes/font_size = 12
+label_settings = SubResource("LabelSettings_gsada")
 
 [node name="TabContainer2" type="TabContainer" parent="Order Area"]
 layout_mode = 1

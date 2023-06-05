@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://xgnaoqvxarvc"]
+[gd_scene load_steps=5 format=3 uid="uid://xgnaoqvxarvc"]
 
+[ext_resource type="Texture2D" uid="uid://ce46mydlen3ui" path="res://assets/loreScenes/intro/intro_bg.png" id="1_nbd7m"]
 [ext_resource type="Texture2D" uid="uid://b5gcuffddrpxd" path="res://assets/UI/tut_bubble.png" id="1_otggd"]
+[ext_resource type="Texture2D" uid="uid://y41fy5hkhdt2" path="res://assets/loreScenes/intro/01.png" id="2_4oqcv"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_74jix"]
 font_size = 26
@@ -14,27 +16,16 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_nbd7m")
+
 [node name="Scene" type="Control" parent="."]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Background Image" type="TextureRect" parent="Scene"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="TextBox" type="TextureRect" parent="Scene"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Label" type="Label" parent="Scene/TextBox"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 20.0
-
-[node name="Scene1" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -42,15 +33,17 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect2" type="TextureRect" parent="Scene1"]
+[node name="TextureRect2" type="TextureRect" parent="Scene"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_4oqcv")
+expand_mode = 1
 
-[node name="TextureRect" type="TextureRect" parent="Scene1"]
+[node name="TextureRect" type="TextureRect" parent="Scene"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.0416667
@@ -63,7 +56,7 @@ texture = ExtResource("1_otggd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="Scene1/TextureRect"]
+[node name="Label" type="Label" parent="Scene/TextureRect"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
