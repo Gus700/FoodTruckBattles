@@ -3,10 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://ce46mydlen3ui" path="res://assets/loreScenes/intro/intro_bg.png" id="1_nbd7m"]
 [ext_resource type="Texture2D" uid="uid://b5gcuffddrpxd" path="res://assets/UI/tut_bubble.png" id="1_otggd"]
 [ext_resource type="Texture2D" uid="uid://y41fy5hkhdt2" path="res://assets/loreScenes/intro/01.png" id="2_4oqcv"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_74jix"]
-font_size = 26
-font_color = Color(0, 0, 0, 1)
+[ext_resource type="FontFile" uid="uid://c1vtnd0t0k2t4" path="res://assets/fonts/Fredoka-Medium.ttf" id="4_xbvlo"]
 
 [node name="LoreIntro" type="Control"]
 layout_mode = 3
@@ -16,7 +13,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="GeneralBG" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -24,6 +21,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_nbd7m")
+expand_mode = 1
 
 [node name="Scene" type="Control" parent="."]
 layout_mode = 1
@@ -33,7 +31,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect2" type="TextureRect" parent="Scene"]
+[node name="ImgBG" type="TextureRect" parent="Scene"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -43,7 +41,8 @@ grow_vertical = 2
 texture = ExtResource("2_4oqcv")
 expand_mode = 1
 
-[node name="TextureRect" type="TextureRect" parent="Scene"]
+[node name="TextBox" type="TextureRect" parent="Scene"]
+self_modulate = Color(1, 1, 1, 0.717647)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.0416667
@@ -56,15 +55,25 @@ texture = ExtResource("1_otggd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="Scene/TextureRect"]
+[node name="MarginContainer" type="MarginContainer" parent="Scene/TextBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "brrrrrr…brrrrrr. your phone gently buzzes you awake, but the moment is interrupted by a text from doug….your (literally a) clown boss & owner of the very food truck you were sleeping in."
-label_settings = SubResource("LabelSettings_74jix")
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="Label" type="Label" parent="Scene/TextBox/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_xbvlo")
+theme_override_font_sizes/font_size = 26
+text = "Brrrrrr…Brrrrrr. 
+Your phone gently buzzes you awake, but the moment is interrupted by a text from doug….your (literal) clown boss & owner of the very food truck you were sleeping in."
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
