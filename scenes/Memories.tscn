@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b2pbtif4x6b3"]
+[gd_scene load_steps=19 format=3 uid="uid://b2pbtif4x6b3"]
 
 [ext_resource type="Script" path="res://scripts/SceneManager/scene.gd" id="1_0noef"]
 [ext_resource type="Texture2D" uid="uid://0uovcm0xbouv" path="res://assets/loreScenes/photos/angel_food_locked.png" id="2_fmr6e"]
@@ -9,11 +9,13 @@
 [ext_resource type="Texture2D" uid="uid://cfo5n02kbbnlh" path="res://assets/loreScenes/photos/devil_s_tango_locked.png" id="7_20rel"]
 [ext_resource type="Texture2D" uid="uid://dg30lru0uqbp4" path="res://assets/loreScenes/photos/frosty_friends_locked.png" id="8_qa11f"]
 [ext_resource type="Texture2D" uid="uid://d0att6uhkbow6" path="res://assets/loreScenes/photos/tacobara_locked.png" id="9_u6b42"]
-[ext_resource type="Texture2D" uid="uid://dtrctt0ob146j" path="res://assets/UI_buttons/play.png" id="10_rhvnv"]
+[ext_resource type="Texture2D" uid="uid://b0r8f8x7y0e5r" path="res://assets/UI_buttons/back.png" id="10_mb1cb"]
 [ext_resource type="Script" path="res://scripts/SceneManager/ChangeSceneButton.gd" id="10_top0h"]
 [ext_resource type="Script" path="res://scripts/Memories/bigMem.gd" id="11_mj4il"]
+[ext_resource type="Texture2D" uid="uid://dvtn4u0004701" path="res://assets/UI_buttons/back_hover.png" id="11_uiapg"]
 [ext_resource type="Texture2D" uid="uid://dfkjhbkthdnhc" path="res://assets/loreScenes/full/deviled_food.png" id="12_lv7um"]
 [ext_resource type="Texture2D" uid="uid://bmh0n4fiiyjvg" path="res://assets/loreScenes/full/narrative_bubble.png" id="13_4q1tn"]
+[ext_resource type="Texture2D" uid="uid://cgsks8f6ky7w4" path="res://assets/UI/mem_banner.png" id="16_83oq7"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_os62y"]
 font_size = 33
@@ -40,16 +42,16 @@ script = ExtResource("1_0noef")
 layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color(0.184314, 0.301961, 0.145098, 1)
+color = Color(0.905882, 1, 0.196078, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="TopRow" type="GridContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.120226
-anchor_top = 0.132716
-anchor_right = 0.879774
-anchor_bottom = 0.441358
+anchor_left = 0.115451
+anchor_top = 0.268518
+anchor_right = 0.884549
+anchor_bottom = 0.57716
 offset_left = 5.5
 offset_right = -5.5
 grow_horizontal = 2
@@ -155,9 +157,9 @@ icon_alignment = 1
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.217882
-anchor_top = 0.467593
+anchor_top = 0.561729
 anchor_right = 0.782118
-anchor_bottom = 0.776235
+anchor_bottom = 0.870371
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
@@ -235,7 +237,22 @@ grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
 
+[node name="banner" type="TextureRect" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -422.0
+offset_top = 17.0
+offset_right = 423.0
+offset_bottom = 179.0
+grow_horizontal = 2
+texture = ExtResource("16_83oq7")
+stretch_mode = 5
+
 [node name="Memories Label" type="Label" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.417535
@@ -254,7 +271,8 @@ anchor_left = 0.0303819
 anchor_top = 0.862654
 anchor_right = 0.238715
 anchor_bottom = 0.949074
-texture_normal = ExtResource("10_rhvnv")
+texture_normal = ExtResource("10_mb1cb")
+texture_hover = ExtResource("11_uiapg")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("10_top0h")
