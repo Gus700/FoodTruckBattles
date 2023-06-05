@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=54 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -49,6 +49,8 @@
 [ext_resource type="Texture2D" uid="uid://cgfelblnvakg5" path="res://assets/UI_buttons/next.png" id="42_mrn5o"]
 [ext_resource type="Texture2D" uid="uid://cvdbevoymvmgs" path="res://assets/UI/tutorial6.png" id="43_gaicr"]
 [ext_resource type="Texture2D" uid="uid://c6dwth7evsdyw" path="res://assets/UI_buttons/next_hover.png" id="43_i7dqr"]
+[ext_resource type="Texture2D" uid="uid://b7xjq8vemtxr5" path="res://assets/UI_buttons/skip_pressed.png" id="47_dyalx"]
+[ext_resource type="Texture2D" uid="uid://cedfso3ol71vl" path="res://assets/UI_buttons/next_pressed.png" id="50_0uhe5"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_wkq44"]
 font_size = 50
@@ -732,14 +734,15 @@ texture = ExtResource("39_nkydd")
 [node name="CloseTutorial" type="TextureButton" parent="TutorialOverlay"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0147569
-anchor_top = 0.901235
-anchor_right = 0.145833
-anchor_bottom = 0.975309
+anchor_left = 0.016493
+anchor_top = 0.908951
+anchor_right = 0.147569
+anchor_bottom = 0.983025
 texture_normal = ExtResource("40_c6v7u")
+texture_pressed = ExtResource("47_dyalx")
 texture_hover = ExtResource("41_ewn4c")
 ignore_texture_size = true
-stretch_mode = 0
+stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/CloseTutorial"]
@@ -758,16 +761,17 @@ vertical_alignment = 1
 [node name="NextButton" type="TextureButton" parent="TutorialOverlay"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.83941
-anchor_top = 0.901235
-anchor_right = 0.978299
-anchor_bottom = 0.981481
+anchor_left = 0.830729
+anchor_top = 0.899691
+anchor_right = 0.979167
+anchor_bottom = 0.975309
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("42_mrn5o")
+texture_pressed = ExtResource("50_0uhe5")
 texture_hover = ExtResource("43_i7dqr")
 ignore_texture_size = true
-stretch_mode = 0
+stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/NextButton"]
