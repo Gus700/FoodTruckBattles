@@ -382,14 +382,15 @@ metadata/_edit_use_anchors_ = true
 [node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Intro"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.110537
-anchor_top = 3.61467
-anchor_right = 0.822311
-anchor_bottom = 4.99082
+anchor_left = 0.114669
+anchor_top = 3.95412
+anchor_right = 0.826443
+anchor_bottom = 5.33027
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("34_oqupw")
 expand_mode = 1
+stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/Steps/Intro/TextBoxImg"]
@@ -430,6 +431,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("36_e0ejb")
 expand_mode = 1
+stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/Steps/Step1/TextBoxImg"]
@@ -475,7 +477,7 @@ anchor_bottom = 2.02752
 rotation = 2.64243
 texture = ExtResource("33_1kdry")
 expand_mode = 1
-stretch_mode = 5
+stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="Step2" type="Control" parent="TutorialOverlay/Steps"]
@@ -498,6 +500,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("40_pyqf8")
 expand_mode = 1
+stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/Steps/Step2/TextBoxImg"]
@@ -530,7 +533,7 @@ anchor_bottom = 3.01834
 rotation = 1.0472
 texture = ExtResource("33_1kdry")
 expand_mode = 1
-stretch_mode = 5
+stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="Step3" type="Control" parent="TutorialOverlay/Steps"]
@@ -553,6 +556,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("41_wqn2j")
 expand_mode = 1
+stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/Steps/Step3/TextBoxImg"]
@@ -577,24 +581,24 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step3"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.28719
-anchor_top = 0.165137
-anchor_right = 0.479339
-anchor_bottom = 1.24771
-rotation = 1.0472
-texture = ExtResource("33_1kdry")
-expand_mode = 1
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
 [node name="BellDef" type="Sprite2D" parent="TutorialOverlay/Steps/Step3"]
 visible = false
 position = Vector2(368, 204)
 scale = Vector2(0.431122, 0.416667)
 texture = ExtResource("6_1ceec")
+
+[node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.31095
+anchor_top = 0.146789
+anchor_right = 0.497934
+anchor_bottom = 1.29357
+rotation = 1.0472
+texture = ExtResource("33_1kdry")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
 
 [node name="Step4" type="Control" parent="TutorialOverlay/Steps"]
 visible = false
@@ -616,6 +620,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("42_0lo6e")
 expand_mode = 1
+stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/Steps/Step4/TextBoxImg"]
@@ -649,7 +654,7 @@ anchor_bottom = 1.00917
 rotation = 1.0472
 texture = ExtResource("33_1kdry")
 expand_mode = 1
-stretch_mode = 5
+stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="TrashDef" type="Sprite2D" parent="TutorialOverlay/Steps/Step4"]
@@ -670,14 +675,15 @@ metadata/_edit_use_anchors_ = true
 [node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step5"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.667353
-anchor_top = 3.63303
-anchor_right = 0.0444212
-anchor_bottom = 5.00918
+anchor_left = -0.672518
+anchor_top = 3.66973
+anchor_right = 0.0392559
+anchor_bottom = 5.04588
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("43_gaicr")
 expand_mode = 1
+stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/Steps/Step5/TextBoxImg"]
@@ -703,13 +709,13 @@ autowrap_mode = 2
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.09814
-anchor_top = 1.96331
+anchor_top = 1.76147
 anchor_right = 0.309916
-anchor_bottom = 3.27524
+anchor_bottom = 3.0734
 rotation = -1.83259
 texture = ExtResource("33_1kdry")
 expand_mode = 1
-stretch_mode = 5
+stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="TimerBar" type="Sprite2D" parent="TutorialOverlay/Steps/Step5"]
