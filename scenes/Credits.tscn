@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bh81fxcqoi63x"]
+[gd_scene load_steps=13 format=3 uid="uid://bh81fxcqoi63x"]
 
 [ext_resource type="Script" path="res://scripts/SceneManager/scene.gd" id="1_urrrw"]
 [ext_resource type="Script" path="res://scripts/SceneManager/ChangeSceneButton.gd" id="2_gry6h"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://kian6h8hl6q6" path="res://assets/trucks/angel_food.png" id="4_dvy60"]
 [ext_resource type="Script" path="res://scripts/TeleTruck.gd" id="5_di74o"]
 [ext_resource type="Texture2D" uid="uid://dvtn4u0004701" path="res://assets/UI_buttons/back_hover.png" id="5_ltvqi"]
+[ext_resource type="Texture2D" uid="uid://n1qvtvy44j54" path="res://assets/UI_buttons/back_pressed.png" id="5_mudjh"]
 [ext_resource type="Texture2D" uid="uid://ccfajvghfjihx" path="res://assets/UI/credits_banner.png" id="7_jhvg8"]
 
 [sub_resource type="Animation" id="Animation_f3i7q"]
@@ -115,6 +116,7 @@ anchor_top = 0.862654
 anchor_right = 0.207465
 anchor_bottom = 0.949074
 texture_normal = ExtResource("4_31on6")
+texture_pressed = ExtResource("5_mudjh")
 texture_hover = ExtResource("5_ltvqi")
 ignore_texture_size = true
 stretch_mode = 5
@@ -125,12 +127,15 @@ metadata/_edit_use_anchors_ = true
 [node name="banner" type="TextureRect" parent="."]
 clip_contents = true
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -371.5
-offset_right = 371.5
-offset_bottom = 190.0
+anchors_preset = -1
+anchor_left = 0.178
+anchor_top = 0.019
+anchor_right = 0.822
+anchor_bottom = 0.293
+offset_left = -0.556
+offset_top = -12.312
+offset_right = 0.555969
+offset_bottom = 0.135986
 grow_horizontal = 2
 texture = ExtResource("7_jhvg8")
 stretch_mode = 5

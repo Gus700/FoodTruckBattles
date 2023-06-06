@@ -1,14 +1,17 @@
-[gd_scene load_steps=11 format=3 uid="uid://cv3tnjlpim0ks"]
+[gd_scene load_steps=14 format=3 uid="uid://cv3tnjlpim0ks"]
 
 [ext_resource type="Script" path="res://scripts/SceneManager/scene.gd" id="1_cgfym"]
 [ext_resource type="Script" path="res://scripts/SceneManager/ChangeSceneButton.gd" id="2_64bw0"]
 [ext_resource type="Texture2D" uid="uid://b8hic22n1a631" path="res://assets/backgrounds/cover.png" id="2_ito7d"]
 [ext_resource type="Texture2D" uid="uid://dtrctt0ob146j" path="res://assets/UI_buttons/play.png" id="3_dky2o"]
+[ext_resource type="Texture2D" uid="uid://dk5vyxowylb0m" path="res://assets/UI_buttons/play_pressed.png" id="4_cm7ht"]
 [ext_resource type="Texture2D" uid="uid://chb8m61qyeywj" path="res://assets/UI_buttons/play_hover.png" id="4_y10lx"]
 [ext_resource type="Texture2D" uid="uid://x6gaq2ljw0gv" path="res://assets/UI_buttons/lore.png" id="5_gdpgf"]
 [ext_resource type="Texture2D" uid="uid://7e8s2gt7u2jq" path="res://assets/UI_buttons/lore_hover.png" id="6_yigwo"]
 [ext_resource type="Texture2D" uid="uid://cdwu4sogxaegd" path="res://assets/UI_buttons/credits.png" id="7_ysxlo"]
+[ext_resource type="Texture2D" uid="uid://61casoppoy6r" path="res://assets/UI_buttons/lore_pressed.png" id="8_i40w5"]
 [ext_resource type="Texture2D" uid="uid://p3vh0jwsrr3e" path="res://assets/UI_buttons/credits_hover.png" id="8_mmh0j"]
+[ext_resource type="Texture2D" uid="uid://dgu6tndwrp0l1" path="res://assets/UI_buttons/credits_pressed.png" id="11_loqfu"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8faaw"]
 font_size = 33
@@ -76,8 +79,8 @@ custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
 size_flags_vertical = 3
 texture_normal = ExtResource("3_dky2o")
+texture_pressed = ExtResource("4_cm7ht")
 texture_hover = ExtResource("4_y10lx")
-ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("2_64bw0")
 dest = "LoreIntro"
@@ -87,6 +90,7 @@ custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
 size_flags_vertical = 3
 texture_normal = ExtResource("5_gdpgf")
+texture_pressed = ExtResource("8_i40w5")
 texture_hover = ExtResource("6_yigwo")
 ignore_texture_size = true
 stretch_mode = 5
@@ -98,6 +102,7 @@ custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
 size_flags_vertical = 3
 texture_normal = ExtResource("7_ysxlo")
+texture_pressed = ExtResource("11_loqfu")
 texture_hover = ExtResource("8_mmh0j")
 ignore_texture_size = true
 stretch_mode = 5
