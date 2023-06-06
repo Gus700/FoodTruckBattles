@@ -59,10 +59,10 @@ func checkSelectedIngr(ingrName) -> void:
 
 func checkCorrectCompletion() ->void:
 	#check if the ingredients are correct
-	print(userSelectedIngrs.size())
-	print(currentOrderRecipe.size())
 	if numCorrectIngr == currentOrderRecipe.size() && (numCorrectIngrPos == currentOrderRecipe.size() || numCorrectIngrPosRev == currentOrderRecipe.size()) && userSelectedIngrs.size() == currentOrderRecipe.size():
 		emit_signal("show_completion_feedback", true)
+		emit_signal("request_updated_order")
+		clearIngredients()
 	else:
 		emit_signal("show_completion_feedback", false)
 
@@ -82,10 +82,7 @@ func _on_order_area_update_recipe(recipe) -> void:
 
 # recieves completion signal
 func _on_completion_bell_pressed() -> void:
-	print("recieved order complete signal in crafting area")
 	checkCorrectCompletion()
-	emit_signal("request_updated_order")
-	clearIngredients()
 
 func _on_trash_can_pressed() -> void:
 	clearIngredients()

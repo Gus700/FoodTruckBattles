@@ -823,6 +823,11 @@ text = "Next Step"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="WiningScreen" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [connection signal="update_recipe" from="Order Area" to="Crafting Area" method="_on_order_area_update_recipe"]
 [connection signal="request_updated_order" from="Crafting Area" to="Order Area" method="_on_crafting_area_request_updated_order"]
 [connection signal="show_completion_feedback" from="Crafting Area" to="." method="_on_crafting_area_show_completion_feedback"]
