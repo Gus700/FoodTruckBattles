@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsdpe132kmtpp"
-path="res://.godot/imported/lore.png-139e8a97614093bd5701c2421fa787ac.ctex"
+uid="uid://d0ss15vsqqikk"
+path="res://.godot/imported/x.png-2b43cea264c9982325f483b5858adedf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://lore.png"
-dest_files=["res://.godot/imported/lore.png-139e8a97614093bd5701c2421fa787ac.ctex"]
+source_file="res://assets/UI_buttons/x.png"
+dest_files=["res://.godot/imported/x.png-2b43cea264c9982325f483b5858adedf.ctex"]
 
 [params]
 
