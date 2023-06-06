@@ -5,8 +5,10 @@ extends Control
 var currentOrderRecipe: Array[String]
 var userSelectedIngrs: Array[String]
 var recipeIngrIndx: int = 0 #index of currently needed ingredient from the recipe
+var recipeIngrIndxRev: int = 0 #index of currently needed ingredient from the recipe in reverse
 var numCorrectIngr: int = 0 #keeps track of how many correct ingredients the user has selected
 var numCorrectIngrPos: int = 0 #keeps track of how many ingredients have been selected in correct order
+var numCorrectIngrPosRev: int = 0 #keeps track of how many ingredients have been selected in correct order but in reverse
 var isCorrect: bool = false
 
 signal request_updated_order
@@ -33,24 +35,33 @@ func clearIngredients() -> void:
 	for ingr in ingredientContainer.get_children():
 		ingr.queue_free()
 	recipeIngrIndx = 0
+	recipeIngrIndxRev = currentOrderRecipe.size() - 1
 	numCorrectIngr = 0
 	numCorrectIngrPos = 0
+	numCorrectIngrPosRev = 0
+	userSelectedIngrs = []
 
 # check if the selected ingredient belongs in current recipe and if it was in the correct order
 func checkSelectedIngr(ingrName) -> void:
 	print("checking for ingredient:" , ingrName)
-	if recipeIngrIndx < currentOrderRecipe.size() && numCorrectIngr != currentOrderRecipe.size(): 
-		if currentOrderRecipe[recipeIngrIndx] == ingrName:
+	if recipeIngrIndx < currentOrderRecipe.size() && recipeIngrIndxRev >= 0 && numCorrectIngr != currentOrderRecipe.size():
+		if currentOrderRecipe[recipeIngrIndx] == ingrName && numCorrectIngrPosRev == 0:
 			numCorrectIngrPos += 1
 			recipeIngrIndx += 1
+			print("amount of correct ingredients in correct order:, ", numCorrectIngrPos)
+		if currentOrderRecipe[recipeIngrIndxRev] == ingrName && numCorrectIngrPos == 0:
+			numCorrectIngrPosRev += 1
+			recipeIngrIndxRev -= 1
+			print("amount of correct ingredients in correct reverse order:, ", numCorrectIngrPosRev)
 		if currentOrderRecipe.has(ingrName):
 			numCorrectIngr += 1
-		print("amount of correct ingredients: ", numCorrectIngr)
-		print("amount of correct ingredients in correct order:, ", numCorrectIngrPos)
+			print("amount of correct ingredients: ", numCorrectIngr)
 
 func checkCorrectCompletion() ->void:
 	#check if the ingredients are correct
-	if numCorrectIngr == currentOrderRecipe.size() && numCorrectIngrPos == currentOrderRecipe.size():
+	print(userSelectedIngrs.size())
+	print(currentOrderRecipe.size())
+	if numCorrectIngr == currentOrderRecipe.size() && (numCorrectIngrPos == currentOrderRecipe.size() || numCorrectIngrPosRev == currentOrderRecipe.size()) && userSelectedIngrs.size() == currentOrderRecipe.size():
 		emit_signal("show_completion_feedback", true)
 	else:
 		emit_signal("show_completion_feedback", false)
@@ -65,8 +76,9 @@ func ingredient_selected (ingrName, ingrImg) -> void:
 
 # recieves current order signal
 func _on_order_area_update_recipe(recipe) -> void:
-	print("recieved current order recipe: ", recipe)
 	currentOrderRecipe = recipe
+	recipeIngrIndxRev = recipe.size() - 1
+	print("recieved current order recipe: ", recipe)
 
 # recieves completion signal
 func _on_completion_bell_pressed() -> void:
