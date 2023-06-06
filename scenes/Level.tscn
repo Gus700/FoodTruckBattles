@@ -835,19 +835,17 @@ grow_vertical = 2
 [node name="TextureRect" type="TextureRect" parent="CompletionScreen"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.293
-anchor_top = 0.145
-anchor_right = 0.71
-anchor_bottom = 0.904
-offset_left = -0.536011
-offset_top = 0.0399933
-offset_right = 481.08
-offset_bottom = 492.208
+anchor_left = 0.0694444
+anchor_top = 0.110691
+anchor_right = 0.944
+anchor_bottom = 0.888889
+offset_top = 0.271999
+offset_right = 0.511963
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.5, 0.5)
 texture = ExtResource("53_c7ery")
 expand_mode = 1
+stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="CompletionScreen/TextureRect"]
