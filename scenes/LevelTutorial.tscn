@@ -25,3 +25,6 @@ stretch_mode = 4
 
 [node name="Label" parent="TutorialOverlay/CloseTutorial" index="0"]
 visible = false
+
+[node name="CompletionScreen" parent="." index="10"]
+visible = false
