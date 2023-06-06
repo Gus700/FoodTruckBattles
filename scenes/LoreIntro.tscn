@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://xgnaoqvxarvc"]
+[gd_scene load_steps=19 format=3 uid="uid://xgnaoqvxarvc"]
 
 [ext_resource type="Texture2D" uid="uid://ce46mydlen3ui" path="res://assets/loreScenes/intro/intro_bg.png" id="1_nbd7m"]
 [ext_resource type="Texture2D" uid="uid://b5gcuffddrpxd" path="res://assets/UI/tut_bubble.png" id="1_otggd"]
+[ext_resource type="Script" path="res://scripts/loreIntro.gd" id="1_vosbv"]
 [ext_resource type="Texture2D" uid="uid://y41fy5hkhdt2" path="res://assets/loreScenes/intro/01.png" id="2_4oqcv"]
 [ext_resource type="FontFile" uid="uid://c1vtnd0t0k2t4" path="res://assets/fonts/Fredoka-Medium.ttf" id="4_xbvlo"]
 [ext_resource type="Texture2D" uid="uid://c2pr52xlrt48k" path="res://assets/loreScenes/intro/02.png" id="5_t5wxx"]
@@ -13,6 +14,10 @@
 [ext_resource type="Texture2D" uid="uid://gyefcexgonel" path="res://assets/loreScenes/intro/08.png" id="11_0anox"]
 [ext_resource type="Texture2D" uid="uid://bxruatu8qwhpc" path="res://assets/loreScenes/intro/09.png" id="12_tgyjp"]
 [ext_resource type="Texture2D" uid="uid://d035te6ggmjhl" path="res://assets/loreScenes/intro/10.png" id="13_sadiy"]
+[ext_resource type="Texture2D" uid="uid://cgfelblnvakg5" path="res://assets/UI_buttons/next.png" id="15_gng5i"]
+[ext_resource type="Texture2D" uid="uid://c6dwth7evsdyw" path="res://assets/UI_buttons/next_hover.png" id="16_2ogs0"]
+[ext_resource type="Texture2D" uid="uid://b0r8f8x7y0e5r" path="res://assets/UI_buttons/back.png" id="17_ayh5i"]
+[ext_resource type="Texture2D" uid="uid://dvtn4u0004701" path="res://assets/UI_buttons/back_hover.png" id="18_jjdpu"]
 
 [node name="LoreIntro" type="Control"]
 layout_mode = 3
@@ -21,8 +26,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_vosbv")
 
 [node name="GeneralBG" type="TextureRect" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -32,8 +39,7 @@ grow_vertical = 2
 texture = ExtResource("1_nbd7m")
 expand_mode = 1
 
-[node name="Scene" type="Control" parent="."]
-visible = false
+[node name="Scns" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -41,7 +47,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ImgBG" type="TextureRect" parent="Scene"]
+[node name="Scn" type="Control" parent="Scns"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImgBG" type="TextureRect" parent="Scns/Scn"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -53,7 +67,7 @@ expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
-[node name="TextBox" type="TextureRect" parent="Scene"]
+[node name="TextBox" type="TextureRect" parent="Scns/Scn"]
 self_modulate = Color(1, 1, 1, 0.717647)
 layout_mode = 1
 anchors_preset = -1
@@ -67,7 +81,7 @@ texture = ExtResource("1_otggd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Scene/TextBox"]
+[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn/TextBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -79,7 +93,7 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
-[node name="Label" type="Label" parent="Scene/TextBox/MarginContainer"]
+[node name="Label" type="Label" parent="Scns/Scn/TextBox/MarginContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_xbvlo")
@@ -90,7 +104,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Scene2" type="Control" parent="."]
+[node name="Scn2" type="Control" parent="Scns"]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -99,7 +113,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ImgBG" type="TextureRect" parent="Scene2"]
+[node name="ImgBG" type="TextureRect" parent="Scns/Scn2"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -111,7 +125,7 @@ expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
-[node name="TextBox" type="TextureRect" parent="Scene2"]
+[node name="TextBox" type="TextureRect" parent="Scns/Scn2"]
 visible = false
 self_modulate = Color(1, 1, 1, 0.717647)
 layout_mode = 1
@@ -126,7 +140,7 @@ texture = ExtResource("1_otggd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Scene2/TextBox"]
+[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn2/TextBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -138,7 +152,7 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
-[node name="Label" type="Label" parent="Scene2/TextBox/MarginContainer"]
+[node name="Label" type="Label" parent="Scns/Scn2/TextBox/MarginContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_xbvlo")
@@ -149,7 +163,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Scene3" type="Control" parent="."]
+[node name="Scn3" type="Control" parent="Scns"]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -158,7 +172,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ImgBG" type="TextureRect" parent="Scene3"]
+[node name="ImgBG" type="TextureRect" parent="Scns/Scn3"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -170,7 +184,7 @@ expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
-[node name="TextBox" type="TextureRect" parent="Scene3"]
+[node name="TextBox" type="TextureRect" parent="Scns/Scn3"]
 visible = false
 self_modulate = Color(1, 1, 1, 0.717647)
 layout_mode = 1
@@ -185,7 +199,7 @@ texture = ExtResource("1_otggd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Scene3/TextBox"]
+[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn3/TextBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -197,7 +211,7 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
-[node name="Label" type="Label" parent="Scene3/TextBox/MarginContainer"]
+[node name="Label" type="Label" parent="Scns/Scn3/TextBox/MarginContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_xbvlo")
@@ -208,7 +222,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Scene4" type="Control" parent="."]
+[node name="Scn4" type="Control" parent="Scns"]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -217,7 +231,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ImgBG" type="TextureRect" parent="Scene4"]
+[node name="ImgBG" type="TextureRect" parent="Scns/Scn4"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -229,7 +243,7 @@ expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
-[node name="TextBox" type="TextureRect" parent="Scene4"]
+[node name="TextBox" type="TextureRect" parent="Scns/Scn4"]
 visible = false
 self_modulate = Color(1, 1, 1, 0.717647)
 layout_mode = 1
@@ -244,7 +258,7 @@ texture = ExtResource("1_otggd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Scene4/TextBox"]
+[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn4/TextBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -256,7 +270,7 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
-[node name="Label" type="Label" parent="Scene4/TextBox/MarginContainer"]
+[node name="Label" type="Label" parent="Scns/Scn4/TextBox/MarginContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_xbvlo")
@@ -267,7 +281,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Scene5" type="Control" parent="."]
+[node name="Scn5" type="Control" parent="Scns"]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -276,7 +290,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ImgBG" type="TextureRect" parent="Scene5"]
+[node name="ImgBG" type="TextureRect" parent="Scns/Scn5"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -288,7 +302,7 @@ expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
-[node name="TextBox" type="TextureRect" parent="Scene5"]
+[node name="TextBox" type="TextureRect" parent="Scns/Scn5"]
 visible = false
 self_modulate = Color(1, 1, 1, 0.717647)
 layout_mode = 1
@@ -303,7 +317,7 @@ texture = ExtResource("1_otggd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Scene5/TextBox"]
+[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn5/TextBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -315,7 +329,7 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
-[node name="Label" type="Label" parent="Scene5/TextBox/MarginContainer"]
+[node name="Label" type="Label" parent="Scns/Scn5/TextBox/MarginContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_xbvlo")
@@ -326,7 +340,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Scene6" type="Control" parent="."]
+[node name="Scn6" type="Control" parent="Scns"]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -335,7 +349,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ImgBG" type="TextureRect" parent="Scene6"]
+[node name="ImgBG" type="TextureRect" parent="Scns/Scn6"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -347,7 +361,7 @@ expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
-[node name="TextBox" type="TextureRect" parent="Scene6"]
+[node name="TextBox" type="TextureRect" parent="Scns/Scn6"]
 visible = false
 self_modulate = Color(1, 1, 1, 0.717647)
 layout_mode = 1
@@ -362,7 +376,7 @@ texture = ExtResource("1_otggd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Scene6/TextBox"]
+[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn6/TextBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -374,7 +388,7 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
-[node name="Label" type="Label" parent="Scene6/TextBox/MarginContainer"]
+[node name="Label" type="Label" parent="Scns/Scn6/TextBox/MarginContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_xbvlo")
@@ -385,7 +399,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Scene7" type="Control" parent="."]
+[node name="Scn7" type="Control" parent="Scns"]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -394,7 +408,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ImgBG" type="TextureRect" parent="Scene7"]
+[node name="ImgBG" type="TextureRect" parent="Scns/Scn7"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -406,7 +420,7 @@ expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
-[node name="TextBox" type="TextureRect" parent="Scene7"]
+[node name="TextBox" type="TextureRect" parent="Scns/Scn7"]
 self_modulate = Color(1, 1, 1, 0.717647)
 layout_mode = 1
 anchors_preset = -1
@@ -420,7 +434,7 @@ texture = ExtResource("1_otggd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Scene7/TextBox"]
+[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn7/TextBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -432,7 +446,7 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
-[node name="Label" type="Label" parent="Scene7/TextBox/MarginContainer"]
+[node name="Label" type="Label" parent="Scns/Scn7/TextBox/MarginContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_xbvlo")
@@ -442,7 +456,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Scene8" type="Control" parent="."]
+[node name="Scn8" type="Control" parent="Scns"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -450,7 +465,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ImgBG" type="TextureRect" parent="Scene8"]
+[node name="ImgBG" type="TextureRect" parent="Scns/Scn8"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -462,7 +477,7 @@ expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
-[node name="TextBox" type="TextureRect" parent="Scene8"]
+[node name="TextBox" type="TextureRect" parent="Scns/Scn8"]
 self_modulate = Color(1, 1, 1, 0.717647)
 layout_mode = 1
 anchors_preset = -1
@@ -476,7 +491,7 @@ texture = ExtResource("1_otggd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Scene8/TextBox"]
+[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn8/TextBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -488,7 +503,7 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
-[node name="Label" type="Label" parent="Scene8/TextBox/MarginContainer"]
+[node name="Label" type="Label" parent="Scns/Scn8/TextBox/MarginContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_xbvlo")
@@ -498,7 +513,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Scene9" type="Control" parent="."]
+[node name="Scn9" type="Control" parent="Scns"]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -507,7 +522,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ImgBG" type="TextureRect" parent="Scene9"]
+[node name="ImgBG" type="TextureRect" parent="Scns/Scn9"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -519,7 +534,7 @@ expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
-[node name="TextBox" type="TextureRect" parent="Scene9"]
+[node name="TextBox" type="TextureRect" parent="Scns/Scn9"]
 self_modulate = Color(1, 1, 1, 0.717647)
 layout_mode = 1
 anchors_preset = -1
@@ -533,7 +548,7 @@ texture = ExtResource("1_otggd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Scene9/TextBox"]
+[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn9/TextBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -545,7 +560,7 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
-[node name="Label" type="Label" parent="Scene9/TextBox/MarginContainer"]
+[node name="Label" type="Label" parent="Scns/Scn9/TextBox/MarginContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_xbvlo")
@@ -556,7 +571,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Scene10" type="Control" parent="."]
+[node name="Scn10" type="Control" parent="Scns"]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -565,7 +580,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ImgBG" type="TextureRect" parent="Scene10"]
+[node name="ImgBG" type="TextureRect" parent="Scns/Scn10"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -577,7 +592,7 @@ expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
-[node name="TextBox" type="TextureRect" parent="Scene10"]
+[node name="TextBox" type="TextureRect" parent="Scns/Scn10"]
 self_modulate = Color(1, 1, 1, 0.717647)
 layout_mode = 1
 anchors_preset = -1
@@ -591,7 +606,7 @@ texture = ExtResource("1_otggd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Scene10/TextBox"]
+[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn10/TextBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -603,7 +618,7 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
-[node name="Label" type="Label" parent="Scene10/TextBox/MarginContainer"]
+[node name="Label" type="Label" parent="Scns/Scn10/TextBox/MarginContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_xbvlo")
@@ -612,3 +627,35 @@ text = "Doug is waiting outside, in his power stance. before you know it, he cli
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+
+[node name="NextButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.840278
+anchor_top = 0.876543
+anchor_right = 0.986389
+anchor_bottom = 1.00027
+offset_right = -0.32
+offset_bottom = -0.176003
+texture_normal = ExtResource("15_gng5i")
+texture_hover = ExtResource("16_2ogs0")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="BackButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0138889
+anchor_top = 0.876543
+anchor_right = 0.16
+anchor_bottom = 1.00027
+offset_right = -0.32
+offset_bottom = -0.176003
+texture_normal = ExtResource("17_ayh5i")
+texture_hover = ExtResource("18_jjdpu")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]
