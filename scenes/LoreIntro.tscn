@@ -659,3 +659,4 @@ stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
