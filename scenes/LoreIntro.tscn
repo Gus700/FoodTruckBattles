@@ -1,10 +1,10 @@
-[gd_scene load_steps=20 format=3 uid="uid://xgnaoqvxarvc"]
+[gd_scene load_steps=24 format=3 uid="uid://xgnaoqvxarvc"]
 
 [ext_resource type="Texture2D" uid="uid://ce46mydlen3ui" path="res://assets/loreScenes/intro/intro_bg.png" id="1_nbd7m"]
 [ext_resource type="Script" path="res://scripts/loreIntro.gd" id="1_vosbv"]
 [ext_resource type="Texture2D" uid="uid://y41fy5hkhdt2" path="res://assets/loreScenes/intro/01.png" id="2_4oqcv"]
-[ext_resource type="FontFile" uid="uid://c1vtnd0t0k2t4" path="res://assets/fonts/Fredoka-Medium.ttf" id="4_xbvlo"]
-[ext_resource type="Texture2D" uid="uid://dcmqycrnh0423" path="res://assets/UI/timer_bar.png" id="4_xy2id"]
+[ext_resource type="Texture2D" uid="uid://dc17g7jos4mvh" path="res://assets/loreScenes/intro_dialogue/intro1.png" id="4_88lso"]
+[ext_resource type="Texture2D" uid="uid://gnfsiyttb7ep" path="res://assets/loreScenes/intro_dialogue/intro2.png" id="5_dys07"]
 [ext_resource type="Texture2D" uid="uid://c2pr52xlrt48k" path="res://assets/loreScenes/intro/02.png" id="5_t5wxx"]
 [ext_resource type="Texture2D" uid="uid://dheeyukk48ven" path="res://assets/loreScenes/intro/03.png" id="6_yd2h8"]
 [ext_resource type="Texture2D" uid="uid://b1nsp5m7ism1e" path="res://assets/loreScenes/intro/04.png" id="7_7bnd8"]
@@ -14,11 +14,15 @@
 [ext_resource type="Texture2D" uid="uid://gyefcexgonel" path="res://assets/loreScenes/intro/08.png" id="11_0anox"]
 [ext_resource type="Texture2D" uid="uid://bxruatu8qwhpc" path="res://assets/loreScenes/intro/09.png" id="12_tgyjp"]
 [ext_resource type="Texture2D" uid="uid://d035te6ggmjhl" path="res://assets/loreScenes/intro/10.png" id="13_sadiy"]
+[ext_resource type="Texture2D" uid="uid://ctgbt6jkn25de" path="res://assets/loreScenes/intro_dialogue/intro3.png" id="14_ws35s"]
 [ext_resource type="Texture2D" uid="uid://cgfelblnvakg5" path="res://assets/UI_buttons/next.png" id="15_gng5i"]
 [ext_resource type="Texture2D" uid="uid://c6dwth7evsdyw" path="res://assets/UI_buttons/next_hover.png" id="16_2ogs0"]
+[ext_resource type="Texture2D" uid="uid://dphejpwn7tnvs" path="res://assets/loreScenes/intro_dialogue/intro4.png" id="16_mooya"]
 [ext_resource type="Texture2D" uid="uid://b0r8f8x7y0e5r" path="res://assets/UI_buttons/back.png" id="17_ayh5i"]
+[ext_resource type="Texture2D" uid="uid://bcw2vwffis5p3" path="res://assets/loreScenes/intro_dialogue/intro5.png" id="18_2w7jq"]
 [ext_resource type="Texture2D" uid="uid://dvtn4u0004701" path="res://assets/UI_buttons/back_hover.png" id="18_jjdpu"]
 [ext_resource type="Script" path="res://scripts/SceneManager/ChangeSceneButton.gd" id="19_p57xb"]
+[ext_resource type="Texture2D" uid="uid://bir4n1prte5u6" path="res://assets/loreScenes/intro_dialogue/intro6.png" id="20_rmj0f"]
 
 [node name="LoreIntro" type="Control"]
 layout_mode = 3
@@ -47,7 +51,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Scn" type="Control" parent="Scns"]
+[node name="Scn0" type="Control" parent="Scns"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -55,7 +59,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ImgBG" type="TextureRect" parent="Scns/Scn"]
+[node name="ImgBG" type="TextureRect" parent="Scns/Scn0"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -66,42 +70,61 @@ texture = ExtResource("2_4oqcv")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="TextBox" type="TextureRect" parent="Scns/Scn"]
-self_modulate = Color(1, 1, 1, 0.603922)
+[node name="intro1" type="TextureRect" parent="Scns/Scn0"]
+self_modulate = Color(1, 1, 1, 0.729412)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.201389
-anchor_top = 0.814815
-anchor_right = 0.791667
-anchor_bottom = 0.925926
+anchor_left = 0.195868
+anchor_top = 0.73279
+anchor_right = 0.799868
+anchor_bottom = 0.97379
+offset_left = 0.355988
+offset_top = 0.151978
+offset_right = -0.458496
+offset_bottom = -0.0160522
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_xy2id")
+texture = ExtResource("4_88lso")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn/TextBox"]
+[node name="Scn1" type="Control" parent="Scns"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
 
-[node name="Label" type="Label" parent="Scns/Scn/TextBox/MarginContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.556863, 0.270588, 0.0196078, 1)
-theme_override_fonts/font = ExtResource("4_xbvlo")
-theme_override_font_sizes/font_size = 25
-text = "Brrrrrr…Brrrrrr. 
-Your phone gently buzzes you awake, but the moment is interrupted by a text from doug….your (literal) clown boss & owner of the very food truck you were sleeping in."
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
+[node name="ImgBG" type="TextureRect" parent="Scns/Scn1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_4oqcv")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="intro2" type="TextureRect" parent="Scns/Scn1"]
+self_modulate = Color(1, 1, 1, 0.729412)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.195868
+anchor_top = 0.73279
+anchor_right = 0.799868
+anchor_bottom = 0.97379
+offset_left = 0.355988
+offset_top = 0.151978
+offset_right = -0.458496
+offset_bottom = -0.0160522
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_dys07")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Scn2" type="Control" parent="Scns"]
 visible = false
@@ -123,44 +146,6 @@ texture = ExtResource("5_t5wxx")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="TextBox" type="TextureRect" parent="Scns/Scn2"]
-visible = false
-self_modulate = Color(1, 1, 1, 0.603922)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.201389
-anchor_top = 0.814815
-anchor_right = 0.791667
-anchor_bottom = 0.925926
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_xy2id")
-expand_mode = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn2/TextBox"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
-
-[node name="Label" type="Label" parent="Scns/Scn2/TextBox/MarginContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.556863, 0.270588, 0.0196078, 1)
-theme_override_fonts/font = ExtResource("4_xbvlo")
-theme_override_font_sizes/font_size = 25
-text = "Brrrrrr…Brrrrrr. 
-Your phone gently buzzes you awake, but the moment is interrupted by a text from doug….your (literal) clown boss & owner of the very food truck you were sleeping in."
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
-
 [node name="Scn3" type="Control" parent="Scns"]
 visible = false
 layout_mode = 1
@@ -180,44 +165,6 @@ grow_vertical = 2
 texture = ExtResource("6_yd2h8")
 expand_mode = 1
 stretch_mode = 5
-
-[node name="TextBox" type="TextureRect" parent="Scns/Scn3"]
-visible = false
-self_modulate = Color(1, 1, 1, 0.603922)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.201389
-anchor_top = 0.814815
-anchor_right = 0.791667
-anchor_bottom = 0.925926
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_xy2id")
-expand_mode = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn3/TextBox"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
-
-[node name="Label" type="Label" parent="Scns/Scn3/TextBox/MarginContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.556863, 0.270588, 0.0196078, 1)
-theme_override_fonts/font = ExtResource("4_xbvlo")
-theme_override_font_sizes/font_size = 25
-text = "Brrrrrr…Brrrrrr. 
-Your phone gently buzzes you awake, but the moment is interrupted by a text from doug….your (literal) clown boss & owner of the very food truck you were sleeping in."
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
 
 [node name="Scn4" type="Control" parent="Scns"]
 visible = false
@@ -239,44 +186,6 @@ texture = ExtResource("7_7bnd8")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="TextBox" type="TextureRect" parent="Scns/Scn4"]
-visible = false
-self_modulate = Color(1, 1, 1, 0.603922)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.201389
-anchor_top = 0.814815
-anchor_right = 0.791667
-anchor_bottom = 0.925926
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_xy2id")
-expand_mode = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn4/TextBox"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
-
-[node name="Label" type="Label" parent="Scns/Scn4/TextBox/MarginContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.556863, 0.270588, 0.0196078, 1)
-theme_override_fonts/font = ExtResource("4_xbvlo")
-theme_override_font_sizes/font_size = 25
-text = "Brrrrrr…Brrrrrr. 
-Your phone gently buzzes you awake, but the moment is interrupted by a text from doug….your (literal) clown boss & owner of the very food truck you were sleeping in."
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
-
 [node name="Scn5" type="Control" parent="Scns"]
 visible = false
 layout_mode = 1
@@ -296,44 +205,6 @@ grow_vertical = 2
 texture = ExtResource("8_odela")
 expand_mode = 1
 stretch_mode = 5
-
-[node name="TextBox" type="TextureRect" parent="Scns/Scn5"]
-visible = false
-self_modulate = Color(1, 1, 1, 0.603922)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.201389
-anchor_top = 0.814815
-anchor_right = 0.791667
-anchor_bottom = 0.925926
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_xy2id")
-expand_mode = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn5/TextBox"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
-
-[node name="Label" type="Label" parent="Scns/Scn5/TextBox/MarginContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.556863, 0.270588, 0.0196078, 1)
-theme_override_fonts/font = ExtResource("4_xbvlo")
-theme_override_font_sizes/font_size = 25
-text = "Brrrrrr…Brrrrrr. 
-Your phone gently buzzes you awake, but the moment is interrupted by a text from doug….your (literal) clown boss & owner of the very food truck you were sleeping in."
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
 
 [node name="Scn6" type="Control" parent="Scns"]
 visible = false
@@ -355,44 +226,6 @@ texture = ExtResource("9_0pjru")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="TextBox" type="TextureRect" parent="Scns/Scn6"]
-visible = false
-self_modulate = Color(1, 1, 1, 0.603922)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.201389
-anchor_top = 0.814815
-anchor_right = 0.791667
-anchor_bottom = 0.925926
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_xy2id")
-expand_mode = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn6/TextBox"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
-
-[node name="Label" type="Label" parent="Scns/Scn6/TextBox/MarginContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.556863, 0.270588, 0.0196078, 1)
-theme_override_fonts/font = ExtResource("4_xbvlo")
-theme_override_font_sizes/font_size = 25
-text = "Brrrrrr…Brrrrrr. 
-Your phone gently buzzes you awake, but the moment is interrupted by a text from doug….your (literal) clown boss & owner of the very food truck you were sleeping in."
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
-
 [node name="Scn7" type="Control" parent="Scns"]
 visible = false
 layout_mode = 1
@@ -413,41 +246,23 @@ texture = ExtResource("10_7mha0")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="TextBox" type="TextureRect" parent="Scns/Scn7"]
-self_modulate = Color(1, 1, 1, 0.603922)
+[node name="intro3" type="TextureRect" parent="Scns/Scn7"]
+self_modulate = Color(1, 1, 1, 0.729412)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.201389
-anchor_top = 0.814815
-anchor_right = 0.791667
-anchor_bottom = 0.925926
+anchor_left = 0.195868
+anchor_top = 0.73279
+anchor_right = 0.799868
+anchor_bottom = 0.97379
+offset_left = 0.355988
+offset_top = 0.151978
+offset_right = -0.458496
+offset_bottom = -0.0160522
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_xy2id")
+texture = ExtResource("14_ws35s")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
-
-[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn7/TextBox"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
-
-[node name="Label" type="Label" parent="Scns/Scn7/TextBox/MarginContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.556863, 0.270588, 0.0196078, 1)
-theme_override_fonts/font = ExtResource("4_xbvlo")
-theme_override_font_sizes/font_size = 25
-text = "Doug was pretty intimidating for a 2ft clown. Regardless, he was kind enough to offer you a job on the spot after that… incident."
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
 
 [node name="Scn8" type="Control" parent="Scns"]
 visible = false
@@ -469,41 +284,23 @@ texture = ExtResource("11_0anox")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="TextBox" type="TextureRect" parent="Scns/Scn8"]
-self_modulate = Color(1, 1, 1, 0.603922)
+[node name="intro4" type="TextureRect" parent="Scns/Scn8"]
+self_modulate = Color(1, 1, 1, 0.729412)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.201389
-anchor_top = 0.814815
-anchor_right = 0.791667
-anchor_bottom = 0.925926
+anchor_left = 0.195868
+anchor_top = 0.73279
+anchor_right = 0.799868
+anchor_bottom = 0.97379
+offset_left = 0.355988
+offset_top = 0.151978
+offset_right = -0.458496
+offset_bottom = -0.0160522
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_xy2id")
+texture = ExtResource("16_mooya")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
-
-[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn8/TextBox"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
-
-[node name="Label" type="Label" parent="Scns/Scn8/TextBox/MarginContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.556863, 0.270588, 0.0196078, 1)
-theme_override_fonts/font = ExtResource("4_xbvlo")
-theme_override_font_sizes/font_size = 25
-text = "It was a water gun, but he still got 2 days in county jail."
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
 
 [node name="Scn9" type="Control" parent="Scns"]
 visible = false
@@ -525,41 +322,23 @@ texture = ExtResource("12_tgyjp")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="TextBox" type="TextureRect" parent="Scns/Scn9"]
-self_modulate = Color(1, 1, 1, 0.603922)
+[node name="intro5" type="TextureRect" parent="Scns/Scn9"]
+self_modulate = Color(1, 1, 1, 0.729412)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.201389
-anchor_top = 0.814815
-anchor_right = 0.791667
-anchor_bottom = 0.925926
+anchor_left = 0.195868
+anchor_top = 0.73279
+anchor_right = 0.799868
+anchor_bottom = 0.97379
+offset_left = 0.355988
+offset_top = 0.151978
+offset_right = -0.458496
+offset_bottom = -0.0160522
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_xy2id")
+texture = ExtResource("18_2w7jq")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
-
-[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn9/TextBox"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
-
-[node name="Label" type="Label" parent="Scns/Scn9/TextBox/MarginContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.556863, 0.270588, 0.0196078, 1)
-theme_override_fonts/font = ExtResource("4_xbvlo")
-theme_override_font_sizes/font_size = 25
-text = "You start the truck on a near empty tank. It doesn’t matter, because after today, you could buy so many tanks of gas (and doug’s respect), if you won."
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
 
 [node name="Scn10" type="Control" parent="Scns"]
 visible = false
@@ -581,41 +360,23 @@ texture = ExtResource("13_sadiy")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="TextBox" type="TextureRect" parent="Scns/Scn10"]
-self_modulate = Color(1, 1, 1, 0.603922)
+[node name="intro6" type="TextureRect" parent="Scns/Scn10"]
+self_modulate = Color(1, 1, 1, 0.729412)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.201389
-anchor_top = 0.814815
-anchor_right = 0.791667
-anchor_bottom = 0.925926
+anchor_left = 0.195868
+anchor_top = 0.73279
+anchor_right = 0.799868
+anchor_bottom = 0.97379
+offset_left = 0.355988
+offset_top = 0.151978
+offset_right = -0.458496
+offset_bottom = -0.0160522
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_xy2id")
+texture = ExtResource("20_rmj0f")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
-
-[node name="MarginContainer" type="MarginContainer" parent="Scns/Scn10/TextBox"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
-
-[node name="Label" type="Label" parent="Scns/Scn10/TextBox/MarginContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.556863, 0.270588, 0.0196078, 1)
-theme_override_fonts/font = ExtResource("4_xbvlo")
-theme_override_font_sizes/font_size = 25
-text = "Doug is waiting outside, in his power stance. Before you know it, he climbs in and drags you to the back."
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
 
 [node name="NextButton" type="TextureButton" parent="."]
 layout_mode = 1
