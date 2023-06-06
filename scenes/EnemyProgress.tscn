@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://djjiids4ekxok"]
+[gd_scene load_steps=3 format=3 uid="uid://2jigh7kk64cy"]
 
-[ext_resource type="Script" path="res://scripts/EnemyProgress.gd" id="1_1v4q5"]
+[ext_resource type="Script" path="res://scripts/enemyProgress.gd" id="1_a72fk"]
 [ext_resource type="Texture2D" uid="uid://dcmqycrnh0423" path="res://assets/UI/timer_bar.png" id="2_xbsjr"]
 
 [node name="EnemyProgress" type="Control"]
@@ -10,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_1v4q5")
+script = ExtResource("1_a72fk")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 120.0

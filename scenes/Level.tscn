@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=55 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -20,7 +20,7 @@
 [ext_resource type="Resource" uid="uid://d4jx5ix1s3b63" path="res://resourceData/ingredients/tigerBottomBun.tres" id="10_c2d4f"]
 [ext_resource type="Resource" uid="uid://d1o0v5g4mcipb" path="res://resourceData/ingredients/clownTopBun.tres" id="10_cksu0"]
 [ext_resource type="Resource" uid="uid://pk1tim3x7tr1" path="res://resourceData/ingredients/lettuce.tres" id="11_ql7bd"]
-[ext_resource type="PackedScene" uid="uid://djjiids4ekxok" path="res://scenes/EnemyProgress.tscn" id="11_rr48n"]
+[ext_resource type="PackedScene" uid="uid://2jigh7kk64cy" path="res://scenes/EnemyProgress.tscn" id="11_rr48n"]
 [ext_resource type="Resource" uid="uid://pe1m662ee6as" path="res://resourceData/ingredients/clownBottomBun.tres" id="12_es8ic"]
 [ext_resource type="Resource" uid="uid://dp6bqwo157oj8" path="res://resourceData/ingredients/clownPatty.tres" id="12_gg3y8"]
 [ext_resource type="Resource" uid="uid://b6p234ih6kgaj" path="res://resourceData/ingredients/cheese.tres" id="13_dl28i"]
