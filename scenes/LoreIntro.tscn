@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://xgnaoqvxarvc"]
+[gd_scene load_steps=20 format=3 uid="uid://xgnaoqvxarvc"]
 
 [ext_resource type="Texture2D" uid="uid://ce46mydlen3ui" path="res://assets/loreScenes/intro/intro_bg.png" id="1_nbd7m"]
 [ext_resource type="Texture2D" uid="uid://b5gcuffddrpxd" path="res://assets/UI/tut_bubble.png" id="1_otggd"]
@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://c6dwth7evsdyw" path="res://assets/UI_buttons/next_hover.png" id="16_2ogs0"]
 [ext_resource type="Texture2D" uid="uid://b0r8f8x7y0e5r" path="res://assets/UI_buttons/back.png" id="17_ayh5i"]
 [ext_resource type="Texture2D" uid="uid://dvtn4u0004701" path="res://assets/UI_buttons/back_hover.png" id="18_jjdpu"]
+[ext_resource type="Script" path="res://scripts/SceneManager/ChangeSceneButton.gd" id="19_p57xb"]
 
 [node name="LoreIntro" type="Control"]
 layout_mode = 3
@@ -658,5 +659,26 @@ ignore_texture_size = true
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
+[node name="NextSceneButton" type="TextureButton" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.840278
+anchor_top = 0.888889
+anchor_right = 0.986389
+anchor_bottom = 0.987926
+offset_right = -0.32
+offset_bottom = -0.176003
+texture_normal = ExtResource("15_gng5i")
+texture_hover = ExtResource("16_2ogs0")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("19_p57xb")
+dest = "LevelTutorial"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="draw" from="Scns/Scn10" to="." method="_on_scn_10_draw"]
 [connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="get_dest" from="NextSceneButton" to="." method="_on_next_scene_button_get_dest"]
+[connection signal="pressed" from="NextSceneButton" to="NextSceneButton" method="_on_pressed"]

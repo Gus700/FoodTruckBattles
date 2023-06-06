@@ -1,5 +1,7 @@
 extends TextureButton
 
+class_name ChangeSceneButtonScr
+
 @export var dest : String = "level"
 
 signal get_dest(dest)
