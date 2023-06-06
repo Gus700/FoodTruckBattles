@@ -90,5 +90,5 @@ func _on_crafting_area_request_updated_order() -> void:
 		#emit_signal("all_orders_complete")
 
 func _on_completion_bell_pressed() -> void:
-	if nextOrdersContainer.get_child_count() == 0 && currOrderContainer.get_child_count() == 0:
+	if nextOrdersContainer.get_child_count() == 0:
 		emit_signal("all_orders_complete")
