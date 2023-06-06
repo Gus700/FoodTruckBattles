@@ -1,7 +1,7 @@
 extends Control
 
 @onready var levelComplete = $CompletionScreen
-@onready var gameOverOverLay = $GameOverOverlay
+@onready var gameOverOverLay = $GameOverScreen
 @onready var completionFeedBack = $CompletionFeedback
 @onready var timerBar = $EnemyProgress
 @export var tutorialDisplay: bool = false
