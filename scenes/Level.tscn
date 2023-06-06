@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=57 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -50,6 +50,7 @@
 [ext_resource type="Texture2D" uid="uid://b5gcuffddrpxd" path="res://assets/UI/tut_bubble.png" id="46_aaugl"]
 [ext_resource type="Texture2D" uid="uid://cedfso3ol71vl" path="res://assets/UI_buttons/next_pressed.png" id="50_0uhe5"]
 [ext_resource type="Texture2D" uid="uid://b0r8f8x7y0e5r" path="res://assets/UI_buttons/back.png" id="52_fe8k6"]
+[ext_resource type="Texture2D" uid="uid://djtku388vwrte" path="res://assets/UI/win_graphic.png" id="53_c7ery"]
 [ext_resource type="Texture2D" uid="uid://n1qvtvy44j54" path="res://assets/UI_buttons/back_pressed.png" id="53_wh1oq"]
 [ext_resource type="Texture2D" uid="uid://dvtn4u0004701" path="res://assets/UI_buttons/back_hover.png" id="54_brp1j"]
 
@@ -824,7 +825,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CompletionScreen" type="Control" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -835,16 +835,23 @@ grow_vertical = 2
 [node name="TextureRect" type="TextureRect" parent="CompletionScreen"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.180556
-anchor_top = 0.0401235
-anchor_right = 0.903055
-anchor_bottom = 0.938543
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture = ExtResource("46_aaugl")
+anchor_left = 0.293
+anchor_top = 0.145
+anchor_right = 0.71
+anchor_bottom = 0.904
+offset_left = -0.536011
+offset_top = 0.0399933
+offset_right = 481.08
+offset_bottom = 492.208
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("53_c7ery")
+expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="CompletionScreen/TextureRect"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
