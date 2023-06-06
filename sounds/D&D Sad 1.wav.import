@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dtduawsegh55p"
+path="res://.godot/imported/D&D Sad 1.wav-64fde2fe206dc2b2a39059e64f426e87.sample"
+
+[deps]
+
+source_file="res://sounds/D&D Sad 1.wav"
+dest_files=["res://.godot/imported/D&D Sad 1.wav-64fde2fe206dc2b2a39059e64f426e87.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

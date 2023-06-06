@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://hukd1wqo7s5f"
+path="res://.godot/imported/D&D Yay 2.wav-b0a455e0281a503a76f69880ff516e2e.sample"
+
+[deps]
+
+source_file="res://sounds/D&D Yay 2.wav"
+dest_files=["res://.godot/imported/D&D Yay 2.wav-b0a455e0281a503a76f69880ff516e2e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
