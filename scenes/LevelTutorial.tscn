@@ -7,6 +7,9 @@
 
 [node name="LevelTutorial" instance=ExtResource("1_0m4n7")]
 
+[node name="TutorialOverlay" parent="." index="9"]
+visible = true
+
 [node name="CloseTutorial" parent="TutorialOverlay" index="2"]
 anchor_top = 0.011
 anchor_right = 0.038
