@@ -1,6 +1,6 @@
 extends Control
 
-
+@onready var levelComplete = $CompletionScreen
 @onready var gameOverOverLay = $GameOverOverlay
 @onready var completionFeedBack = $CompletionFeedback
 @onready var timerBar = $EnemyProgress
@@ -34,3 +34,7 @@ func _on_tutorial_overlay_draw() -> void:
 
 func _on_tutorial_overlay_hidden() -> void:
 	timerBar.unpauseTimer()
+
+
+func _on_order_area_all_orders_complete() -> void:
+	levelComplete.show()

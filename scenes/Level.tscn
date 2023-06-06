@@ -823,14 +823,47 @@ text = "Next Step"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="WiningScreen" type="Control" parent="."]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="CompletionScreen" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
+[node name="TextureRect" type="TextureRect" parent="CompletionScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.180556
+anchor_top = 0.0401235
+anchor_right = 0.903055
+anchor_bottom = 0.938543
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture = ExtResource("46_aaugl")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="CompletionScreen/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.337255, 0.223529, 0.121569, 1)
+theme_override_fonts/font = ExtResource("8_m1ay7")
+theme_override_font_sizes/font_size = 35
+text = "Congrats kid you have completed you duties for the day."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[connection signal="all_orders_complete" from="Order Area" to="." method="_on_order_area_all_orders_complete"]
 [connection signal="update_recipe" from="Order Area" to="Crafting Area" method="_on_order_area_update_recipe"]
 [connection signal="request_updated_order" from="Crafting Area" to="Order Area" method="_on_crafting_area_request_updated_order"]
 [connection signal="show_completion_feedback" from="Crafting Area" to="." method="_on_crafting_area_show_completion_feedback"]
+[connection signal="pressed" from="CompletionBell" to="Order Area" method="_on_completion_bell_pressed"]
 [connection signal="pressed" from="CompletionBell" to="Crafting Area" method="_on_completion_bell_pressed"]
 [connection signal="pressed" from="TrashCan" to="Crafting Area" method="_on_trash_can_pressed"]
 [connection signal="game_over" from="EnemyProgress" to="." method="_on_enemy_progress_game_over"]
