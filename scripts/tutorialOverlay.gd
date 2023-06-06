@@ -23,10 +23,21 @@ func _on_close_tutorial_pressed() -> void:
 
 
 func _on_next_button_pressed() -> void:
-	lastStepIndx = currStepIndx
-	currStepIndx += 1
-	currStepIndx = fposmod(currStepIndx, numSteps)
-	print(currStepIndx)
-	stepNodes.get_child(currStepIndx).show()
-	stepNodes.get_child(lastStepIndx).hide()
+	if currStepIndx != numSteps - 1:
+		lastStepIndx = currStepIndx
+		currStepIndx += 1
+		currStepIndx = fposmod(currStepIndx, numSteps)
+		print(currStepIndx)
+		stepNodes.get_child(currStepIndx).show()
+		stepNodes.get_child(lastStepIndx).hide()
 	
+
+
+func _on_back_button_pressed() -> void:
+	if currStepIndx != 0:
+		lastStepIndx = currStepIndx
+		currStepIndx -= 1
+		currStepIndx = fposmod(currStepIndx, numSteps)
+		print(currStepIndx)
+		stepNodes.get_child(currStepIndx).show()
+		stepNodes.get_child(lastStepIndx).hide()

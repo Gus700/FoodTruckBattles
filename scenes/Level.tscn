@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=56 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -41,16 +41,17 @@
 [ext_resource type="Texture2D" uid="uid://gdombg4r0w3h" path="res://assets/UI/tutorial2.png" id="36_e0ejb"]
 [ext_resource type="Texture2D" uid="uid://i2s82jtvoed1" path="res://assets/food/starterFood/ketchup_hotdog.png" id="36_qkj61"]
 [ext_resource type="Texture2D" uid="uid://dcmqycrnh0423" path="res://assets/UI/timer_bar.png" id="39_nkydd"]
-[ext_resource type="Texture2D" uid="uid://bcpqovcvvvdbl" path="res://assets/UI_buttons/skip.png" id="40_c6v7u"]
 [ext_resource type="Texture2D" uid="uid://eml7fhsg1v5q" path="res://assets/UI/tutorial3.png" id="40_pyqf8"]
-[ext_resource type="Texture2D" uid="uid://bmy5vjaw6kdpw" path="res://assets/UI_buttons/skip_hover.png" id="41_ewn4c"]
 [ext_resource type="Texture2D" uid="uid://dk7k6ynbhrsqq" path="res://assets/UI/tutorial4.png" id="41_wqn2j"]
 [ext_resource type="Texture2D" uid="uid://bf7y2qm8vi6ff" path="res://assets/UI/tutorial5.png" id="42_0lo6e"]
 [ext_resource type="Texture2D" uid="uid://cgfelblnvakg5" path="res://assets/UI_buttons/next.png" id="42_mrn5o"]
 [ext_resource type="Texture2D" uid="uid://cvdbevoymvmgs" path="res://assets/UI/tutorial6.png" id="43_gaicr"]
 [ext_resource type="Texture2D" uid="uid://c6dwth7evsdyw" path="res://assets/UI_buttons/next_hover.png" id="43_i7dqr"]
-[ext_resource type="Texture2D" uid="uid://b7xjq8vemtxr5" path="res://assets/UI_buttons/skip_pressed.png" id="47_dyalx"]
+[ext_resource type="Texture2D" uid="uid://b5gcuffddrpxd" path="res://assets/UI/tut_bubble.png" id="46_aaugl"]
 [ext_resource type="Texture2D" uid="uid://cedfso3ol71vl" path="res://assets/UI_buttons/next_pressed.png" id="50_0uhe5"]
+[ext_resource type="Texture2D" uid="uid://b0r8f8x7y0e5r" path="res://assets/UI_buttons/back.png" id="52_fe8k6"]
+[ext_resource type="Texture2D" uid="uid://n1qvtvy44j54" path="res://assets/UI_buttons/back_pressed.png" id="53_wh1oq"]
+[ext_resource type="Texture2D" uid="uid://dvtn4u0004701" path="res://assets/UI_buttons/back_hover.png" id="54_brp1j"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_gsada"]
 font_size = 26
@@ -740,27 +741,26 @@ texture = ExtResource("39_nkydd")
 [node name="CloseTutorial" type="TextureButton" parent="TutorialOverlay"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.016493
-anchor_top = 0.908951
-anchor_right = 0.147569
-anchor_bottom = 0.983025
-texture_normal = ExtResource("40_c6v7u")
-texture_pressed = ExtResource("47_dyalx")
-texture_hover = ExtResource("41_ewn4c")
+anchor_left = 0.00694444
+anchor_top = 0.0108025
+anchor_right = 0.0277778
+anchor_bottom = 0.0493827
+texture_normal = ExtResource("46_aaugl")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TutorialOverlay/CloseTutorial"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Exit"
+theme_override_colors/font_color = Color(0.556863, 0.270588, 0.0196078, 1)
+theme_override_fonts/font = ExtResource("8_m1ay7")
+theme_override_font_sizes/font_size = 36
+text = "X"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -793,6 +793,35 @@ text = "Next Step"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="BackButton" type="TextureButton" parent="TutorialOverlay"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0208333
+anchor_top = 0.899691
+anchor_right = 0.169271
+anchor_bottom = 0.975309
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("52_fe8k6")
+texture_pressed = ExtResource("53_wh1oq")
+texture_hover = ExtResource("54_brp1j")
+ignore_texture_size = true
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="TutorialOverlay/BackButton"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Next Step"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="update_recipe" from="Order Area" to="Crafting Area" method="_on_order_area_update_recipe"]
 [connection signal="request_updated_order" from="Crafting Area" to="Order Area" method="_on_crafting_area_request_updated_order"]
 [connection signal="show_completion_feedback" from="Crafting Area" to="." method="_on_crafting_area_show_completion_feedback"]
@@ -803,3 +832,4 @@ vertical_alignment = 1
 [connection signal="hidden" from="TutorialOverlay" to="." method="_on_tutorial_overlay_hidden"]
 [connection signal="pressed" from="TutorialOverlay/CloseTutorial" to="TutorialOverlay" method="_on_close_tutorial_pressed"]
 [connection signal="pressed" from="TutorialOverlay/NextButton" to="TutorialOverlay" method="_on_next_button_pressed"]
+[connection signal="pressed" from="TutorialOverlay/BackButton" to="TutorialOverlay" method="_on_back_button_pressed"]
