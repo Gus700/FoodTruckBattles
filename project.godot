@@ -23,6 +23,10 @@ GlobalSig="*res://scripts/globalScripts/globalSig.gd"
 
 window/size/initial_position_type=0
 
+[filesystem]
+
+import/blender/enabled=false
+
 [gui]
 
 theme/custom_font="res://misc/Fredoka-VariableFont_wdth,wght.ttf"
