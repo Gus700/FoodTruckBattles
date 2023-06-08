@@ -1,0 +1,18 @@
+[gd_scene load_steps=6 format=3 uid="uid://bpeuhwuf7kl1q"]
+
+[ext_resource type="PackedScene" uid="uid://eddd6ar36cnd" path="res://scenes/Level.tscn" id="1_yn5su"]
+[ext_resource type="Texture2D" uid="uid://c6n64wm1m2ccm" path="res://assets/loreScenes/truck_intro/buryme0.png" id="2_r21te"]
+[ext_resource type="Texture2D" uid="uid://bpsb465dfjdex" path="res://assets/loreScenes/truck_intro/buryme1.png" id="3_stvhd"]
+[ext_resource type="Texture2D" uid="uid://8ei7gxjmkwop" path="res://assets/loreScenes/lore_bg/buryme_bg.png" id="4_byxme"]
+[ext_resource type="Texture2D" uid="uid://ckj3vve1hpewn" path="res://assets/trucks/bury_me.png" id="5_rta48"]
+
+[node name="Level" instance=ExtResource("1_yn5su")]
+
+[node name="TruckIntro" parent="." index="9"]
+textImgs = Array[Texture2D]([ExtResource("2_r21te"), ExtResource("3_stvhd")])
+
+[node name="bg" parent="TruckIntro" index="0"]
+texture = ExtResource("4_byxme")
+
+[node name="backgroundImage" parent="TruckIntro" index="1"]
+texture = ExtResource("5_rta48")
