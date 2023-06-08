@@ -1,17 +1,68 @@
-[gd_scene load_steps=5 format=3 uid="uid://yt3olmasjk8s"]
+[gd_scene load_steps=17 format=3 uid="uid://yt3olmasjk8s"]
 
 [ext_resource type="PackedScene" uid="uid://eddd6ar36cnd" path="res://scenes/Level.tscn" id="1_0m4n7"]
 [ext_resource type="Texture2D" uid="uid://d0ss15vsqqikk" path="res://assets/UI_buttons/x.png" id="2_n1xdf"]
+[ext_resource type="Resource" uid="uid://dg07q1t5rb8ye" path="res://resourceData/ingredients/hotdogBun.tres" id="2_x6eci"]
 [ext_resource type="Texture2D" uid="uid://qa868aunlr4r" path="res://assets/UI_buttons/x_pressed.png" id="3_mvhb7"]
+[ext_resource type="Resource" uid="uid://d1o0v5g4mcipb" path="res://resourceData/ingredients/clownTopBun.tres" id="3_u5qsa"]
 [ext_resource type="Texture2D" uid="uid://dqcd7kdie7kkg" path="res://assets/UI_buttons/x_hover.png" id="4_my2eo"]
+[ext_resource type="Resource" uid="uid://pe1m662ee6as" path="res://resourceData/ingredients/clownBottomBun.tres" id="4_obyv2"]
+[ext_resource type="Resource" uid="uid://bibtu1pp4xme5" path="res://resourceData/ingredients/sausage.tres" id="5_t385q"]
+[ext_resource type="Resource" uid="uid://dp6bqwo157oj8" path="res://resourceData/ingredients/clownPatty.tres" id="6_x255n"]
+[ext_resource type="Resource" uid="uid://dqgi8skhl0bfo" path="res://resourceData/ingredients/tigerPatty.tres" id="7_jyrut"]
+[ext_resource type="Resource" uid="uid://jmfdb4rty8s5" path="res://resourceData/ingredients/tomato.tres" id="8_1m0g7"]
+[ext_resource type="Resource" uid="uid://pk1tim3x7tr1" path="res://resourceData/ingredients/lettuce.tres" id="9_1nwht"]
+[ext_resource type="Resource" uid="uid://d2nj6j61nifs8" path="res://resourceData/ingredients/pickles.tres" id="10_bbs5d"]
+[ext_resource type="Resource" uid="uid://b6p234ih6kgaj" path="res://resourceData/ingredients/cheese.tres" id="11_wcqsm"]
+[ext_resource type="Resource" uid="uid://dkeqkklgytq5d" path="res://resourceData/ingredients/rainbowCheese.tres" id="12_igdub"]
+[ext_resource type="Resource" uid="uid://c70k6roidpm46" path="res://resourceData/ingredients/ketchup.tres" id="13_d7idj"]
 
 [node name="LevelTutorial" instance=ExtResource("1_0m4n7")]
 
+[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer" index="2"]
+ingrResource = ExtResource("2_x6eci")
+
+[node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="0"]
+ingrResource = ExtResource("3_u5qsa")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="1"]
+ingrResource = ExtResource("4_obyv2")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="2"]
+ingrResource = ExtResource("5_t385q")
+
+[node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer3" index="0"]
+ingrResource = ExtResource("6_x255n")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer3" index="1"]
+ingrResource = ExtResource("7_jyrut")
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer" index="0"]
+ingrResource = ExtResource("8_1m0g7")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer" index="1"]
+ingrResource = ExtResource("9_1nwht")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer" index="2"]
+ingrResource = ExtResource("10_bbs5d")
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer2" index="0"]
+ingrResource = null
+
+[node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer2" index="1"]
+ingrResource = ExtResource("11_wcqsm")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer2" index="2"]
+ingrResource = ExtResource("12_igdub")
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer3" index="0"]
+ingrResource = null
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer3" index="2"]
+ingrResource = ExtResource("13_d7idj")
+
 [node name="TruckIntro" parent="." index="9"]
 visible = false
-
-[node name="TutorialOverlay" parent="." index="10"]
-visible = true
 
 [node name="CloseTutorial" parent="TutorialOverlay" index="2"]
 anchor_top = 0.011
