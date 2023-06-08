@@ -64,6 +64,9 @@ ingrResource = ExtResource("13_d7idj")
 [node name="TruckIntro" parent="." index="9"]
 visible = false
 
+[node name="TutorialOverlay" parent="." index="10"]
+visible = true
+
 [node name="CloseTutorial" parent="TutorialOverlay" index="2"]
 anchor_top = 0.011
 anchor_right = 0.038
