@@ -1323,7 +1323,7 @@ texture_hover = ExtResource("65_3st3l")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("58_kbqwc")
-dest = "LevelTutorial"
+dest = "loreScene"
 metadata/_edit_use_anchors_ = true
 
 [node name="Quit" type="TextureButton" parent="CompletionScreen"]
