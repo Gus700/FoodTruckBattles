@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://g6jpe0rh2xoo"]
+[gd_scene load_steps=83 format=3 uid="uid://g6jpe0rh2xoo"]
 
 [ext_resource type="Script" path="res://scripts/loreScene.gd" id="1_pjpxh"]
 [ext_resource type="Texture2D" uid="uid://b5najsyc2rjed" path="res://assets/loreScenes/full/angel_s_scripture.png" id="2_jk1s3"]
@@ -34,6 +34,51 @@
 [ext_resource type="Texture2D" uid="uid://derhp2uvow3ls" path="res://assets/loreScenes/lore_dialogue/buryme7.png" id="32_y6q7u"]
 [ext_resource type="Texture2D" uid="uid://c7lkpdwq6vrov" path="res://assets/loreScenes/lore_dialogue/buryme8.png" id="33_tdpqt"]
 [ext_resource type="Texture2D" uid="uid://bg65v0a7sam8w" path="res://assets/loreScenes/full/hearse_to_be_you.png" id="34_srd65"]
+[ext_resource type="Texture2D" uid="uid://b5iagh364gext" path="res://assets/loreScenes/lore_bg/devilstango_bg.png" id="35_s7tg4"]
+[ext_resource type="Texture2D" uid="uid://c6bo6ieywf87f" path="res://assets/loreScenes/truck_intro/devilstango0.png" id="36_2clcq"]
+[ext_resource type="Texture2D" uid="uid://dynhsfe6shmrd" path="res://assets/loreScenes/truck_intro/devilstango1.png" id="37_q1sdj"]
+[ext_resource type="Texture2D" uid="uid://bqqt13e5buas0" path="res://assets/trucks/devils_tango.png" id="38_w1ulh"]
+[ext_resource type="Texture2D" uid="uid://dha2re54q6m54" path="res://assets/loreScenes/lore_dialogue/devilstango0.png" id="39_mlihf"]
+[ext_resource type="Texture2D" uid="uid://bpbcmpgi6ma83" path="res://assets/loreScenes/lore_dialogue/devilstango1.png" id="40_ebjtr"]
+[ext_resource type="Texture2D" uid="uid://cxcx4qs0h8y1a" path="res://assets/loreScenes/lore_dialogue/devilstango3.png" id="41_l4kkx"]
+[ext_resource type="Texture2D" uid="uid://dbif46fgpyh6b" path="res://assets/loreScenes/lore_dialogue/devilstango4.png" id="42_8q1av"]
+[ext_resource type="Texture2D" uid="uid://bvj56eur8tph3" path="res://assets/loreScenes/lore_dialogue/devilstango5.png" id="43_6dyp3"]
+[ext_resource type="Texture2D" uid="uid://crwyekv12v7b" path="res://assets/loreScenes/lore_dialogue/devilstango6.png" id="44_314pm"]
+[ext_resource type="Texture2D" uid="uid://mgjjd8ysjm85" path="res://assets/loreScenes/lore_dialogue/devilstango7.png" id="45_fehht"]
+[ext_resource type="Texture2D" uid="uid://3ilax4mfvdb" path="res://assets/loreScenes/lore_dialogue/devilstango8.png" id="46_ti5is"]
+[ext_resource type="Texture2D" uid="uid://dfkjhbkthdnhc" path="res://assets/loreScenes/full/deviled_food.png" id="47_skowg"]
+[ext_resource type="Texture2D" uid="uid://bmw7xugtnmd2e" path="res://assets/loreScenes/lore_bg/frostyfriends_bg.png" id="48_y64s6"]
+[ext_resource type="Texture2D" uid="uid://c2eknj44sifqh" path="res://assets/loreScenes/truck_intro/frostyfriends0.png" id="49_lp2cs"]
+[ext_resource type="Texture2D" uid="uid://dnr8h6smri7oi" path="res://assets/loreScenes/truck_intro/frostyfriends1.png" id="50_kefs6"]
+[ext_resource type="Texture2D" uid="uid://n54x7jk8y3u" path="res://assets/trucks/frosty_friends.png" id="51_61f5y"]
+[ext_resource type="Texture2D" uid="uid://c2eu7o8edgiau" path="res://assets/loreScenes/lore_dialogue/frostyfriends0.png" id="52_12qqw"]
+[ext_resource type="Texture2D" uid="uid://b5x7acmdbq57a" path="res://assets/loreScenes/lore_dialogue/frostyfriends1.png" id="53_gpkue"]
+[ext_resource type="Texture2D" uid="uid://dly16gaomueea" path="res://assets/loreScenes/lore_dialogue/frostyfriends2.png" id="54_nqid8"]
+[ext_resource type="Texture2D" uid="uid://c01ru75laiw5r" path="res://assets/loreScenes/lore_dialogue/frostyfriends3.png" id="55_ik8vf"]
+[ext_resource type="Texture2D" uid="uid://dthdrhjkyyp1r" path="res://assets/loreScenes/lore_dialogue/frostyfriends4.png" id="56_duvwg"]
+[ext_resource type="Texture2D" uid="uid://dl03tsc2jh0g2" path="res://assets/loreScenes/lore_dialogue/frostyfriends5.png" id="57_l0k73"]
+[ext_resource type="Texture2D" uid="uid://bdfadte0olkxh" path="res://assets/loreScenes/lore_dialogue/frostyfriends6.png" id="58_fwhuu"]
+[ext_resource type="Texture2D" uid="uid://dlynt4wkj7lwl" path="res://assets/loreScenes/lore_dialogue/frostyfriends7.png" id="59_yr65l"]
+[ext_resource type="Texture2D" uid="uid://wvqlxwu5pbty" path="res://assets/loreScenes/lore_dialogue/frostyfriends8.png" id="60_swk5f"]
+[ext_resource type="Texture2D" uid="uid://djrw0owxlig0e" path="res://assets/loreScenes/lore_dialogue/frostyfriends9.png" id="61_7ni14"]
+[ext_resource type="Texture2D" uid="uid://0cipscue3pic" path="res://assets/loreScenes/lore_dialogue/frostyfriends10.png" id="62_mld8v"]
+[ext_resource type="Texture2D" uid="uid://dvrli6u10ev2b" path="res://assets/loreScenes/full/frosty_beginnings.png" id="63_5ov1p"]
+[ext_resource type="Texture2D" uid="uid://ebco5bmwsec1" path="res://assets/loreScenes/lore_bg/tacobara_bg.png" id="64_86b86"]
+[ext_resource type="Texture2D" uid="uid://cvj84tw5ajnbk" path="res://assets/loreScenes/truck_intro/tacobara0.png" id="65_lbmp6"]
+[ext_resource type="Texture2D" uid="uid://dc5n3fb48ncu8" path="res://assets/loreScenes/truck_intro/tacobara1.png" id="66_7wpnx"]
+[ext_resource type="Texture2D" uid="uid://c5skiy27mknq8" path="res://assets/trucks/capybara.png" id="67_7a7lu"]
+[ext_resource type="Texture2D" uid="uid://onojje8e5xnh" path="res://assets/loreScenes/lore_dialogue/tacobara0.png" id="68_hj26s"]
+[ext_resource type="Texture2D" uid="uid://wc354ai50e2n" path="res://assets/loreScenes/lore_dialogue/tacobara1.png" id="69_lmc3r"]
+[ext_resource type="Texture2D" uid="uid://bno17k25ww833" path="res://assets/loreScenes/lore_dialogue/tacobara2.png" id="70_so68c"]
+[ext_resource type="Texture2D" uid="uid://d24amc5qx52u4" path="res://assets/loreScenes/lore_dialogue/tacobara3.png" id="71_dulkp"]
+[ext_resource type="Texture2D" uid="uid://bvp25v887a4ns" path="res://assets/loreScenes/lore_dialogue/tacobara4.png" id="72_0poc4"]
+[ext_resource type="Texture2D" uid="uid://cpxcspvaxgoci" path="res://assets/loreScenes/lore_dialogue/tacobara5.png" id="73_muqy2"]
+[ext_resource type="Texture2D" uid="uid://bhawhmx3fxwtk" path="res://assets/loreScenes/lore_dialogue/tacobara6.png" id="74_f2xq1"]
+[ext_resource type="Texture2D" uid="uid://bmu6eaneamod4" path="res://assets/loreScenes/lore_dialogue/tacobara7.png" id="75_46i26"]
+[ext_resource type="Texture2D" uid="uid://dphevanqu4a7f" path="res://assets/loreScenes/lore_dialogue/tacobara8.png" id="76_j7f40"]
+[ext_resource type="Texture2D" uid="uid://dxk73y8rao1u1" path="res://assets/loreScenes/lore_dialogue/tacobara9.png" id="77_e5q73"]
+[ext_resource type="Texture2D" uid="uid://dlt1338qsghlh" path="res://assets/loreScenes/lore_dialogue/tacobara10.png" id="78_iexer"]
+[ext_resource type="Texture2D" uid="uid://c4jc7siqtayqn" path="res://assets/loreScenes/lore_dialogue/tacobara11.png" id="79_mjjt4"]
 
 [sub_resource type="Animation" id="Animation_5snml"]
 length = 0.001
@@ -154,7 +199,6 @@ grow_vertical = 2
 script = ExtResource("1_pjpxh")
 
 [node name="Level1" type="Control" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -352,6 +396,7 @@ stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
 [node name="Level2" type="Control" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -546,6 +591,588 @@ ignore_texture_size = true
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
+[node name="Level5" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="bg" type="TextureRect" parent="Level5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("35_s7tg4")
+expand_mode = 1
+
+[node name="TruckIntro" type="Control" parent="Level5"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("10_065ck")
+textImgs = Array[Texture2D]([ExtResource("36_2clcq"), ExtResource("37_q1sdj")])
+
+[node name="backgroundImage" type="TextureRect" parent="Level5/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("38_w1ulh")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="textBubble" type="TextureRect" parent="Level5/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.0154321
+anchor_right = 1.0
+anchor_bottom = 0.225309
+offset_left = 312.0
+offset_top = 23.0
+offset_right = 312.0
+offset_bottom = 23.0
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton" type="TextureButton" parent="Level5/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.861111
+anchor_top = 0.91358
+anchor_right = 0.993333
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("16_tc8k0")
+texture_pressed = ExtResource("17_3nf3f")
+texture_hover = ExtResource("18_wa0i0")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("8_w7ok3")
+dest = "Level"
+metadata/_edit_use_anchors_ = true
+
+[node name="NextTextButton" type="TextureButton" parent="Level5/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.861111
+anchor_top = 0.91358
+anchor_right = 0.993333
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("16_tc8k0")
+texture_pressed = ExtResource("17_3nf3f")
+texture_hover = ExtResource("18_wa0i0")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="PrevTextButton" type="TextureButton" parent="Level5/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00694444
+anchor_top = 0.91358
+anchor_right = 0.139167
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("19_kdbm2")
+texture_pressed = ExtResource("20_7sbil")
+texture_hover = ExtResource("21_ju2hf")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Level5/TruckIntro"]
+autoplay = "truckIntroFloat"
+libraries = {
+"": SubResource("AnimationLibrary_nyn2w")
+}
+
+[node name="TruckLore" type="Control" parent="Level5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("10_065ck")
+textImgs = Array[Texture2D]([ExtResource("39_mlihf"), ExtResource("40_ebjtr"), ExtResource("41_l4kkx"), ExtResource("42_8q1av"), ExtResource("43_6dyp3"), ExtResource("44_314pm"), ExtResource("45_fehht"), ExtResource("46_ti5is")])
+
+[node name="backgroundImage" type="TextureRect" parent="Level5/TruckLore"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("47_skowg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="textBubble" type="TextureRect" parent="Level5/TruckLore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.0154321
+anchor_right = 1.0
+anchor_bottom = 0.225309
+texture = ExtResource("4_nsa50")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton" type="TextureButton" parent="Level5/TruckLore"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.861111
+anchor_top = 0.91358
+anchor_right = 0.993333
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("16_tc8k0")
+texture_pressed = ExtResource("17_3nf3f")
+texture_hover = ExtResource("18_wa0i0")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("8_w7ok3")
+dest = "loreScene"
+metadata/_edit_use_anchors_ = true
+
+[node name="NextTextButton" type="TextureButton" parent="Level5/TruckLore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.861111
+anchor_top = 0.91358
+anchor_right = 0.993333
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("16_tc8k0")
+texture_pressed = ExtResource("17_3nf3f")
+texture_hover = ExtResource("18_wa0i0")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="PrevTextButton" type="TextureButton" parent="Level5/TruckLore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00694444
+anchor_top = 0.91358
+anchor_right = 0.139167
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("19_kdbm2")
+texture_pressed = ExtResource("20_7sbil")
+texture_hover = ExtResource("21_ju2hf")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Level6" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="bg" type="TextureRect" parent="Level6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("48_y64s6")
+expand_mode = 1
+
+[node name="TruckIntro" type="Control" parent="Level6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("10_065ck")
+textImgs = Array[Texture2D]([ExtResource("49_lp2cs"), ExtResource("50_kefs6")])
+
+[node name="backgroundImage" type="TextureRect" parent="Level6/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("51_61f5y")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="textBubble" type="TextureRect" parent="Level6/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.0154321
+anchor_right = 1.0
+anchor_bottom = 0.225309
+offset_left = 312.0
+offset_top = 23.0
+offset_right = 312.0
+offset_bottom = 23.0
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton" type="TextureButton" parent="Level6/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.861111
+anchor_top = 0.91358
+anchor_right = 0.993333
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("16_tc8k0")
+texture_pressed = ExtResource("17_3nf3f")
+texture_hover = ExtResource("18_wa0i0")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("8_w7ok3")
+dest = "Level"
+metadata/_edit_use_anchors_ = true
+
+[node name="NextTextButton" type="TextureButton" parent="Level6/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.861111
+anchor_top = 0.91358
+anchor_right = 0.993333
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("16_tc8k0")
+texture_pressed = ExtResource("17_3nf3f")
+texture_hover = ExtResource("18_wa0i0")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="PrevTextButton" type="TextureButton" parent="Level6/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00694444
+anchor_top = 0.91358
+anchor_right = 0.139167
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("19_kdbm2")
+texture_pressed = ExtResource("20_7sbil")
+texture_hover = ExtResource("21_ju2hf")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Level6/TruckIntro"]
+autoplay = "truckIntroFloat"
+libraries = {
+"": SubResource("AnimationLibrary_nyn2w")
+}
+
+[node name="TruckLore" type="Control" parent="Level6"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("10_065ck")
+textImgs = Array[Texture2D]([ExtResource("52_12qqw"), ExtResource("53_gpkue"), ExtResource("54_nqid8"), ExtResource("55_ik8vf"), ExtResource("56_duvwg"), ExtResource("57_l0k73"), ExtResource("58_fwhuu"), ExtResource("59_yr65l"), ExtResource("60_swk5f"), ExtResource("61_7ni14"), ExtResource("62_mld8v")])
+
+[node name="backgroundImage" type="TextureRect" parent="Level6/TruckLore"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("63_5ov1p")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="textBubble" type="TextureRect" parent="Level6/TruckLore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.0154321
+anchor_right = 1.0
+anchor_bottom = 0.225309
+texture = ExtResource("4_nsa50")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton" type="TextureButton" parent="Level6/TruckLore"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.861111
+anchor_top = 0.91358
+anchor_right = 0.993333
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("16_tc8k0")
+texture_pressed = ExtResource("17_3nf3f")
+texture_hover = ExtResource("18_wa0i0")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("8_w7ok3")
+dest = "loreScene"
+metadata/_edit_use_anchors_ = true
+
+[node name="NextTextButton" type="TextureButton" parent="Level6/TruckLore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.861111
+anchor_top = 0.91358
+anchor_right = 0.993333
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("16_tc8k0")
+texture_pressed = ExtResource("17_3nf3f")
+texture_hover = ExtResource("18_wa0i0")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="PrevTextButton" type="TextureButton" parent="Level6/TruckLore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00694444
+anchor_top = 0.91358
+anchor_right = 0.139167
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("19_kdbm2")
+texture_pressed = ExtResource("20_7sbil")
+texture_hover = ExtResource("21_ju2hf")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Level7" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="bg" type="TextureRect" parent="Level7"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("64_86b86")
+expand_mode = 1
+
+[node name="TruckIntro" type="Control" parent="Level7"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("10_065ck")
+textImgs = Array[Texture2D]([ExtResource("65_lbmp6"), ExtResource("66_7wpnx")])
+
+[node name="backgroundImage" type="TextureRect" parent="Level7/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("67_7a7lu")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="textBubble" type="TextureRect" parent="Level7/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.0154321
+anchor_right = 1.0
+anchor_bottom = 0.225309
+offset_left = 312.0
+offset_top = 23.0
+offset_right = 312.0
+offset_bottom = 23.0
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton" type="TextureButton" parent="Level7/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.861111
+anchor_top = 0.91358
+anchor_right = 0.993333
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("16_tc8k0")
+texture_pressed = ExtResource("17_3nf3f")
+texture_hover = ExtResource("18_wa0i0")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("8_w7ok3")
+dest = "Level"
+metadata/_edit_use_anchors_ = true
+
+[node name="NextTextButton" type="TextureButton" parent="Level7/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.861111
+anchor_top = 0.91358
+anchor_right = 0.993333
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("16_tc8k0")
+texture_pressed = ExtResource("17_3nf3f")
+texture_hover = ExtResource("18_wa0i0")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="PrevTextButton" type="TextureButton" parent="Level7/TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00694444
+anchor_top = 0.91358
+anchor_right = 0.139167
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("19_kdbm2")
+texture_pressed = ExtResource("20_7sbil")
+texture_hover = ExtResource("21_ju2hf")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Level7/TruckIntro"]
+autoplay = "truckIntroFloat"
+libraries = {
+"": SubResource("AnimationLibrary_nyn2w")
+}
+
+[node name="TruckLore" type="Control" parent="Level7"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("10_065ck")
+textImgs = Array[Texture2D]([ExtResource("68_hj26s"), ExtResource("69_lmc3r"), ExtResource("70_so68c"), ExtResource("71_dulkp"), ExtResource("72_0poc4"), ExtResource("73_muqy2"), ExtResource("74_f2xq1"), ExtResource("75_46i26"), ExtResource("76_j7f40"), ExtResource("77_e5q73"), ExtResource("78_iexer"), ExtResource("79_mjjt4")])
+
+[node name="backgroundImage" type="TextureRect" parent="Level7/TruckLore"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("34_srd65")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="textBubble" type="TextureRect" parent="Level7/TruckLore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.0154321
+anchor_right = 1.0
+anchor_bottom = 0.225309
+texture = ExtResource("4_nsa50")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton" type="TextureButton" parent="Level7/TruckLore"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.861111
+anchor_top = 0.91358
+anchor_right = 0.993333
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("16_tc8k0")
+texture_pressed = ExtResource("17_3nf3f")
+texture_hover = ExtResource("18_wa0i0")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("8_w7ok3")
+dest = "loreScene"
+metadata/_edit_use_anchors_ = true
+
+[node name="NextTextButton" type="TextureButton" parent="Level7/TruckLore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.861111
+anchor_top = 0.91358
+anchor_right = 0.993333
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("16_tc8k0")
+texture_pressed = ExtResource("17_3nf3f")
+texture_hover = ExtResource("18_wa0i0")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="PrevTextButton" type="TextureButton" parent="Level7/TruckLore"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00694444
+anchor_top = 0.91358
+anchor_right = 0.139167
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("19_kdbm2")
+texture_pressed = ExtResource("20_7sbil")
+texture_hover = ExtResource("21_ju2hf")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
 [connection signal="get_dest" from="Level1/TruckIntro/TextureButton" to="." method="_on_texture_button_get_dest"]
 [connection signal="pressed" from="Level1/TruckIntro/TextureButton" to="Level1/TruckIntro" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Level1/TruckIntro/TextureButton" to="Level1/TruckIntro/TextureButton" method="_on_pressed"]
@@ -566,3 +1193,33 @@ metadata/_edit_use_anchors_ = true
 [connection signal="pressed" from="Level2/TruckLore/TextureButton" to="Level2/TruckLore/TextureButton" method="_on_pressed"]
 [connection signal="pressed" from="Level2/TruckLore/NextTextButton" to="Level2/TruckLore" method="_on_next_text_button_pressed"]
 [connection signal="pressed" from="Level2/TruckLore/PrevTextButton" to="Level2/TruckLore" method="_on_prev_text_button_pressed"]
+[connection signal="get_dest" from="Level5/TruckIntro/TextureButton" to="." method="_on_texture_button_get_dest"]
+[connection signal="pressed" from="Level5/TruckIntro/TextureButton" to="Level5/TruckIntro" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Level5/TruckIntro/TextureButton" to="Level5/TruckIntro/TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="Level5/TruckIntro/NextTextButton" to="Level5/TruckIntro" method="_on_next_text_button_pressed"]
+[connection signal="pressed" from="Level5/TruckIntro/PrevTextButton" to="Level5/TruckIntro" method="_on_prev_text_button_pressed"]
+[connection signal="get_dest" from="Level5/TruckLore/TextureButton" to="." method="_on_texture_button_get_dest"]
+[connection signal="pressed" from="Level5/TruckLore/TextureButton" to="Level5/TruckLore" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Level5/TruckLore/TextureButton" to="Level5/TruckLore/TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="Level5/TruckLore/NextTextButton" to="Level5/TruckLore" method="_on_next_text_button_pressed"]
+[connection signal="pressed" from="Level5/TruckLore/PrevTextButton" to="Level5/TruckLore" method="_on_prev_text_button_pressed"]
+[connection signal="get_dest" from="Level6/TruckIntro/TextureButton" to="." method="_on_texture_button_get_dest"]
+[connection signal="pressed" from="Level6/TruckIntro/TextureButton" to="Level6/TruckIntro" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Level6/TruckIntro/TextureButton" to="Level6/TruckIntro/TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="Level6/TruckIntro/NextTextButton" to="Level6/TruckIntro" method="_on_next_text_button_pressed"]
+[connection signal="pressed" from="Level6/TruckIntro/PrevTextButton" to="Level6/TruckIntro" method="_on_prev_text_button_pressed"]
+[connection signal="get_dest" from="Level6/TruckLore/TextureButton" to="." method="_on_texture_button_get_dest"]
+[connection signal="pressed" from="Level6/TruckLore/TextureButton" to="Level6/TruckLore" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Level6/TruckLore/TextureButton" to="Level6/TruckLore/TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="Level6/TruckLore/NextTextButton" to="Level6/TruckLore" method="_on_next_text_button_pressed"]
+[connection signal="pressed" from="Level6/TruckLore/PrevTextButton" to="Level6/TruckLore" method="_on_prev_text_button_pressed"]
+[connection signal="get_dest" from="Level7/TruckIntro/TextureButton" to="." method="_on_texture_button_get_dest"]
+[connection signal="pressed" from="Level7/TruckIntro/TextureButton" to="Level7/TruckIntro" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Level7/TruckIntro/TextureButton" to="Level7/TruckIntro/TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="Level7/TruckIntro/NextTextButton" to="Level7/TruckIntro" method="_on_next_text_button_pressed"]
+[connection signal="pressed" from="Level7/TruckIntro/PrevTextButton" to="Level7/TruckIntro" method="_on_prev_text_button_pressed"]
+[connection signal="get_dest" from="Level7/TruckLore/TextureButton" to="." method="_on_texture_button_get_dest"]
+[connection signal="pressed" from="Level7/TruckLore/TextureButton" to="Level7/TruckLore" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Level7/TruckLore/TextureButton" to="Level7/TruckLore/TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="Level7/TruckLore/NextTextButton" to="Level7/TruckLore" method="_on_next_text_button_pressed"]
+[connection signal="pressed" from="Level7/TruckLore/PrevTextButton" to="Level7/TruckLore" method="_on_prev_text_button_pressed"]
