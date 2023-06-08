@@ -50,7 +50,7 @@ func _on_quit_get_dest(dest) -> void:
 
 
 func _on_next_get_dest(dest) -> void:
-	GloData.etCurrLvlName(currentLevelName)
+	GloData.setCurrLvlName(currentLevelName)
 	emit_signal("scene_changed", dest)
 
 
