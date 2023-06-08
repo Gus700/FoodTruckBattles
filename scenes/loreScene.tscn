@@ -274,7 +274,7 @@ texture_hover = ExtResource("18_wa0i0")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("8_w7ok3")
-dest = "loreScene"
+dest = "Level2"
 metadata/_edit_use_anchors_ = true
 
 [node name="NextTextButton" type="TextureButton" parent="Level1/TruckLore"]

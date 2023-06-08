@@ -1,6 +1,72 @@
-[gd_scene load_steps=2 format=3 uid="uid://bunhv04ur1e3h"]
+[gd_scene load_steps=14 format=3 uid="uid://bunhv04ur1e3h"]
 
 [ext_resource type="PackedScene" uid="uid://eddd6ar36cnd" path="res://scenes/Level.tscn" id="1_l7cft"]
+[ext_resource type="Resource" uid="uid://cy2228g7du307" path="res://resourceData/orders/sliceOfHeaven.tres" id="2_f55kl"]
+[ext_resource type="Resource" uid="uid://bjvtc05hg4r7k" path="res://resourceData/orders/gildedCross.tres" id="3_omugk"]
+[ext_resource type="Resource" uid="uid://dguydmmpos0q8" path="res://resourceData/orders/cupidFood.tres" id="4_o4tkq"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/whitePlate.tres" id="5_tpf02"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/goldPlate.tres" id="6_o4j5l"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/pinkPlate.tres" id="7_0dgun"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/vanillaCakeSlice.tres" id="8_8h0xc"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/chocolateCakeSlice.tres" id="9_ex30a"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/strawberryCakeSlice.tres" id="10_l8fju"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/raspberries.tres" id="11_livbi"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/strawberries.tres" id="12_ky122"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/goldenCherries.tres" id="13_7o5r7"]
 
 [node name="Level" instance=ExtResource("1_l7cft")]
 currentLevelName = "Level1"
+
+[node name="Order Area" parent="." index="2"]
+orderTypes = Array[Resource]([ExtResource("2_f55kl"), ExtResource("3_omugk"), ExtResource("4_o4tkq")])
+
+[node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer" index="0"]
+ingrResource = ExtResource("5_tpf02")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer" index="1"]
+ingrResource = ExtResource("6_o4j5l")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer" index="2"]
+ingrResource = ExtResource("7_0dgun")
+
+[node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="0"]
+ingrResource = null
+
+[node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="1"]
+ingrResource = null
+
+[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="2"]
+ingrResource = null
+
+[node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer3" index="0"]
+ingrResource = null
+
+[node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer3" index="1"]
+ingrResource = null
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer" index="0"]
+ingrResource = ExtResource("8_8h0xc")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer" index="1"]
+ingrResource = ExtResource("9_ex30a")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer" index="2"]
+ingrResource = ExtResource("10_l8fju")
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer2" index="0"]
+ingrResource = ExtResource("11_livbi")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer2" index="1"]
+ingrResource = ExtResource("12_ky122")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer2" index="2"]
+ingrResource = ExtResource("13_7o5r7")
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer3" index="0"]
+ingrResource = null
+
+[node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer3" index="1"]
+ingrResource = null
+
+[node name="TruckIntro" parent="." index="9"]
+visible = false
