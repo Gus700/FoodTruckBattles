@@ -2,7 +2,7 @@ extends Control
 
 @export var textImgs: Array[Texture2D]
 @onready var textBubbleNode = $textBubble
-@onready var challengeB = $TextureButton
+@onready var challengeB = $ChallengeButton
 @onready var nextTextB = $NextTextButton
 @onready var prevTextB = $PrevTextButton
 @onready var animNode = $AnimationPlayer
@@ -38,7 +38,7 @@ func _on_next_text_button_pressed() -> void:
 	if textBubIndex < textImgs.size() - 1:
 		textBubIndex += 1
 		setTextBubImg()
-	checkIfFirstText()
+	#checkIfFirstText()
 
 
 func _on_prev_text_button_pressed() -> void:
@@ -47,7 +47,7 @@ func _on_prev_text_button_pressed() -> void:
 	if textBubIndex > 0:
 		textBubIndex -= 1
 		setTextBubImg()
-	checkIfFirstText()
+	#checkIfFirstText()
 
 
 func _on_texture_button_pressed() -> void:
