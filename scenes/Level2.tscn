@@ -69,7 +69,6 @@ ingrResource = null
 ingrResource = null
 
 [node name="TruckIntro" parent="." index="9"]
-visible = false
 textImgs = Array[Texture2D]([ExtResource("2_r21te"), ExtResource("3_stvhd")])
 
 [node name="bg" parent="TruckIntro" index="0"]
