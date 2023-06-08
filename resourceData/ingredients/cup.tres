@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://dkyl57hmh6l7i"]
+
+[ext_resource type="Texture2D" uid="uid://cyecmblk6ixr7" path="res://assets/food/frostyFood/ingredients/cup.png" id="1_f6cfl"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_uuu5p"]
+
+[resource]
+script = ExtResource("1_uuu5p")
+ingrName = "cup"
+mainTexture = ExtResource("1_f6cfl")

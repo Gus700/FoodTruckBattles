@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseOrder" load_steps=3 format=3 uid="uid://ceeryhesjdq1c"]
+
+[ext_resource type="Texture2D" uid="uid://c24ta7r6kfi7e" path="res://assets/food/frostyFood/triple_split.png" id="1_3epit"]
+[ext_resource type="Script" path="res://scripts/baseOrder.gd" id="1_teqgo"]
+
+[resource]
+script = ExtResource("1_teqgo")
+recipe = Array[String](["cup", "blueScoop", "greenScoop", "pinkScoop"])
+mainTexture = ExtResource("1_3epit")
