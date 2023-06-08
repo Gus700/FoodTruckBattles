@@ -1,8 +1,9 @@
 extends SceneScr
 
-var currentFoodTruck: String = GloData.getCurrLvlName()
+var currentFoodTruck: String 
 
 func _ready() -> void:
+	currentFoodTruck = GloData.getCurrLvlName()
 	get_node(currentFoodTruck).show()
 
 #_________________________signal functions______________________________________

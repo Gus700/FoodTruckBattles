@@ -11,7 +11,8 @@ func _ready() -> void:
 	setTextBubImg()
 
 func setTextBubImg() -> void:
-	textBubbleNode.texture = textImgs[textBubIndex]
+	if textImgs != []:
+		textBubbleNode.texture = textImgs[textBubIndex]
 
 # if the last text box is being shown then hide next button and show change scene button
 func checkIfLastText() -> void:
