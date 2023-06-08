@@ -1,7 +1,9 @@
-[gd_resource type="Resource" script_class="BaseOrder" load_steps=2 format=3 uid="uid://cpe2r7v56n5ws"]
+[gd_resource type="Resource" script_class="BaseOrder" load_steps=3 format=3 uid="uid://cpe2r7v56n5ws"]
 
+[ext_resource type="Texture2D" uid="uid://dvn6olul7fgaa" path="res://assets/food/orders/dog_on_the_corn.png" id="1_4n5ci"]
 [ext_resource type="Script" path="res://scripts/baseOrder.gd" id="1_fiwno"]
 
 [resource]
 script = ExtResource("1_fiwno")
-recipe = Array[String](["corn ", "corn ", "sausage", "ketchup"])
+recipe = Array[String](["corn", "corn", "sausage", "ketchup"])
+mainTexture = ExtResource("1_4n5ci")
