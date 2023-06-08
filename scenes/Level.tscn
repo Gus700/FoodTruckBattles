@@ -345,7 +345,7 @@ anchor_left = 0.319444
 anchor_top = 0.0123457
 anchor_right = 0.944444
 anchor_bottom = 0.111111
-timeNeeded = 10
+timeNeeded = 30
 metadata/_edit_use_anchors_ = true
 
 [node name="CompletionFeedback" parent="." instance=ExtResource("30_6cca4")]
@@ -956,7 +956,6 @@ autowrap_mode = 2
 [connection signal="pressed" from="CompletionBell" to="Order Area" method="_on_completion_bell_pressed"]
 [connection signal="pressed" from="CompletionBell" to="Crafting Area" method="_on_completion_bell_pressed"]
 [connection signal="pressed" from="TrashCan" to="Crafting Area" method="_on_trash_can_pressed"]
-[connection signal="game_over" from="EnemyProgress" to="." method="_on_enemy_progress_game_over"]
 [connection signal="draw" from="TutorialOverlay" to="." method="_on_tutorial_overlay_draw"]
 [connection signal="hidden" from="TutorialOverlay" to="." method="_on_tutorial_overlay_hidden"]
 [connection signal="pressed" from="TutorialOverlay/CloseTutorial" to="TutorialOverlay" method="_on_close_tutorial_pressed"]
