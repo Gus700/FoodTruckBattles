@@ -1,4 +1,4 @@
-[gd_scene load_steps=96 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=99 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -62,8 +62,11 @@
 [ext_resource type="Texture2D" uid="uid://cwvvuudklxsg2" path="res://assets/UI_buttons/quit.png" id="59_8gd7u"]
 [ext_resource type="Texture2D" uid="uid://xfpftcj0ksoi" path="res://assets/UI_buttons/quit_pressed.png" id="60_w448p"]
 [ext_resource type="Texture2D" uid="uid://ddlgcvwnsslu3" path="res://assets/UI_buttons/quit_hover.png" id="61_gutjr"]
+[ext_resource type="Texture2D" uid="uid://p5wmg3nhx8iv" path="res://assets/UI_buttons/onto_the_next.png" id="63_du25w"]
 [ext_resource type="Script" path="res://scripts/Ding&Del.gd" id="63_kluqc"]
 [ext_resource type="AudioStream" uid="uid://bsyrqr41ssy38" path="res://sounds/delburp1.wav" id="64_2ggfr"]
+[ext_resource type="Texture2D" uid="uid://cq4alncdse727" path="res://assets/UI_buttons/onto_the_next_pressed.png" id="64_s5jx1"]
+[ext_resource type="Texture2D" uid="uid://crtctukou70m" path="res://assets/UI_buttons/onto_the_next_hover.png" id="65_3st3l"]
 [ext_resource type="AudioStream" uid="uid://bmycrw2ute85l" path="res://sounds/delburp2.wav" id="65_ckb2e"]
 [ext_resource type="AudioStream" uid="uid://ddfw1ws5i44j" path="res://sounds/delnoise1.wav" id="66_p64sg"]
 [ext_resource type="AudioStream" uid="uid://cfyhyj5nytikg" path="res://sounds/delnoise2.wav" id="67_djtyj"]
@@ -446,7 +449,6 @@ anchor_left = 0.319444
 anchor_top = 0.0123457
 anchor_right = 0.944444
 anchor_bottom = 0.111111
-timeNeeded = 10
 metadata/_edit_use_anchors_ = true
 
 [node name="CompletionFeedback" parent="." instance=ExtResource("30_6cca4")]
@@ -932,7 +934,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect2" type="ColorRect" parent="GameOverScreen"]
+[node name="BG" type="ColorRect" parent="GameOverScreen"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -976,10 +978,10 @@ autowrap_mode = 2
 [node name="TryAgain" type="TextureButton" parent="GameOverScreen"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.805556
-anchor_top = 0.851852
-anchor_right = 0.986389
-anchor_bottom = 0.979037
+anchor_left = 0.5
+anchor_top = 0.751543
+anchor_right = 0.687778
+anchor_bottom = 0.878728
 offset_right = -0.32
 offset_bottom = -3.416
 texture_normal = ExtResource("55_we2v5")
@@ -994,10 +996,10 @@ metadata/_edit_use_anchors_ = true
 [node name="Quit" type="TextureButton" parent="GameOverScreen"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0208333
-anchor_top = 0.851852
-anchor_right = 0.201667
-anchor_bottom = 0.979037
+anchor_left = 0.319444
+anchor_top = 0.751543
+anchor_right = 0.500278
+anchor_bottom = 0.878728
 offset_right = -0.32
 offset_bottom = -3.416
 texture_normal = ExtResource("59_8gd7u")
@@ -1017,6 +1019,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="BG" type="ColorRect" parent="CompletionScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.54902)
 
 [node name="TextureRect" type="TextureRect" parent="CompletionScreen"]
 layout_mode = 1
@@ -1050,6 +1061,42 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
+[node name="Next" type="TextureButton" parent="CompletionScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.451389
+anchor_top = 0.751543
+anchor_right = 0.712951
+anchor_bottom = 0.878728
+offset_right = -0.32
+offset_bottom = -3.416
+texture_normal = ExtResource("63_du25w")
+texture_pressed = ExtResource("64_s5jx1")
+texture_hover = ExtResource("65_3st3l")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("58_kbqwc")
+dest = "LevelTutorial"
+metadata/_edit_use_anchors_ = true
+
+[node name="Quit" type="TextureButton" parent="CompletionScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.28125
+anchor_top = 0.751543
+anchor_right = 0.462084
+anchor_bottom = 0.878728
+offset_right = -0.32
+offset_bottom = -3.416
+texture_normal = ExtResource("59_8gd7u")
+texture_pressed = ExtResource("60_w448p")
+texture_hover = ExtResource("61_gutjr")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("58_kbqwc")
+dest = "MainMenu"
+metadata/_edit_use_anchors_ = true
+
 [node name="Ding&Del" type="AudioStreamPlayer" parent="."]
 script = ExtResource("63_kluqc")
 dingGood = SubResource("AudioStreamRandomizer_m4hr1")
@@ -1076,3 +1123,11 @@ del = SubResource("AudioStreamRandomizer_8qyr7")
 [connection signal="pressed" from="TutorialOverlay/CloseTutorial" to="TutorialOverlay" method="_on_close_tutorial_pressed"]
 [connection signal="pressed" from="TutorialOverlay/NextButton" to="TutorialOverlay" method="_on_next_button_pressed"]
 [connection signal="pressed" from="TutorialOverlay/BackButton" to="TutorialOverlay" method="_on_back_button_pressed"]
+[connection signal="get_dest" from="GameOverScreen/TryAgain" to="." method="_on_try_again_get_dest"]
+[connection signal="pressed" from="GameOverScreen/TryAgain" to="GameOverScreen/TryAgain" method="_on_pressed"]
+[connection signal="get_dest" from="GameOverScreen/Quit" to="." method="_on_quit_get_dest"]
+[connection signal="pressed" from="GameOverScreen/Quit" to="GameOverScreen/Quit" method="_on_pressed"]
+[connection signal="get_dest" from="CompletionScreen/Next" to="." method="_on_next_get_dest"]
+[connection signal="pressed" from="CompletionScreen/Next" to="CompletionScreen/Next" method="_on_pressed"]
+[connection signal="get_dest" from="CompletionScreen/Quit" to="." method="_on_quit_get_dest"]
+[connection signal="pressed" from="CompletionScreen/Quit" to="CompletionScreen/Quit" method="_on_pressed"]

@@ -7,9 +7,6 @@
 
 [node name="LevelTutorial" instance=ExtResource("1_0m4n7")]
 
-[node name="EnemyProgress" parent="." index="7"]
-timeNeeded = 10
-
 [node name="TutorialOverlay" parent="." index="9"]
 visible = true
 
