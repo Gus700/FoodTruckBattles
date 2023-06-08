@@ -5,6 +5,7 @@ extends Control
 @onready var challengeB = $TextureButton
 @onready var nextTextB = $NextTextButton
 @onready var prevTextB = $PrevTextButton
+@onready var animNode = $AnimationPlayer
 var textBubIndex = 0
 
 func _ready() -> void:
@@ -50,4 +51,8 @@ func _on_prev_text_button_pressed() -> void:
 
 
 func _on_texture_button_pressed() -> void:
+	animNode.play("fadeOut")
+
+
+func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	self.hide()

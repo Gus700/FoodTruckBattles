@@ -4,7 +4,7 @@ extends SceneScr
 @onready var gameOverOverLay = $GameOverScreen
 @onready var completionFeedBack = $CompletionFeedback
 @onready var timerBar = $EnemyProgress
-@export var tutorialDisplay: bool = false
+@export var currentLevelName: String = "LevelTutorial"
 
 
 # Called when the node enters the scene tree for the first time.
@@ -50,6 +50,7 @@ func _on_quit_get_dest(dest) -> void:
 
 
 func _on_next_get_dest(dest) -> void:
+	GloData.etCurrLvlName(currentLevelName)
 	emit_signal("scene_changed", dest)
 
 

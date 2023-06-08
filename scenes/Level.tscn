@@ -1,4 +1,4 @@
-[gd_scene load_steps=110 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=111 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -153,6 +153,33 @@ tracks/3/keys = {
 "update": 0,
 "values": [0.0]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_6doiu"]
+resource_name = "fadeOut"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_dxum2"]
 resource_name = "truckIntroFloat"
@@ -209,6 +236,7 @@ tracks/3/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nyn2w"]
 _data = {
 "RESET": SubResource("Animation_5snml"),
+"fadeOut": SubResource("Animation_6doiu"),
 "truckIntroFloat": SubResource("Animation_dxum2")
 }
 
@@ -602,6 +630,8 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -25.0
+offset_bottom = -25.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("40_gj3sy")
@@ -1340,6 +1370,7 @@ del = SubResource("AudioStreamRandomizer_8qyr7")
 [connection signal="pressed" from="TruckIntro/TextureButton" to="TruckIntro" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="TruckIntro/NextTextButton" to="TruckIntro" method="_on_next_text_button_pressed"]
 [connection signal="pressed" from="TruckIntro/PrevTextButton" to="TruckIntro" method="_on_prev_text_button_pressed"]
+[connection signal="animation_finished" from="TruckIntro/AnimationPlayer" to="TruckIntro" method="_on_animation_player_animation_finished"]
 [connection signal="draw" from="TutorialOverlay" to="." method="_on_tutorial_overlay_draw"]
 [connection signal="hidden" from="TutorialOverlay" to="." method="_on_tutorial_overlay_hidden"]
 [connection signal="pressed" from="TutorialOverlay/CloseTutorial" to="TutorialOverlay" method="_on_close_tutorial_pressed"]

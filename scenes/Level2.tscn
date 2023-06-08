@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://ckj3vve1hpewn" path="res://assets/trucks/bury_me.png" id="5_rta48"]
 
 [node name="Level" instance=ExtResource("1_yn5su")]
+currentLevelName = "Level2"
 
 [node name="TruckIntro" parent="." index="9"]
 textImgs = Array[Texture2D]([ExtResource("2_r21te"), ExtResource("3_stvhd")])
