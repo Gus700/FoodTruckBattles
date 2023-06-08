@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseOrder" load_steps=3 format=3 uid="uid://bvkgm81e2xg7p"]
+
+[ext_resource type="Texture2D" uid="uid://tjn567wspo26" path="res://assets/food/orders/toughbara.png" id="1_cw44s"]
+[ext_resource type="Script" path="res://scripts/baseOrder.gd" id="1_uleda"]
+
+[resource]
+script = ExtResource("1_uleda")
+recipe = Array[String](["brownShellTaco", "clownPatty", "dillPickle", "onion", "cilantro", "mustard"])
+mainTexture = ExtResource("1_cw44s")

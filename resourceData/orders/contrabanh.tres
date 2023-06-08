@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseOrder" load_steps=3 format=3 uid="uid://dow1wp5b3bljy"]
+
+[ext_resource type="Texture2D" uid="uid://cdwtv0nvoow1t" path="res://assets/food/orders/contrabanh.png" id="1_cmpmv"]
+[ext_resource type="Script" path="res://scripts/baseOrder.gd" id="1_ujs6e"]
+
+[resource]
+script = ExtResource("1_ujs6e")
+recipe = Array[String](["goldBaguette", "mayo", "ham", "cilantro", "carrots", "daikon", "goldBaguette"])
+mainTexture = ExtResource("1_cmpmv")

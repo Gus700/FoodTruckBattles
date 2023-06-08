@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3]
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://d2nj6j61nifs8"]
 
 [ext_resource type="Texture2D" uid="uid://c56rgoyindqa4" path="res://assets/food/ingredients/butter_pickle.png" id="1_5bfxj"]
 [ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_svhri"]

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3]
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://dkeqkklgytq5d"]
 
 [ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_4t2yw"]
 [ext_resource type="Texture2D" uid="uid://caqp0q8yg8syq" path="res://assets/food/ingredients/gay_cheese.png" id="1_7fn72"]

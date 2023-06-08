@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhabax3ihyrqa"
-path="res://.godot/imported/2_gilded_cross.png-d8500da07dc306ef04d6b8f81d218a6f.ctex"
+uid="uid://mrww6sjy0v6o"
+path="res://.godot/imported/3_cupid_food.png-ba6aa3ae881cb08d9fc26e90251efc4b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/food/angelFood/2_gilded_cross.png"
-dest_files=["res://.godot/imported/2_gilded_cross.png-d8500da07dc306ef04d6b8f81d218a6f.ctex"]
+source_file="res://assets/food/orders/3_cupid_food.png"
+dest_files=["res://.godot/imported/3_cupid_food.png-ba6aa3ae881cb08d9fc26e90251efc4b.ctex"]
 
 [params]
 

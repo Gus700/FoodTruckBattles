@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseOrder" load_steps=3 format=3 uid="uid://bky3vhgd2sex7"]
+
+[ext_resource type="Script" path="res://scripts/baseOrder.gd" id="1_1leu7"]
+[ext_resource type="Texture2D" uid="uid://bsxso7vpmrery" path="res://assets/food/orders/fruit_sando.png" id="1_vxkwt"]
+
+[resource]
+script = ExtResource("1_1leu7")
+recipe = Array[String](["whiteBread", "whippedCream", "mandarins", "grapes", "mango", "strawberries", "whiteBread"])
+mainTexture = ExtResource("1_vxkwt")

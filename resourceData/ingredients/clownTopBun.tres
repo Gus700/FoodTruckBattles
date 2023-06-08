@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3]
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://d1o0v5g4mcipb"]
 
 [ext_resource type="Texture2D" uid="uid://xb8f17rl0vkr" path="res://assets/food/ingredients/clown_topbun.png" id="1_0y25h"]
 [ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_isdm1"]

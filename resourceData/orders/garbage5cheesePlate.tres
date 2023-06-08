@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseOrder" load_steps=3 format=3 uid="uid://u24vxnljcpcw"]
+
+[ext_resource type="Script" path="res://scripts/baseOrder.gd" id="1_oaqte"]
+[ext_resource type="Texture2D" uid="uid://b7m6y48h5dusk" path="res://assets/food/orders/garbage_plate.png" id="1_ofi6e"]
+
+[resource]
+script = ExtResource("1_oaqte")
+recipe = Array[String](["cheese", "cheese", "cheese", "cheese", "cheess"])
+mainTexture = ExtResource("1_ofi6e")

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseOrder" load_steps=3 format=3 uid="uid://dguydmmpos0q8"]
+
+[ext_resource type="Script" path="res://scripts/baseOrder.gd" id="1_8b21n"]
+[ext_resource type="Texture2D" uid="uid://mrww6sjy0v6o" path="res://assets/food/orders/3_cupid_food.png" id="1_8x0vj"]
+
+[resource]
+script = ExtResource("1_8b21n")
+recipe = Array[String](["pinkPlate", "chocolateCakeSlice", "goldenCherries"])
+mainTexture = ExtResource("1_8x0vj")

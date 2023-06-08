@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseOrder" load_steps=3 format=3 uid="uid://clj2tt5idw63w"]
+
+[ext_resource type="Script" path="res://scripts/baseOrder.gd" id="1_k42kb"]
+[ext_resource type="Texture2D" uid="uid://53vag26y6ygo" path="res://assets/food/orders/strawberry_mochi.png" id="1_x8g1i"]
+
+[resource]
+script = ExtResource("1_k42kb")
+recipe = Array[String](["pinkRiceBall", "red bean paste", "strawberries"])
+mainTexture = ExtResource("1_x8g1i")

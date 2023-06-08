@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3]
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://dqgi8skhl0bfo"]
 
 [ext_resource type="Texture2D" uid="uid://bgt6aquj2cux1" path="res://assets/food/ingredients/tiger_patty.png" id="1_o61ft"]
 [ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_sxgnn"]

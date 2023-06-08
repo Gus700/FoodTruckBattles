@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseOrder" load_steps=3 format=3 uid="uid://pcyqdf3pvw23"]
+
+[ext_resource type="Texture2D" uid="uid://un1dyyey0w17" path="res://assets/food/orders/gold_bar(beque).png" id="1_0lv5h"]
+[ext_resource type="Script" path="res://scripts/baseOrder.gd" id="1_i2a2r"]
+
+[resource]
+script = ExtResource("1_i2a2r")
+recipe = Array[String](["goldTopBun", "bbqSauce", "pulledPork", "coleSlaw", "onion", "goldBottomBun"])
+mainTexture = ExtResource("1_0lv5h")

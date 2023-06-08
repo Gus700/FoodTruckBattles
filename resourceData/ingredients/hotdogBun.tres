@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3]
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://dg07q1t5rb8ye"]
 
 [ext_resource type="Texture2D" uid="uid://coy7h011r3o6g" path="res://assets/food/ingredients/hotdog_bun.png" id="1_1x26f"]
 [ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_b1rdu"]

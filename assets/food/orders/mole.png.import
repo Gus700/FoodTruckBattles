@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mrww6sjy0v6o"
-path="res://.godot/imported/3_cupid_food.png-6f958dc0ab3f882420726ef0d047cfbb.ctex"
+uid="uid://m8ec61kytrwv"
+path="res://.godot/imported/mole.png-3254ce3f60a53602e62141c4ae869792.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/food/angelFood/3_cupid_food.png"
-dest_files=["res://.godot/imported/3_cupid_food.png-6f958dc0ab3f882420726ef0d047cfbb.ctex"]
+source_file="res://assets/food/orders/mole.png"
+dest_files=["res://.godot/imported/mole.png-3254ce3f60a53602e62141c4ae869792.ctex"]
 
 [params]
 

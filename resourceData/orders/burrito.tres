@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseOrder" load_steps=3 format=3 uid="uid://noh0mdooxl8h"]
+
+[ext_resource type="Texture2D" uid="uid://x3ih5ixv85y" path="res://assets/food/orders/burrito.png" id="1_1o3l5"]
+[ext_resource type="Script" path="res://scripts/baseOrder.gd" id="1_xdh8t"]
+
+[resource]
+script = ExtResource("1_xdh8t")
+recipe = Array[String](["blueTortilla", "clownPatty", "rice", "lettuce", "tomato", "corn", "cheese"])
+mainTexture = ExtResource("1_1o3l5")
