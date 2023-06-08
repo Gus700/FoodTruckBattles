@@ -1,0 +1,85 @@
+[gd_scene load_steps=15 format=3 uid="uid://d4ijoufdujaym"]
+
+[ext_resource type="PackedScene" uid="uid://eddd6ar36cnd" path="res://scenes/Level.tscn" id="1_k075a"]
+[ext_resource type="Texture2D" uid="uid://c2eknj44sifqh" path="res://assets/loreScenes/truck_intro/frostyfriends0.png" id="2_xwlcu"]
+[ext_resource type="Resource" uid="uid://ceeryhesjdq1c" path="res://resourceData/orders/tripleSplit.tres" id="2_ymybm"]
+[ext_resource type="Texture2D" uid="uid://dnr8h6smri7oi" path="res://assets/loreScenes/truck_intro/frostyfriends1.png" id="3_25sa2"]
+[ext_resource type="Resource" uid="uid://cfl3d66s2gudk" path="res://resourceData/orders/dustBunnies.tres" id="3_eieju"]
+[ext_resource type="Texture2D" uid="uid://bmw7xugtnmd2e" path="res://assets/loreScenes/lore_bg/frostyfriends_bg.png" id="4_0np1m"]
+[ext_resource type="Resource" uid="uid://rsd7p0i3vmju" path="res://resourceData/ingredients/blueScoop.tres" id="4_8csq8"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/greenScoop.tres" id="5_0jesa"]
+[ext_resource type="Texture2D" uid="uid://n54x7jk8y3u" path="res://assets/trucks/frosty_friends.png" id="5_vi136"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/pinkScoop.tres" id="6_7en3h"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/cone.tres" id="7_idi1c"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/cherry.tres" id="8_ox2ex"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/scoop.tres" id="9_elrjs"]
+[ext_resource type="Resource" uid="uid://dkyl57hmh6l7i" path="res://resourceData/ingredients/cup.tres" id="9_fli8x"]
+
+[node name="Level" instance=ExtResource("1_k075a")]
+currentLevelName = "Level6"
+
+[node name="Order Area" parent="." index="2"]
+orderTypes = Array[Resource]([ExtResource("2_ymybm"), ExtResource("3_eieju")])
+
+[node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer" index="0"]
+ingrResource = ExtResource("5_0jesa")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer" index="1"]
+ingrResource = ExtResource("5_0jesa")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer" index="2"]
+ingrResource = ExtResource("5_0jesa")
+
+[node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="0"]
+ingrResource = ExtResource("4_8csq8")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="1"]
+ingrResource = ExtResource("4_8csq8")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="2"]
+ingrResource = ExtResource("4_8csq8")
+
+[node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer3" index="0"]
+ingrResource = ExtResource("6_7en3h")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer3" index="1"]
+ingrResource = ExtResource("6_7en3h")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer3" index="2"]
+ingrResource = ExtResource("6_7en3h")
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer" index="0"]
+ingrResource = ExtResource("7_idi1c")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer" index="1"]
+ingrResource = ExtResource("8_ox2ex")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer" index="2"]
+ingrResource = ExtResource("7_idi1c")
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer2" index="0"]
+ingrResource = ExtResource("8_ox2ex")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer2" index="1"]
+ingrResource = ExtResource("9_fli8x")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer2" index="2"]
+ingrResource = ExtResource("8_ox2ex")
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer3" index="0"]
+ingrResource = ExtResource("9_elrjs")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer3" index="1"]
+ingrResource = ExtResource("8_ox2ex")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer3" index="2"]
+ingrResource = ExtResource("9_elrjs")
+
+[node name="TruckIntro" parent="." index="9"]
+textImgs = Array[Texture2D]([ExtResource("2_xwlcu"), ExtResource("3_25sa2")])
+
+[node name="bg" parent="TruckIntro" index="0"]
+texture = ExtResource("4_0np1m")
+
+[node name="backgroundImage" parent="TruckIntro" index="1"]
+texture = ExtResource("5_vi136")
