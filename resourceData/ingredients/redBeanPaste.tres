@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://dapsvrg5dtd06"]
+
+[ext_resource type="Texture2D" uid="uid://b8ldmrlr43hlv" path="res://assets/food/ingredients/redbean_paste.png" id="1_4s263"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_uyanu"]
+
+[resource]
+script = ExtResource("1_uyanu")
+ingrName = "redBeanPaste"
+mainTexture = ExtResource("1_4s263")
