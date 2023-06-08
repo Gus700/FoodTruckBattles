@@ -14,5 +14,8 @@ var levels = {
 	"level8": {"introSeen": false},
 }
 
-func updCurrLvlNameStatus(lvlName: String) -> void:
+func setCurrLvlName(lvlName: String) -> void:
 	currentlevelName = lvlName
+
+func getCurrLvlName() -> String:
+	return currentlevelName
