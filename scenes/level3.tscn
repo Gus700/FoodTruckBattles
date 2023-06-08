@@ -1,0 +1,90 @@
+[gd_scene load_steps=23 format=3 uid="uid://c6pmn2vl6dqjf"]
+
+[ext_resource type="PackedScene" uid="uid://eddd6ar36cnd" path="res://scenes/Level.tscn" id="1_itjqb"]
+[ext_resource type="Resource" uid="uid://cbuh18ychm3u" path="res://resourceData/orders/cheeseborgor.tres" id="2_tbgyn"]
+[ext_resource type="Resource" uid="uid://pcyqdf3pvw23" path="res://resourceData/orders/goldBarbecue.tres" id="3_i1v6m"]
+[ext_resource type="Resource" uid="uid://dow1wp5b3bljy" path="res://resourceData/orders/contrabanh.tres" id="4_go2mi"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/goldTopBun.tres" id="5_1pvi8"]
+[ext_resource type="Texture2D" uid="uid://ccsow7e7pssqb" path="res://assets/loreScenes/truck_intro/cheddorbendor0.png" id="5_xwk3i"]
+[ext_resource type="Texture2D" uid="uid://udvhe3x8dj8j" path="res://assets/loreScenes/truck_intro/cheddorbendor1.png" id="6_3ah1w"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/goldBottomBun.tres" id="6_72vkf"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/goldBaguette.tres" id="7_8xcjr"]
+[ext_resource type="Texture2D" uid="uid://dun3w1n78d5x4" path="res://assets/loreScenes/lore_bg/cheddorbendor_bg.png" id="7_v8rrq"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/pulledPork.tres" id="8_5wph0"]
+[ext_resource type="Texture2D" uid="uid://cy7ver0ds3ui6" path="res://assets/trucks/cheddorbendor.png" id="8_p0rug"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/ham.tres" id="9_i24hs"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/goldPatty.tres" id="10_f7g8o"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/onion.tres" id="11_6mtuw"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/coleSlaw.tres" id="12_qm7i4"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/cilantro.tres" id="13_pilxy"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/daikon.tres" id="14_ru02p"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/carrots.tres" id="15_82kw7"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/bbqSauce.tres" id="16_vfehe"]
+[ext_resource type="Resource" path="res://resourceData/ingredients/mayo.tres" id="17_4eyu2"]
+[ext_resource type="Resource" uid="uid://b6p234ih6kgaj" path="res://resourceData/ingredients/cheese.tres" id="18_45mso"]
+
+[node name="Level" instance=ExtResource("1_itjqb")]
+currentLevelName = "Level3"
+
+[node name="Order Area" parent="." index="2"]
+orderTypes = Array[Resource]([ExtResource("2_tbgyn"), ExtResource("3_i1v6m"), ExtResource("4_go2mi")])
+
+[node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer" index="0"]
+ingrResource = ExtResource("5_1pvi8")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer" index="1"]
+ingrResource = ExtResource("6_72vkf")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer" index="2"]
+ingrResource = ExtResource("7_8xcjr")
+
+[node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="0"]
+ingrResource = ExtResource("8_5wph0")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="1"]
+ingrResource = ExtResource("9_i24hs")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="2"]
+ingrResource = ExtResource("10_f7g8o")
+
+[node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer3" index="0"]
+ingrResource = null
+
+[node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer3" index="1"]
+ingrResource = null
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer" index="0"]
+ingrResource = ExtResource("11_6mtuw")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer" index="1"]
+ingrResource = ExtResource("12_qm7i4")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer" index="2"]
+ingrResource = ExtResource("13_pilxy")
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer2" index="0"]
+ingrResource = ExtResource("14_ru02p")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer2" index="1"]
+ingrResource = ExtResource("15_82kw7")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer2" index="2"]
+ingrResource = ExtResource("14_ru02p")
+
+[node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer3" index="0"]
+ingrResource = ExtResource("16_vfehe")
+
+[node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer3" index="1"]
+ingrResource = ExtResource("17_4eyu2")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer3" index="2"]
+ingrResource = ExtResource("18_45mso")
+
+[node name="TruckIntro" parent="." index="9"]
+textImgs = Array[Texture2D]([ExtResource("5_xwk3i"), ExtResource("6_3ah1w")])
+
+[node name="bg" parent="TruckIntro" index="0"]
+texture = ExtResource("7_v8rrq")
+
+[node name="backgroundImage" parent="TruckIntro" index="1"]
+texture = ExtResource("8_p0rug")
