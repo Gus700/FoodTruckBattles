@@ -1,6 +1,6 @@
 extends Node
 
-var currentlevelName: String = ""
+var currentlevelName: String = "Level1"
 
 var levels = {
 	"levelTutorial": {"introSeen": false},
