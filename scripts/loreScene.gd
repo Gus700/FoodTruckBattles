@@ -3,6 +3,9 @@ extends Control
 @export var img: Texture2D
 @onready var bgImgNode = $backgroundImage
 
+var available 
+var currentFoodTruck: String = ""
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	setBgImg(img)
