@@ -7,12 +7,12 @@
 [ext_resource type="Resource" uid="uid://cfl3d66s2gudk" path="res://resourceData/orders/dustBunnies.tres" id="3_eieju"]
 [ext_resource type="Texture2D" uid="uid://bmw7xugtnmd2e" path="res://assets/loreScenes/lore_bg/frostyfriends_bg.png" id="4_0np1m"]
 [ext_resource type="Resource" uid="uid://rsd7p0i3vmju" path="res://resourceData/ingredients/blueScoop.tres" id="4_8csq8"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/greenScoop.tres" id="5_0jesa"]
+[ext_resource type="Resource" uid="uid://6rl61cg862dj" path="res://resourceData/ingredients/greenScoop.tres" id="5_0jesa"]
 [ext_resource type="Texture2D" uid="uid://n54x7jk8y3u" path="res://assets/trucks/frosty_friends.png" id="5_vi136"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/pinkScoop.tres" id="6_7en3h"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/cone.tres" id="7_idi1c"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/cherry.tres" id="8_ox2ex"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/scoop.tres" id="9_elrjs"]
+[ext_resource type="Resource" uid="uid://bb4bjrrmik8ws" path="res://resourceData/ingredients/pinkScoop.tres" id="6_7en3h"]
+[ext_resource type="Resource" uid="uid://6mtwtl0wm0jq" path="res://resourceData/ingredients/cone.tres" id="7_idi1c"]
+[ext_resource type="Resource" uid="uid://cgl8bacsgtfo5" path="res://resourceData/ingredients/cherry.tres" id="8_ox2ex"]
+[ext_resource type="Resource" uid="uid://bjyge2y2ned2b" path="res://resourceData/ingredients/scoop.tres" id="9_elrjs"]
 [ext_resource type="Resource" uid="uid://dkyl57hmh6l7i" path="res://resourceData/ingredients/cup.tres" id="9_fli8x"]
 
 [node name="Level" instance=ExtResource("1_k075a")]
@@ -79,6 +79,7 @@ ingrResource = ExtResource("9_elrjs")
 textImgs = Array[Texture2D]([ExtResource("2_xwlcu"), ExtResource("3_25sa2")])
 
 [node name="bg" parent="TruckIntro" index="0"]
+modulate = Color(0.466667, 0.658824, 0.831373, 1)
 texture = ExtResource("4_0np1m")
 
 [node name="backgroundImage" parent="TruckIntro" index="1"]

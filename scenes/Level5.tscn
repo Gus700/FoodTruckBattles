@@ -8,17 +8,17 @@
 [ext_resource type="Texture2D" uid="uid://b5iagh364gext" path="res://assets/loreScenes/lore_bg/devilstango_bg.png" id="4_6q7mr"]
 [ext_resource type="Resource" uid="uid://bky3vhgd2sex7" path="res://resourceData/orders/fruitSando.tres" id="4_dg3wy"]
 [ext_resource type="Texture2D" uid="uid://bqqt13e5buas0" path="res://assets/trucks/devils_tango.png" id="5_gkc7d"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/greenRiceBall.tres" id="5_ob5fm"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/purpleRiceBall.tres" id="6_s6h6m"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/blueRiceBall.tres" id="7_dh03v"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/pinkRiceBall.tres" id="8_k0b8d"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/whiteBread.tres" id="9_tvajr"]
+[ext_resource type="Resource" uid="uid://k03q0paahh07" path="res://resourceData/ingredients/greenRiceBall.tres" id="5_ob5fm"]
+[ext_resource type="Resource" uid="uid://cyn0frskeih6e" path="res://resourceData/ingredients/purpleRiceBall.tres" id="6_s6h6m"]
+[ext_resource type="Resource" uid="uid://dshvo5xmnv1ff" path="res://resourceData/ingredients/blueRiceBall.tres" id="7_dh03v"]
+[ext_resource type="Resource" uid="uid://dumn58rla8hml" path="res://resourceData/ingredients/pinkRiceBall.tres" id="8_k0b8d"]
+[ext_resource type="Resource" uid="uid://cyuxd8drjix1s" path="res://resourceData/ingredients/whiteBread.tres" id="9_tvajr"]
 [ext_resource type="Resource" uid="uid://dapsvrg5dtd06" path="res://resourceData/ingredients/redBeanPaste.tres" id="10_8j3xp"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/mandarins.tres" id="11_56hq6"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/strawberries.tres" id="12_qyfh8"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/grapes.tres" id="13_p2tkv"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/mango.tres" id="14_sndcc"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/whippedCream.tres" id="15_wnuc8"]
+[ext_resource type="Resource" uid="uid://4o17nbrmu4m8" path="res://resourceData/ingredients/mandarins.tres" id="11_56hq6"]
+[ext_resource type="Resource" uid="uid://dve500uldgqy1" path="res://resourceData/ingredients/strawberries.tres" id="12_qyfh8"]
+[ext_resource type="Resource" uid="uid://bwsg6kbu8o2rd" path="res://resourceData/ingredients/grapes.tres" id="13_p2tkv"]
+[ext_resource type="Resource" uid="uid://bove170riuhyj" path="res://resourceData/ingredients/mango.tres" id="14_sndcc"]
+[ext_resource type="Resource" uid="uid://p5eqelx50vvy" path="res://resourceData/ingredients/whippedCream.tres" id="15_wnuc8"]
 
 [node name="Level" instance=ExtResource("1_alc2c")]
 currentLevelName = "Level5"
@@ -78,6 +78,7 @@ ingrResource = null
 textImgs = Array[Texture2D]([ExtResource("2_r2m43"), ExtResource("3_pdv7d")])
 
 [node name="bg" parent="TruckIntro" index="0"]
+modulate = Color(0.341176, 0.0509804, 0.831373, 1)
 texture = ExtResource("4_6q7mr")
 
 [node name="backgroundImage" parent="TruckIntro" index="1"]

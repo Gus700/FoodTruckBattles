@@ -8,11 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://dun3w1n78d5x4" path="res://assets/loreScenes/lore_bg/cheddorbendor_bg.png" id="4_6ctwv"]
 [ext_resource type="Resource" uid="uid://dp6bqwo157oj8" path="res://resourceData/ingredients/clownPatty.tres" id="4_tn7cc"]
 [ext_resource type="Texture2D" uid="uid://bm80d6nsvuqu7" path="res://assets/trucks/debris_please.png" id="5_fixdc"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/fries.tres" id="5_h4vm8"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/macaroniSalad.tres" id="6_d6pf7"]
+[ext_resource type="Resource" uid="uid://codamtl1crs55" path="res://resourceData/ingredients/fries.tres" id="5_h4vm8"]
+[ext_resource type="Resource" uid="uid://5nljdvvc830a" path="res://resourceData/ingredients/macaroniSalad.tres" id="6_d6pf7"]
 [ext_resource type="Resource" uid="uid://b6p234ih6kgaj" path="res://resourceData/ingredients/cheese.tres" id="7_emi1s"]
 [ext_resource type="Resource" uid="uid://c70k6roidpm46" path="res://resourceData/ingredients/ketchup.tres" id="7_ex61r"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/cheeseSauce.tres" id="8_vaolk"]
+[ext_resource type="Resource" uid="uid://b1qqsilmqxms4" path="res://resourceData/ingredients/cheeseSauce.tres" id="8_vaolk"]
 [ext_resource type="Resource" uid="uid://d11s23kskfx4h" path="res://resourceData/ingredients/mustard.tres" id="9_ek55n"]
 [ext_resource type="Resource" uid="uid://dkeqkklgytq5d" path="res://resourceData/ingredients/rainbowCheese.tres" id="11_t2ep8"]
 [ext_resource type="Texture2D" uid="uid://cgfelblnvakg5" path="res://assets/UI_buttons/next.png" id="16_s58to"]
@@ -83,6 +83,7 @@ ingrResource = ExtResource("11_t2ep8")
 textImgs = Array[Texture2D]([ExtResource("2_6hp67"), ExtResource("3_d1idi")])
 
 [node name="bg" parent="TruckIntro" index="0"]
+modulate = Color(0.0470588, 0.0313726, 0, 1)
 texture = ExtResource("4_6ctwv")
 
 [node name="backgroundImage" parent="TruckIntro" index="1"]

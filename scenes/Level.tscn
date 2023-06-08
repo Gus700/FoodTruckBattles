@@ -108,58 +108,10 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("textBubble:position")
+tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 10)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("textBubble:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("backgroundImage:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("backgroundImage:rotation")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath(".:modulate")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -187,46 +139,22 @@ loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("textBubble:position")
+tracks/0/path = NodePath("backgroundImage:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 24), Vector2(0, 10)]
+"values": [Vector2(0, 0), Vector2(0, -25)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
-tracks/1/enabled = false
-tracks/1/path = NodePath("textBubble:rotation")
+tracks/1/enabled = true
+tracks/1/path = NodePath("backgroundImage:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 0.0]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("backgroundImage:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(0, -25)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("backgroundImage:rotation")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
@@ -615,6 +543,7 @@ script = ExtResource("36_lj8ec")
 textImgs = Array[Texture2D]([ExtResource("37_7qkv8"), ExtResource("38_562ku")])
 
 [node name="bg" type="TextureRect" parent="TruckIntro"]
+modulate = Color(0.341176, 0.168627, 0.290196, 1)
 self_modulate = Color(1, 1, 1, 0.509804)
 layout_mode = 1
 anchors_preset = 15
@@ -630,8 +559,7 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -25.0
-offset_bottom = -25.0
+offset_bottom = -110.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("40_gj3sy")
@@ -641,12 +569,17 @@ stretch_mode = 5
 [node name="textBubble" type="TextureRect" parent="TruckIntro"]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.0154321
-anchor_right = 1.0
-anchor_bottom = 0.225309
+anchor_left = 0.25934
+anchor_top = 0.722346
+anchor_right = 0.77334
+anchor_bottom = 0.970346
+offset_left = 0.23999
+offset_top = -0.0800171
+offset_right = 0.111877
+offset_bottom = 0.215942
 texture = ExtResource("37_7qkv8")
 expand_mode = 1
-stretch_mode = 5
+stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureButton" type="TextureButton" parent="TruckIntro"]

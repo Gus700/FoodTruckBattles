@@ -4,15 +4,15 @@
 [ext_resource type="Resource" uid="uid://cy2228g7du307" path="res://resourceData/orders/sliceOfHeaven.tres" id="2_f55kl"]
 [ext_resource type="Resource" uid="uid://bjvtc05hg4r7k" path="res://resourceData/orders/gildedCross.tres" id="3_omugk"]
 [ext_resource type="Resource" uid="uid://dguydmmpos0q8" path="res://resourceData/orders/cupidFood.tres" id="4_o4tkq"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/whitePlate.tres" id="5_tpf02"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/goldPlate.tres" id="6_o4j5l"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/pinkPlate.tres" id="7_0dgun"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/vanillaCakeSlice.tres" id="8_8h0xc"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/chocolateCakeSlice.tres" id="9_ex30a"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/strawberryCakeSlice.tres" id="10_l8fju"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/raspberries.tres" id="11_livbi"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/strawberries.tres" id="12_ky122"]
-[ext_resource type="Resource" path="res://resourceData/ingredients/goldenCherries.tres" id="13_7o5r7"]
+[ext_resource type="Resource" uid="uid://gebtabonm5k0" path="res://resourceData/ingredients/whitePlate.tres" id="5_tpf02"]
+[ext_resource type="Resource" uid="uid://bvvfi3lkicxut" path="res://resourceData/ingredients/goldPlate.tres" id="6_o4j5l"]
+[ext_resource type="Resource" uid="uid://con8opy776r3n" path="res://resourceData/ingredients/pinkPlate.tres" id="7_0dgun"]
+[ext_resource type="Resource" uid="uid://cvpvqe6q7a80r" path="res://resourceData/ingredients/vanillaCakeSlice.tres" id="8_8h0xc"]
+[ext_resource type="Resource" uid="uid://d3cjfaf2urdu4" path="res://resourceData/ingredients/chocolateCakeSlice.tres" id="9_ex30a"]
+[ext_resource type="Resource" uid="uid://ctdmon855b3dm" path="res://resourceData/ingredients/strawberryCakeSlice.tres" id="10_l8fju"]
+[ext_resource type="Resource" uid="uid://bthkvp46tpxve" path="res://resourceData/ingredients/raspberries.tres" id="11_livbi"]
+[ext_resource type="Resource" uid="uid://dve500uldgqy1" path="res://resourceData/ingredients/strawberries.tres" id="12_ky122"]
+[ext_resource type="Resource" uid="uid://ch0eg63t10486" path="res://resourceData/ingredients/goldenCherries.tres" id="13_7o5r7"]
 
 [node name="Level" instance=ExtResource("1_l7cft")]
 currentLevelName = "Level1"
@@ -74,5 +74,28 @@ ingrResource = ExtResource("12_ky122")
 [node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer3" index="2"]
 ingrResource = ExtResource("13_7o5r7")
 
+[node name="bg" parent="TruckIntro" index="0"]
+modulate = Color(0.290196, 0.145098, 0.243137, 1)
+
+[node name="textBubble" parent="TruckIntro" index="2"]
+clip_contents = true
+custom_minimum_size = Vector2(0.176, 0)
+layout_direction = 2
+anchor_left = 0.253924
+anchor_top = 0.709975
+anchor_right = 0.776924
+anchor_bottom = 0.950321
+offset_left = 0.47995
+offset_top = -0.0640259
+offset_right = -0.0160522
+offset_bottom = 0.231995
+grow_horizontal = 0
+grow_vertical = 2
+expand_mode = 5
+stretch_mode = 5
+
 [node name="TryAgain" parent="GameOverScreen" index="2"]
 dest = "Level1"
+
+[node name="Next" parent="CompletionScreen" index="2"]
+visible = false
