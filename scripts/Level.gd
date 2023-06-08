@@ -1,4 +1,4 @@
-extends Control
+extends SceneScr
 
 @onready var levelComplete = $CompletionScreen
 @onready var gameOverOverLay = $GameOverScreen
@@ -39,3 +39,15 @@ func _on_tutorial_overlay_hidden() -> void:
 
 func _on_order_area_all_orders_complete() -> void:
 	levelComplete.show()
+
+
+func _on_try_again_get_dest(dest) -> void:
+	emit_signal("scene_changed", dest)
+
+
+func _on_quit_get_dest(dest) -> void:
+	emit_signal("scene_changed", dest)
+
+
+func _on_next_get_dest(dest) -> void:
+	emit_signal("scene_changed", dest)
