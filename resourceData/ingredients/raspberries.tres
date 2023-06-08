@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://bthkvp46tpxve"]
+
+[ext_resource type="Texture2D" uid="uid://fjtc775m0yds" path="res://assets/food/ingredients/raspberry.png" id="1_h011p"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_hso7i"]
+
+[resource]
+script = ExtResource("1_hso7i")
+ingrName = "raspberries"
+mainTexture = ExtResource("1_h011p")

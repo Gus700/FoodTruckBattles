@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://rj8880w2wqsq"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_0bbpm"]
+[ext_resource type="Texture2D" uid="uid://te2nsk0mt3km" path="res://assets/food/ingredients/corn.png" id="1_ijva0"]
+
+[resource]
+script = ExtResource("1_0bbpm")
+ingrName = "corn"
+mainTexture = ExtResource("1_ijva0")

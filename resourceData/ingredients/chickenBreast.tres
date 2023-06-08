@@ -1,7 +1,9 @@
-[gd_resource type="Resource" script_class="BaseIngredient" load_steps=2 format=3 uid="uid://bqlu870vitjk5"]
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://bqlu870vitjk5"]
 
+[ext_resource type="Texture2D" uid="uid://bqp3v8bon08bm" path="res://assets/food/ingredients/chicken_breast.png" id="1_vst7n"]
 [ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_wnmk6"]
 
 [resource]
 script = ExtResource("1_wnmk6")
-ingrName = ""
+ingrName = "chickenBreast"
+mainTexture = ExtResource("1_vst7n")

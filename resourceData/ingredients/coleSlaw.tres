@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://bllqrqfubim7r"]
+
+[ext_resource type="Texture2D" uid="uid://k1f4q8wjv0fk" path="res://assets/food/ingredients/coleslaw.png" id="1_jxkha"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_wqqhb"]
+
+[resource]
+script = ExtResource("1_wqqhb")
+ingrName = "coleSlaw"
+mainTexture = ExtResource("1_jxkha")

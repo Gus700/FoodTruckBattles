@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://rgkch6dt04nr"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_5ain0"]
+[ext_resource type="Texture2D" uid="uid://c3pljnwhogeo6" path="res://assets/food/ingredients/bbq_sauce.png" id="1_cnhv1"]
+
+[resource]
+script = ExtResource("1_5ain0")
+ingrName = "bbqSauce"
+mainTexture = ExtResource("1_cnhv1")

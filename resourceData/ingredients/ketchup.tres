@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://c70k6roidpm46"]
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3]
 
-[ext_resource type="Texture2D" uid="uid://dgipdidrryiti" path="res://assets/food/starterFood/ingredients/ketchup.png" id="1_f7kov"]
+[ext_resource type="Texture2D" uid="uid://dgipdidrryiti" path="res://assets/food/ingredients/ketchup.png" id="1_f7kov"]
 [ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_pn2lh"]
 
 [resource]

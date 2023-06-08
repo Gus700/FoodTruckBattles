@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://cvpvqe6q7a80r"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_3bxwj"]
+[ext_resource type="Texture2D" uid="uid://deq3u4q630we1" path="res://assets/food/ingredients/vanilla_cake.png" id="1_ph2lq"]
+
+[resource]
+script = ExtResource("1_3bxwj")
+ingrName = "vanillaCakeSlice"
+mainTexture = ExtResource("1_ph2lq")

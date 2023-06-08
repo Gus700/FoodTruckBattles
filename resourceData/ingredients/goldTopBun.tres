@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://b0dkmogmk8vtk"]
+
+[ext_resource type="Texture2D" uid="uid://dtkmjwhd6mmti" path="res://assets/food/ingredients/gold_topbun.png" id="1_a0b25"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="2_ov0u1"]
+
+[resource]
+script = ExtResource("2_ov0u1")
+ingrName = "goldTopBun"
+mainTexture = ExtResource("1_a0b25")

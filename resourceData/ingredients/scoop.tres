@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://bjyge2y2ned2b"]
+
+[ext_resource type="Texture2D" uid="uid://bwhuenstp41w2" path="res://assets/food/ingredients/scoop_multicolor.png" id="1_7hbfx"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_tf8e1"]
+
+[resource]
+script = ExtResource("1_tf8e1")
+ingrName = "scoop"
+mainTexture = ExtResource("1_7hbfx")

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://bove170riuhyj"]
+
+[ext_resource type="Texture2D" uid="uid://6s1iaalmdt8s" path="res://assets/food/ingredients/mango.png" id="1_8dfre"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_rdi68"]
+
+[resource]
+script = ExtResource("1_rdi68")
+ingrName = "mango"
+mainTexture = ExtResource("1_8dfre")

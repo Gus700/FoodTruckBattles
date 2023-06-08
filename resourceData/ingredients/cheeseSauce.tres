@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://b1qqsilmqxms4"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_jc258"]
+[ext_resource type="Texture2D" uid="uid://b45to3fx8mbjv" path="res://assets/food/ingredients/cheese_sauce.png" id="1_knwr0"]
+
+[resource]
+script = ExtResource("1_jc258")
+ingrName = "cheeseSauce"
+mainTexture = ExtResource("1_knwr0")

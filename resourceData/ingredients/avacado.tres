@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://c8nic1m6w358y"]
+
+[ext_resource type="Texture2D" uid="uid://dgib38dbw7yvu" path="res://assets/food/ingredients/avocado.png" id="1_a878v"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_klq7i"]
+
+[resource]
+script = ExtResource("1_klq7i")
+ingrName = "avacado"
+mainTexture = ExtResource("1_a878v")

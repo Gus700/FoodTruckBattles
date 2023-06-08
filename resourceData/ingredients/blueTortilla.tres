@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://b26ji76c2y7od"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_8dhvc"]
+[ext_resource type="Texture2D" uid="uid://cmaa5ivs0tnne" path="res://assets/food/ingredients/tortilla_blue.png" id="1_dwix7"]
+
+[resource]
+script = ExtResource("1_8dhvc")
+ingrName = "blueTortilla"
+mainTexture = ExtResource("1_dwix7")

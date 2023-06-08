@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://donwerebhyyu2"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_koq6c"]
+[ext_resource type="Texture2D" uid="uid://ohx2xli5x4wk" path="res://assets/food/ingredients/sliced_daikon.png" id="1_xv2uw"]
+
+[resource]
+script = ExtResource("1_koq6c")
+ingrName = "daikon"
+mainTexture = ExtResource("1_xv2uw")

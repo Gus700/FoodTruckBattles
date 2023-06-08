@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://p5eqelx50vvy"]
+
+[ext_resource type="Texture2D" uid="uid://khglgpp7edci" path="res://assets/food/ingredients/whipped_cream.png" id="1_nik3y"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_qrm7d"]
+
+[resource]
+script = ExtResource("1_qrm7d")
+ingrName = "whippedCream"
+mainTexture = ExtResource("1_nik3y")

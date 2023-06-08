@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://cd0pyrk7yqavi"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_a5fdl"]
+[ext_resource type="Texture2D" uid="uid://dlgpusq4ieh12" path="res://assets/food/ingredients/ham.png" id="1_vjxd4"]
+
+[resource]
+script = ExtResource("1_a5fdl")
+ingrName = "ham"
+mainTexture = ExtResource("1_vjxd4")

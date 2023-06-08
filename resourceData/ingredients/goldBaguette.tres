@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://cdmk3oxe747vg"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_267v7"]
+[ext_resource type="Texture2D" uid="uid://cl1btjeox5xbm" path="res://assets/food/ingredients/gold_baguette.png" id="1_juw5b"]
+
+[resource]
+script = ExtResource("1_267v7")
+ingrName = "goldBaguette"
+mainTexture = ExtResource("1_juw5b")

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://5nljdvvc830a"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_7413m"]
+[ext_resource type="Texture2D" uid="uid://c5kc1hyub3skd" path="res://assets/food/ingredients/mac_salad.png" id="1_ibg7t"]
+
+[resource]
+script = ExtResource("1_7413m")
+ingrName = "macaroniSalad"
+mainTexture = ExtResource("1_ibg7t")

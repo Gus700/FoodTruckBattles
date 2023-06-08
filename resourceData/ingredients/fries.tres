@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://codamtl1crs55"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_nvfp4"]
+[ext_resource type="Texture2D" uid="uid://tohpv3ug74uk" path="res://assets/food/ingredients/fries.png" id="1_rvsq8"]
+
+[resource]
+script = ExtResource("1_nvfp4")
+ingrName = "fries"
+mainTexture = ExtResource("1_rvsq8")

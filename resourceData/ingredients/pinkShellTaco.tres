@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://d1p74p14my8bs"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_hqf83"]
+[ext_resource type="Texture2D" uid="uid://domoqvq8k7ymw" path="res://assets/food/ingredients/taco_pink.png" id="1_vxev1"]
+
+[resource]
+script = ExtResource("1_hqf83")
+ingrName = "pinkShellTaco"
+mainTexture = ExtResource("1_vxev1")

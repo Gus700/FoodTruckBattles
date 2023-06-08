@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://bpo4so40qeqbh"]
+
+[ext_resource type="Texture2D" uid="uid://ddgqy886mg3w" path="res://assets/food/ingredients/mayo.png" id="1_h4tq3"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_rq8ne"]
+
+[resource]
+script = ExtResource("1_rq8ne")
+ingrName = "mayo"
+mainTexture = ExtResource("1_h4tq3")

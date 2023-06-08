@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://beoi7683xyww1"]
+
+[ext_resource type="Texture2D" uid="uid://bvaguikia2s1o" path="res://assets/food/ingredients/red_onion.png" id="1_e2lwv"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_vqbj5"]
+
+[resource]
+script = ExtResource("1_vqbj5")
+ingrName = "onion"
+mainTexture = ExtResource("1_e2lwv")

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://bfnpj8a772bl2"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_bc3tn"]
+[ext_resource type="Texture2D" uid="uid://bibd3y2q6frwr" path="res://assets/food/ingredients/cilantro.png" id="1_yqsrj"]
+
+[resource]
+script = ExtResource("1_bc3tn")
+ingrName = "cilantro"
+mainTexture = ExtResource("1_yqsrj")

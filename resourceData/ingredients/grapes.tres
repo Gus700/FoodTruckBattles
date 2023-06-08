@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://bwsg6kbu8o2rd"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_0kumb"]
+[ext_resource type="Texture2D" uid="uid://b13lm6utyhid8" path="res://assets/food/ingredients/grapes.png" id="1_6jtxi"]
+
+[resource]
+script = ExtResource("1_0kumb")
+ingrName = "grapes"
+mainTexture = ExtResource("1_6jtxi")

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://4o17nbrmu4m8"]
+
+[ext_resource type="Texture2D" uid="uid://c2uk6w8oeyknc" path="res://assets/food/ingredients/mandarin.png" id="1_c742s"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="2_36upc"]
+
+[resource]
+script = ExtResource("2_36upc")
+ingrName = "mandarins"
+mainTexture = ExtResource("1_c742s")

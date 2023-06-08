@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://ch0eg63t10486"]
+
+[ext_resource type="Texture2D" uid="uid://dnv0uocnucxnc" path="res://assets/food/ingredients/golden_cherry.png" id="1_2dj8g"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_xj8kv"]
+
+[resource]
+script = ExtResource("1_xj8kv")
+ingrName = "goldenCherries"
+mainTexture = ExtResource("1_2dj8g")

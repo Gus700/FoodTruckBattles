@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://r4joa0yd68vj"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_3u5ey"]
+[ext_resource type="Texture2D" uid="uid://bujxo5yqq0x2m" path="res://assets/food/ingredients/gold_patty.png" id="1_ndhak"]
+
+[resource]
+script = ExtResource("1_3u5ey")
+ingrName = "goldPatty"
+mainTexture = ExtResource("1_ndhak")

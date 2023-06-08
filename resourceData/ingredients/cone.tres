@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://6mtwtl0wm0jq"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_mvx3i"]
+[ext_resource type="Texture2D" uid="uid://d3vonljw4gfff" path="res://assets/food/ingredients/cone.png" id="1_yysn8"]
+
+[resource]
+script = ExtResource("1_mvx3i")
+ingrName = "cone"
+mainTexture = ExtResource("1_yysn8")

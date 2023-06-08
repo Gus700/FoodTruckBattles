@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://cc2ht2eoj1mtc"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_sm1fj"]
+[ext_resource type="Texture2D" uid="uid://cnq0qckxu2mkp" path="res://assets/food/ingredients/pulled_pork.png" id="1_ylsqa"]
+
+[resource]
+script = ExtResource("1_sm1fj")
+ingrName = "pulledPork"
+mainTexture = ExtResource("1_ylsqa")

@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://pe1m662ee6as"]
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3]
 
-[ext_resource type="Texture2D" uid="uid://dtff88f7ntwrm" path="res://assets/food/starterFood/ingredients/clown_botbun.png" id="1_d78rw"]
+[ext_resource type="Texture2D" uid="uid://dtff88f7ntwrm" path="res://assets/food/ingredients/clown_botbun.png" id="1_d78rw"]
 [ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_j5kup"]
 
 [resource]

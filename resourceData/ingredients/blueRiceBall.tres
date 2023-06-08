@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://dshvo5xmnv1ff"]
+
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_qso1d"]
+[ext_resource type="Texture2D" uid="uid://cjivaaepomk8u" path="res://assets/food/ingredients/riceball_blue.png" id="1_xio4g"]
+
+[resource]
+script = ExtResource("1_qso1d")
+ingrName = "blueRiceBall"
+mainTexture = ExtResource("1_xio4g")

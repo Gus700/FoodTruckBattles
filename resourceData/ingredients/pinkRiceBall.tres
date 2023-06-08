@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BaseIngredient" load_steps=3 format=3 uid="uid://dumn58rla8hml"]
+
+[ext_resource type="Texture2D" uid="uid://bopped4yraqwp" path="res://assets/food/ingredients/riceball_pink.png" id="1_8hxhd"]
+[ext_resource type="Script" path="res://scripts/baseIngredient.gd" id="1_idckh"]
+
+[resource]
+script = ExtResource("1_idckh")
+ingrName = "pinkRiceBall"
+mainTexture = ExtResource("1_8hxhd")
