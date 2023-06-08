@@ -1,4 +1,4 @@
-[gd_scene load_steps=108 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=111 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -79,8 +79,11 @@
 [ext_resource type="AudioStream" uid="uid://sf2t2tm47omu" path="res://sounds/delnoise4.wav" id="69_6ur3c"]
 [ext_resource type="AudioStream" uid="uid://ca808tqul86d1" path="res://sounds/delnoise5.wav" id="70_07k57"]
 [ext_resource type="AudioStream" uid="uid://dy17by5q1afu3" path="res://sounds/delnoise6.wav" id="71_ej1sf"]
+[ext_resource type="Texture2D" uid="uid://dkdf6fncpxef8" path="res://assets/UI_buttons/i_quit.png" id="71_utgk6"]
 [ext_resource type="AudioStream" uid="uid://dj7hjue5bu8qu" path="res://sounds/delnoise7.wav" id="72_14dge"]
+[ext_resource type="Texture2D" uid="uid://db1847qqmqgji" path="res://assets/UI_buttons/i_quit_pressed.png" id="72_u8hyr"]
 [ext_resource type="AudioStream" uid="uid://c8i0v85gvj7q0" path="res://sounds/dinggood1.wav" id="73_18a67"]
+[ext_resource type="Texture2D" uid="uid://c05e2j1bc0i5e" path="res://assets/UI_buttons/i_quit_hover.png" id="73_lvmaa"]
 [ext_resource type="AudioStream" uid="uid://iwvq70por0tj" path="res://sounds/dinggood2.wav" id="74_p8a35"]
 [ext_resource type="AudioStream" uid="uid://jayg0bqhcbqc" path="res://sounds/dingsound1.wav" id="75_3esv5"]
 [ext_resource type="AudioStream" uid="uid://s3bagh0atyjb" path="res://sounds/dingsound2.wav" id="76_1i011"]
@@ -1131,10 +1134,10 @@ autowrap_mode = 2
 [node name="TryAgain" type="TextureButton" parent="GameOverScreen"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.751543
-anchor_right = 0.687778
-anchor_bottom = 0.878728
+anchor_left = 0.342014
+anchor_top = 0.753086
+anchor_right = 0.511562
+anchor_bottom = 0.86021
 offset_right = -0.32
 offset_bottom = -3.416
 texture_normal = ExtResource("55_we2v5")
@@ -1149,10 +1152,10 @@ metadata/_edit_use_anchors_ = true
 [node name="Quit" type="TextureButton" parent="GameOverScreen"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.319444
-anchor_top = 0.751543
-anchor_right = 0.500278
-anchor_bottom = 0.878728
+anchor_left = 0.550347
+anchor_top = 0.753086
+anchor_right = 0.66
+anchor_bottom = 0.86021
 offset_right = -0.32
 offset_bottom = -3.416
 texture_normal = ExtResource("59_8gd7u")
@@ -1217,10 +1220,10 @@ autowrap_mode = 2
 [node name="Next" type="TextureButton" parent="CompletionScreen"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.451389
-anchor_top = 0.751543
-anchor_right = 0.712951
-anchor_bottom = 0.878728
+anchor_left = 0.322049
+anchor_top = 0.74537
+anchor_right = 0.548889
+anchor_bottom = 0.852494
 offset_right = -0.32
 offset_bottom = -3.416
 texture_normal = ExtResource("63_du25w")
@@ -1235,15 +1238,15 @@ metadata/_edit_use_anchors_ = true
 [node name="Quit" type="TextureButton" parent="CompletionScreen"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.28125
-anchor_top = 0.751543
-anchor_right = 0.462084
-anchor_bottom = 0.878728
+anchor_left = 0.561632
+anchor_top = 0.74537
+anchor_right = 0.687778
+anchor_bottom = 0.854037
 offset_right = -0.32
 offset_bottom = -3.416
-texture_normal = ExtResource("59_8gd7u")
-texture_pressed = ExtResource("60_w448p")
-texture_hover = ExtResource("61_gutjr")
+texture_normal = ExtResource("71_utgk6")
+texture_pressed = ExtResource("72_u8hyr")
+texture_hover = ExtResource("73_lvmaa")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("58_kbqwc")

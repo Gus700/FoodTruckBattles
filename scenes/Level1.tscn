@@ -96,6 +96,3 @@ stretch_mode = 5
 
 [node name="TryAgain" parent="GameOverScreen" index="2"]
 dest = "Level1"
-
-[node name="Next" parent="CompletionScreen" index="2"]
-visible = false
