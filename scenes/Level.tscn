@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=110 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -40,11 +40,19 @@
 [ext_resource type="FontFile" uid="uid://c1vtnd0t0k2t4" path="res://assets/fonts/Fredoka-Medium.ttf" id="35_jmqed"]
 [ext_resource type="Texture2D" uid="uid://cqxkeynu1gl1p" path="res://assets/objects/order_paper_big.png" id="35_kl1hg"]
 [ext_resource type="Texture2D" uid="uid://gdombg4r0w3h" path="res://assets/UI/tutorial2.png" id="36_e0ejb"]
+[ext_resource type="Script" path="res://scripts/truckIntro.gd" id="36_lj8ec"]
 [ext_resource type="Texture2D" uid="uid://i2s82jtvoed1" path="res://assets/food/starterFood/ketchup_hotdog.png" id="36_qkj61"]
+[ext_resource type="Texture2D" uid="uid://bmvotexyhb71f" path="res://assets/loreScenes/truck_intro/angelfood0.png" id="37_7qkv8"]
+[ext_resource type="Texture2D" uid="uid://tv5loukje7oe" path="res://assets/loreScenes/truck_intro/angelfood1.png" id="38_562ku"]
+[ext_resource type="Texture2D" uid="uid://ddt3lbw5smxv1" path="res://assets/loreScenes/lore_bg/angelfood_bg.png" id="39_623gu"]
 [ext_resource type="Texture2D" uid="uid://dcmqycrnh0423" path="res://assets/UI/timer_bar.png" id="39_nkydd"]
+[ext_resource type="Texture2D" uid="uid://kian6h8hl6q6" path="res://assets/trucks/angel_food.png" id="40_gj3sy"]
+[ext_resource type="Texture2D" uid="uid://c6bwkmnq32355" path="res://assets/UI_buttons/challenge.png" id="40_oa8mf"]
 [ext_resource type="Texture2D" uid="uid://eml7fhsg1v5q" path="res://assets/UI/tutorial3.png" id="40_pyqf8"]
+[ext_resource type="Texture2D" uid="uid://bx6nitou0a214" path="res://assets/UI_buttons/challenge_pressed.png" id="41_l8pfb"]
 [ext_resource type="Texture2D" uid="uid://dk7k6ynbhrsqq" path="res://assets/UI/tutorial4.png" id="41_wqn2j"]
 [ext_resource type="Texture2D" uid="uid://bf7y2qm8vi6ff" path="res://assets/UI/tutorial5.png" id="42_0lo6e"]
+[ext_resource type="Texture2D" uid="uid://dvyyi2nkvnc0d" path="res://assets/UI_buttons/challenge_hover.png" id="42_f3j6t"]
 [ext_resource type="Texture2D" uid="uid://cgfelblnvakg5" path="res://assets/UI_buttons/next.png" id="42_mrn5o"]
 [ext_resource type="Texture2D" uid="uid://cvdbevoymvmgs" path="res://assets/UI/tutorial6.png" id="43_gaicr"]
 [ext_resource type="Texture2D" uid="uid://c6dwth7evsdyw" path="res://assets/UI_buttons/next_hover.png" id="43_i7dqr"]
@@ -94,6 +102,115 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_gsada"]
 font_size = 26
+
+[sub_resource type="Animation" id="Animation_5snml"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("textBubble:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 10)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("textBubble:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("backgroundImage:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("backgroundImage:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_dxum2"]
+resource_name = "truckIntroFloat"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("textBubble:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 24), Vector2(0, 10)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("textBubble:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("backgroundImage:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -25)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("backgroundImage:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nyn2w"]
+_data = {
+"RESET": SubResource("Animation_5snml"),
+"truckIntroFloat": SubResource("Animation_dxum2")
+}
 
 [sub_resource type="LabelSettings" id="LabelSettings_dy1m6"]
 font_size = 26
@@ -458,6 +575,105 @@ anchor_left = 0.507
 anchor_top = 0.605
 anchor_right = 0.778
 anchor_bottom = 0.988
+
+[node name="TruckIntro" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("36_lj8ec")
+textImgs = Array[Texture2D]([ExtResource("37_7qkv8"), ExtResource("38_562ku")])
+
+[node name="bg" type="TextureRect" parent="TruckIntro"]
+self_modulate = Color(1, 1, 1, 0.509804)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("39_623gu")
+expand_mode = 1
+
+[node name="backgroundImage" type="TextureRect" parent="TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("40_gj3sy")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="textBubble" type="TextureRect" parent="TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.0154321
+anchor_right = 1.0
+anchor_bottom = 0.225309
+texture = ExtResource("37_7qkv8")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton" type="TextureButton" parent="TruckIntro"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6875
+anchor_top = 0.91358
+anchor_right = 0.993333
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("40_oa8mf")
+texture_pressed = ExtResource("41_l8pfb")
+texture_hover = ExtResource("42_f3j6t")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="NextTextButton" type="TextureButton" parent="TruckIntro"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.861111
+anchor_top = 0.91358
+anchor_right = 0.993333
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("42_mrn5o")
+texture_pressed = ExtResource("50_0uhe5")
+texture_hover = ExtResource("43_i7dqr")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="PrevTextButton" type="TextureButton" parent="TruckIntro"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00694444
+anchor_top = 0.91358
+anchor_right = 0.139167
+anchor_bottom = 0.987926
+offset_right = -0.319946
+offset_bottom = -0.176025
+texture_normal = ExtResource("52_fe8k6")
+texture_pressed = ExtResource("53_wh1oq")
+texture_hover = ExtResource("54_brp1j")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TruckIntro"]
+autoplay = "truckIntroFloat"
+libraries = {
+"": SubResource("AnimationLibrary_nyn2w")
+}
 
 [node name="TutorialOverlay" type="Control" parent="."]
 visible = false
@@ -1118,6 +1334,11 @@ del = SubResource("AudioStreamRandomizer_8qyr7")
 [connection signal="DDsadded" from="EnemyProgress" to="Ding&Del" method="on_DDSadded_Recieved"]
 [connection signal="game_over" from="EnemyProgress" to="." method="_on_enemy_progress_game_over"]
 [connection signal="DingBaded" from="CompletionFeedback" to="Ding&Del" method="on_DingBaded_Recieved"]
+[connection signal="draw" from="TruckIntro" to="." method="_on_truck_intro_draw"]
+[connection signal="hidden" from="TruckIntro" to="." method="_on_truck_intro_hidden"]
+[connection signal="pressed" from="TruckIntro/TextureButton" to="TruckIntro" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TruckIntro/NextTextButton" to="TruckIntro" method="_on_next_text_button_pressed"]
+[connection signal="pressed" from="TruckIntro/PrevTextButton" to="TruckIntro" method="_on_prev_text_button_pressed"]
 [connection signal="draw" from="TutorialOverlay" to="." method="_on_tutorial_overlay_draw"]
 [connection signal="hidden" from="TutorialOverlay" to="." method="_on_tutorial_overlay_hidden"]
 [connection signal="pressed" from="TutorialOverlay/CloseTutorial" to="TutorialOverlay" method="_on_close_tutorial_pressed"]

@@ -51,3 +51,11 @@ func _on_quit_get_dest(dest) -> void:
 
 func _on_next_get_dest(dest) -> void:
 	emit_signal("scene_changed", dest)
+
+
+func _on_truck_intro_draw() -> void:
+	timerBar.pauseTimer()
+
+
+func _on_truck_intro_hidden() -> void:
+	timerBar.unpauseTimer()

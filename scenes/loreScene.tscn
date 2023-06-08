@@ -1,8 +1,7 @@
-[gd_scene load_steps=114 format=3 uid="uid://g6jpe0rh2xoo"]
+[gd_scene load_steps=92 format=3 uid="uid://g6jpe0rh2xoo"]
 
 [ext_resource type="Script" path="res://scripts/loreScene.gd" id="1_pjpxh"]
 [ext_resource type="Texture2D" uid="uid://b5najsyc2rjed" path="res://assets/loreScenes/full/angel_s_scripture.png" id="2_jk1s3"]
-[ext_resource type="Texture2D" uid="uid://kian6h8hl6q6" path="res://assets/trucks/angel_food.png" id="3_1id5g"]
 [ext_resource type="Texture2D" uid="uid://ddt3lbw5smxv1" path="res://assets/loreScenes/lore_bg/angelfood_bg.png" id="3_jr24d"]
 [ext_resource type="Texture2D" uid="uid://bmvotexyhb71f" path="res://assets/loreScenes/truck_intro/angelfood0.png" id="4_nsa50"]
 [ext_resource type="Texture2D" uid="uid://b7nk16xyfjcre" path="res://assets/loreScenes/lore_dialogue/angelfood0.png" id="4_suinc"]
@@ -20,10 +19,6 @@
 [ext_resource type="Texture2D" uid="uid://n1qvtvy44j54" path="res://assets/UI_buttons/back_pressed.png" id="20_7sbil"]
 [ext_resource type="Texture2D" uid="uid://8ei7gxjmkwop" path="res://assets/loreScenes/lore_bg/buryme_bg.png" id="21_i5xq0"]
 [ext_resource type="Texture2D" uid="uid://dvtn4u0004701" path="res://assets/UI_buttons/back_hover.png" id="21_ju2hf"]
-[ext_resource type="Texture2D" uid="uid://c6n64wm1m2ccm" path="res://assets/loreScenes/truck_intro/buryme0.png" id="22_33hyj"]
-[ext_resource type="Texture2D" uid="uid://tv5loukje7oe" path="res://assets/loreScenes/truck_intro/angelfood1.png" id="23_8gba4"]
-[ext_resource type="Texture2D" uid="uid://bpsb465dfjdex" path="res://assets/loreScenes/truck_intro/buryme1.png" id="23_556wu"]
-[ext_resource type="Texture2D" uid="uid://ckj3vve1hpewn" path="res://assets/trucks/bury_me.png" id="24_jkk0r"]
 [ext_resource type="Texture2D" uid="uid://cvg1t2l6oyrb7" path="res://assets/loreScenes/lore_dialogue/buryme0.png" id="25_57wwn"]
 [ext_resource type="Texture2D" uid="uid://d0wd2hpf5rsu3" path="res://assets/loreScenes/lore_dialogue/buryme1.png" id="26_ompqu"]
 [ext_resource type="Texture2D" uid="uid://skdd1vfilaw3" path="res://assets/loreScenes/lore_dialogue/buryme2.png" id="27_wd42h"]
@@ -36,12 +31,6 @@
 [ext_resource type="Texture2D" uid="uid://bg65v0a7sam8w" path="res://assets/loreScenes/full/hearse_to_be_you.png" id="34_srd65"]
 [ext_resource type="Texture2D" uid="uid://dun3w1n78d5x4" path="res://assets/loreScenes/lore_bg/cheddorbendor_bg.png" id="35_gsof4"]
 [ext_resource type="Texture2D" uid="uid://b5iagh364gext" path="res://assets/loreScenes/lore_bg/devilstango_bg.png" id="35_s7tg4"]
-[ext_resource type="Texture2D" uid="uid://c6bo6ieywf87f" path="res://assets/loreScenes/truck_intro/devilstango0.png" id="36_2clcq"]
-[ext_resource type="Texture2D" uid="uid://ccsow7e7pssqb" path="res://assets/loreScenes/truck_intro/cheddorbendor0.png" id="36_jqquk"]
-[ext_resource type="Texture2D" uid="uid://udvhe3x8dj8j" path="res://assets/loreScenes/truck_intro/cheddorbendor1.png" id="37_lnxay"]
-[ext_resource type="Texture2D" uid="uid://dynhsfe6shmrd" path="res://assets/loreScenes/truck_intro/devilstango1.png" id="37_q1sdj"]
-[ext_resource type="Texture2D" uid="uid://cy7ver0ds3ui6" path="res://assets/trucks/cheddorbendor.png" id="38_bvfce"]
-[ext_resource type="Texture2D" uid="uid://bqqt13e5buas0" path="res://assets/trucks/devils_tango.png" id="38_w1ulh"]
 [ext_resource type="Texture2D" uid="uid://bx8a5r30sdht6" path="res://assets/loreScenes/lore_dialogue/cheddorbendor0.png" id="39_limeo"]
 [ext_resource type="Texture2D" uid="uid://dha2re54q6m54" path="res://assets/loreScenes/lore_dialogue/devilstango0.png" id="39_mlihf"]
 [ext_resource type="Texture2D" uid="uid://g6ysticdo67r" path="res://assets/loreScenes/lore_dialogue/cheddorbendor1.png" id="40_csjrq"]
@@ -63,13 +52,7 @@
 [ext_resource type="Texture2D" uid="uid://ddshww3fxt18q" path="res://assets/loreScenes/full/gold_standard.png" id="48_f6ncm"]
 [ext_resource type="Texture2D" uid="uid://bmw7xugtnmd2e" path="res://assets/loreScenes/lore_bg/frostyfriends_bg.png" id="48_y64s6"]
 [ext_resource type="Texture2D" uid="uid://o0hm71xv4yh2" path="res://assets/loreScenes/lore_bg/corndog_bg.png" id="49_jewda"]
-[ext_resource type="Texture2D" uid="uid://c2eknj44sifqh" path="res://assets/loreScenes/truck_intro/frostyfriends0.png" id="49_lp2cs"]
-[ext_resource type="Texture2D" uid="uid://bgdbex5q13x1d" path="res://assets/loreScenes/truck_intro/corndog0.png" id="50_baj7i"]
-[ext_resource type="Texture2D" uid="uid://dnr8h6smri7oi" path="res://assets/loreScenes/truck_intro/frostyfriends1.png" id="50_kefs6"]
-[ext_resource type="Texture2D" uid="uid://n54x7jk8y3u" path="res://assets/trucks/frosty_friends.png" id="51_61f5y"]
-[ext_resource type="Texture2D" uid="uid://u8ve1itifjvc" path="res://assets/loreScenes/truck_intro/corndog1.png" id="51_rjgds"]
 [ext_resource type="Texture2D" uid="uid://c2eu7o8edgiau" path="res://assets/loreScenes/lore_dialogue/frostyfriends0.png" id="52_12qqw"]
-[ext_resource type="Texture2D" uid="uid://cm230mafrtkm" path="res://assets/trucks/corn_dog.png" id="52_hpv4r"]
 [ext_resource type="Texture2D" uid="uid://b5x7acmdbq57a" path="res://assets/loreScenes/lore_dialogue/frostyfriends1.png" id="53_gpkue"]
 [ext_resource type="Texture2D" uid="uid://dpk3owgiymul5" path="res://assets/loreScenes/lore_dialogue/corndog0.png" id="53_ub48m"]
 [ext_resource type="Texture2D" uid="uid://covo3i0wijrog" path="res://assets/loreScenes/lore_dialogue/corndog1.png" id="54_8hg7c"]
@@ -94,9 +77,6 @@
 [ext_resource type="Texture2D" uid="uid://dvrli6u10ev2b" path="res://assets/loreScenes/full/frosty_beginnings.png" id="63_5ov1p"]
 [ext_resource type="Texture2D" uid="uid://ebco5bmwsec1" path="res://assets/loreScenes/lore_bg/tacobara_bg.png" id="64_86b86"]
 [ext_resource type="Texture2D" uid="uid://cfcij1ll0yohm" path="res://assets/loreScenes/full/operation_corn_dog.png" id="64_u40l0"]
-[ext_resource type="Texture2D" uid="uid://cvj84tw5ajnbk" path="res://assets/loreScenes/truck_intro/tacobara0.png" id="65_lbmp6"]
-[ext_resource type="Texture2D" uid="uid://dc5n3fb48ncu8" path="res://assets/loreScenes/truck_intro/tacobara1.png" id="66_7wpnx"]
-[ext_resource type="Texture2D" uid="uid://c5skiy27mknq8" path="res://assets/trucks/capybara.png" id="67_7a7lu"]
 [ext_resource type="Texture2D" uid="uid://onojje8e5xnh" path="res://assets/loreScenes/lore_dialogue/tacobara0.png" id="68_hj26s"]
 [ext_resource type="Texture2D" uid="uid://wc354ai50e2n" path="res://assets/loreScenes/lore_dialogue/tacobara1.png" id="69_lmc3r"]
 [ext_resource type="Texture2D" uid="uid://bno17k25ww833" path="res://assets/loreScenes/lore_dialogue/tacobara2.png" id="70_so68c"]
@@ -109,116 +89,8 @@
 [ext_resource type="Texture2D" uid="uid://dxk73y8rao1u1" path="res://assets/loreScenes/lore_dialogue/tacobara9.png" id="77_e5q73"]
 [ext_resource type="Texture2D" uid="uid://dlt1338qsghlh" path="res://assets/loreScenes/lore_dialogue/tacobara10.png" id="78_iexer"]
 [ext_resource type="Texture2D" uid="uid://c4jc7siqtayqn" path="res://assets/loreScenes/lore_dialogue/tacobara11.png" id="79_mjjt4"]
+[ext_resource type="Texture2D" uid="uid://cahnb85cp8rum" path="res://assets/loreScenes/full/tacobara.png" id="90_72v23"]
 [ext_resource type="Texture2D" uid="uid://bm80d6nsvuqu7" path="res://assets/trucks/debris_please.png" id="110_6vmxy"]
-
-[sub_resource type="Animation" id="Animation_5snml"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("textBubble:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(312, 33)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("textBubble:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("backgroundImage:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("backgroundImage:rotation")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
-[sub_resource type="Animation" id="Animation_dxum2"]
-resource_name = "truckIntroFloat"
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("textBubble:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, 24), Vector2(0, 10)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = false
-tracks/1/path = NodePath("textBubble:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 0.0]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("backgroundImage:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(0, -25)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("backgroundImage:rotation")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 0.0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_nyn2w"]
-_data = {
-"RESET": SubResource("Animation_5snml"),
-"truckIntroFloat": SubResource("Animation_dxum2")
-}
 
 [node name="LoreScene" type="Control"]
 layout_mode = 3
@@ -230,6 +102,7 @@ grow_vertical = 2
 script = ExtResource("1_pjpxh")
 
 [node name="Level1" type="Control" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -247,103 +120,7 @@ grow_vertical = 2
 texture = ExtResource("3_jr24d")
 expand_mode = 1
 
-[node name="TruckIntro" type="Control" parent="Level1"]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("10_065ck")
-textImgs = Array[Texture2D]([ExtResource("4_nsa50"), ExtResource("23_8gba4")])
-
-[node name="backgroundImage" type="TextureRect" parent="Level1/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 3456.0
-offset_bottom = 1944.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("3_1id5g")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="textBubble" type="TextureRect" parent="Level1/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.0154321
-anchor_right = 1.0
-anchor_bottom = 0.225309
-offset_left = 312.0
-offset_top = 33.0
-offset_right = 3768.0
-offset_bottom = 441.0
-texture = ExtResource("4_nsa50")
-expand_mode = 1
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureButton" type="TextureButton" parent="Level1/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-script = ExtResource("8_w7ok3")
-dest = "Level"
-metadata/_edit_use_anchors_ = true
-
-[node name="NextTextButton" type="TextureButton" parent="Level1/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="PrevTextButton" type="TextureButton" parent="Level1/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.00694444
-anchor_top = 0.91358
-anchor_right = 0.139167
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("19_kdbm2")
-texture_pressed = ExtResource("20_7sbil")
-texture_hover = ExtResource("21_ju2hf")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Level1/TruckIntro"]
-autoplay = "truckIntroFloat"
-libraries = {
-"": SubResource("AnimationLibrary_nyn2w")
-}
-
 [node name="TruckLore" type="Control" parent="Level1"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -445,101 +222,7 @@ grow_vertical = 2
 texture = ExtResource("21_i5xq0")
 expand_mode = 1
 
-[node name="TruckIntro" type="Control" parent="Level2"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("10_065ck")
-textImgs = Array[Texture2D]([ExtResource("22_33hyj"), ExtResource("23_556wu")])
-
-[node name="backgroundImage" type="TextureRect" parent="Level2/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 3456.0
-offset_bottom = 1944.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("24_jkk0r")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="textBubble" type="TextureRect" parent="Level2/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.0154321
-anchor_right = 1.0
-anchor_bottom = 0.225309
-offset_left = 312.0
-offset_top = 33.0
-offset_right = 3768.0
-offset_bottom = 441.0
-expand_mode = 1
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureButton" type="TextureButton" parent="Level2/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-script = ExtResource("8_w7ok3")
-dest = "Level"
-metadata/_edit_use_anchors_ = true
-
-[node name="NextTextButton" type="TextureButton" parent="Level2/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="PrevTextButton" type="TextureButton" parent="Level2/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.00694444
-anchor_top = 0.91358
-anchor_right = 0.139167
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("19_kdbm2")
-texture_pressed = ExtResource("20_7sbil")
-texture_hover = ExtResource("21_ju2hf")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Level2/TruckIntro"]
-autoplay = "truckIntroFloat"
-libraries = {
-"": SubResource("AnimationLibrary_nyn2w")
-}
-
 [node name="TruckLore" type="Control" parent="Level2"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -641,101 +324,7 @@ grow_vertical = 2
 texture = ExtResource("35_gsof4")
 expand_mode = 1
 
-[node name="TruckIntro" type="Control" parent="Level3"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("10_065ck")
-textImgs = Array[Texture2D]([ExtResource("36_jqquk"), ExtResource("37_lnxay")])
-
-[node name="backgroundImage" type="TextureRect" parent="Level3/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 1152.0
-offset_bottom = 648.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("38_bvfce")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="textBubble" type="TextureRect" parent="Level3/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.0154321
-anchor_right = 1.0
-anchor_bottom = 0.225309
-offset_left = 312.0
-offset_top = 33.0
-offset_right = 1464.0
-offset_bottom = 169.0
-expand_mode = 1
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureButton" type="TextureButton" parent="Level3/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-script = ExtResource("8_w7ok3")
-dest = "Level"
-metadata/_edit_use_anchors_ = true
-
-[node name="NextTextButton" type="TextureButton" parent="Level3/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="PrevTextButton" type="TextureButton" parent="Level3/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.00694444
-anchor_top = 0.91358
-anchor_right = 0.139167
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("19_kdbm2")
-texture_pressed = ExtResource("20_7sbil")
-texture_hover = ExtResource("21_ju2hf")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Level3/TruckIntro"]
-autoplay = "truckIntroFloat"
-libraries = {
-"": SubResource("AnimationLibrary_nyn2w")
-}
-
 [node name="TruckLore" type="Control" parent="Level3"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -837,101 +426,7 @@ grow_vertical = 2
 texture = ExtResource("49_jewda")
 expand_mode = 1
 
-[node name="TruckIntro" type="Control" parent="Level4"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("10_065ck")
-textImgs = Array[Texture2D]([ExtResource("50_baj7i"), ExtResource("51_rjgds")])
-
-[node name="backgroundImage" type="TextureRect" parent="Level4/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 1152.0
-offset_bottom = 648.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("52_hpv4r")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="textBubble" type="TextureRect" parent="Level4/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.0154321
-anchor_right = 1.0
-anchor_bottom = 0.225309
-offset_left = 312.0
-offset_top = 33.0
-offset_right = 1464.0
-offset_bottom = 169.0
-expand_mode = 1
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureButton" type="TextureButton" parent="Level4/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-script = ExtResource("8_w7ok3")
-dest = "Level"
-metadata/_edit_use_anchors_ = true
-
-[node name="NextTextButton" type="TextureButton" parent="Level4/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="PrevTextButton" type="TextureButton" parent="Level4/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.00694444
-anchor_top = 0.91358
-anchor_right = 0.139167
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("19_kdbm2")
-texture_pressed = ExtResource("20_7sbil")
-texture_hover = ExtResource("21_ju2hf")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Level4/TruckIntro"]
-autoplay = "truckIntroFloat"
-libraries = {
-"": SubResource("AnimationLibrary_nyn2w")
-}
-
 [node name="TruckLore" type="Control" parent="Level4"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1032,100 +527,6 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("35_s7tg4")
 expand_mode = 1
-
-[node name="TruckIntro" type="Control" parent="Level5"]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("10_065ck")
-textImgs = Array[Texture2D]([ExtResource("36_2clcq"), ExtResource("37_q1sdj")])
-
-[node name="backgroundImage" type="TextureRect" parent="Level5/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 1152.0
-offset_bottom = 648.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("38_w1ulh")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="textBubble" type="TextureRect" parent="Level5/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.0154321
-anchor_right = 1.0
-anchor_bottom = 0.225309
-offset_left = 312.0
-offset_top = 33.0
-offset_right = 1464.0
-offset_bottom = 169.0
-expand_mode = 1
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureButton" type="TextureButton" parent="Level5/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-script = ExtResource("8_w7ok3")
-dest = "Level"
-metadata/_edit_use_anchors_ = true
-
-[node name="NextTextButton" type="TextureButton" parent="Level5/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="PrevTextButton" type="TextureButton" parent="Level5/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.00694444
-anchor_top = 0.91358
-anchor_right = 0.139167
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("19_kdbm2")
-texture_pressed = ExtResource("20_7sbil")
-texture_hover = ExtResource("21_ju2hf")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Level5/TruckIntro"]
-autoplay = "truckIntroFloat"
-libraries = {
-"": SubResource("AnimationLibrary_nyn2w")
-}
 
 [node name="TruckLore" type="Control" parent="Level5"]
 layout_mode = 1
@@ -1229,101 +630,7 @@ grow_vertical = 2
 texture = ExtResource("48_y64s6")
 expand_mode = 1
 
-[node name="TruckIntro" type="Control" parent="Level6"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("10_065ck")
-textImgs = Array[Texture2D]([ExtResource("49_lp2cs"), ExtResource("50_kefs6")])
-
-[node name="backgroundImage" type="TextureRect" parent="Level6/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 1152.0
-offset_bottom = 648.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("51_61f5y")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="textBubble" type="TextureRect" parent="Level6/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.0154321
-anchor_right = 1.0
-anchor_bottom = 0.225309
-offset_left = 312.0
-offset_top = 33.0
-offset_right = 1464.0
-offset_bottom = 169.0
-expand_mode = 1
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureButton" type="TextureButton" parent="Level6/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-script = ExtResource("8_w7ok3")
-dest = "Level"
-metadata/_edit_use_anchors_ = true
-
-[node name="NextTextButton" type="TextureButton" parent="Level6/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="PrevTextButton" type="TextureButton" parent="Level6/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.00694444
-anchor_top = 0.91358
-anchor_right = 0.139167
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("19_kdbm2")
-texture_pressed = ExtResource("20_7sbil")
-texture_hover = ExtResource("21_ju2hf")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Level6/TruckIntro"]
-autoplay = "truckIntroFloat"
-libraries = {
-"": SubResource("AnimationLibrary_nyn2w")
-}
-
 [node name="TruckLore" type="Control" parent="Level6"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1425,101 +732,7 @@ grow_vertical = 2
 texture = ExtResource("64_86b86")
 expand_mode = 1
 
-[node name="TruckIntro" type="Control" parent="Level7"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("10_065ck")
-textImgs = Array[Texture2D]([ExtResource("65_lbmp6"), ExtResource("66_7wpnx")])
-
-[node name="backgroundImage" type="TextureRect" parent="Level7/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 1152.0
-offset_bottom = 648.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("67_7a7lu")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="textBubble" type="TextureRect" parent="Level7/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.0154321
-anchor_right = 1.0
-anchor_bottom = 0.225309
-offset_left = 312.0
-offset_top = 33.0
-offset_right = 1464.0
-offset_bottom = 169.0
-expand_mode = 1
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureButton" type="TextureButton" parent="Level7/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-script = ExtResource("8_w7ok3")
-dest = "Level"
-metadata/_edit_use_anchors_ = true
-
-[node name="NextTextButton" type="TextureButton" parent="Level7/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="PrevTextButton" type="TextureButton" parent="Level7/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.00694444
-anchor_top = 0.91358
-anchor_right = 0.139167
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("19_kdbm2")
-texture_pressed = ExtResource("20_7sbil")
-texture_hover = ExtResource("21_ju2hf")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Level7/TruckIntro"]
-autoplay = "truckIntroFloat"
-libraries = {
-"": SubResource("AnimationLibrary_nyn2w")
-}
-
 [node name="TruckLore" type="Control" parent="Level7"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1536,7 +749,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("34_srd65")
+texture = ExtResource("90_72v23")
 expand_mode = 1
 stretch_mode = 5
 
@@ -1621,98 +834,6 @@ grow_vertical = 2
 texture = ExtResource("35_s7tg4")
 expand_mode = 1
 
-[node name="TruckIntro" type="Control" parent="Level8"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("10_065ck")
-
-[node name="backgroundImage" type="TextureRect" parent="Level8/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 1152.0
-offset_bottom = 648.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("110_6vmxy")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="textBubble" type="TextureRect" parent="Level8/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.0154321
-anchor_right = 1.0
-anchor_bottom = 0.225309
-offset_left = 312.0
-offset_top = 33.0
-offset_right = 1464.0
-offset_bottom = 169.0
-expand_mode = 1
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureButton" type="TextureButton" parent="Level8/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-script = ExtResource("8_w7ok3")
-dest = "Level"
-metadata/_edit_use_anchors_ = true
-
-[node name="NextTextButton" type="TextureButton" parent="Level8/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.861111
-anchor_top = 0.91358
-anchor_right = 0.993333
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("16_tc8k0")
-texture_pressed = ExtResource("17_3nf3f")
-texture_hover = ExtResource("18_wa0i0")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="PrevTextButton" type="TextureButton" parent="Level8/TruckIntro"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.00694444
-anchor_top = 0.91358
-anchor_right = 0.139167
-anchor_bottom = 0.987926
-offset_right = -0.319946
-offset_bottom = -0.176025
-texture_normal = ExtResource("19_kdbm2")
-texture_pressed = ExtResource("20_7sbil")
-texture_hover = ExtResource("21_ju2hf")
-ignore_texture_size = true
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Level8/TruckIntro"]
-autoplay = "truckIntroFloat"
-libraries = {
-"": SubResource("AnimationLibrary_nyn2w")
-}
-
 [node name="TruckLore" type="Control" parent="Level8"]
 visible = false
 layout_mode = 1
@@ -1796,81 +917,41 @@ ignore_texture_size = true
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
-[connection signal="get_dest" from="Level1/TruckIntro/TextureButton" to="." method="_on_texture_button_get_dest"]
-[connection signal="pressed" from="Level1/TruckIntro/TextureButton" to="Level1/TruckIntro" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Level1/TruckIntro/TextureButton" to="Level1/TruckIntro/TextureButton" method="_on_pressed"]
-[connection signal="pressed" from="Level1/TruckIntro/NextTextButton" to="Level1/TruckIntro" method="_on_next_text_button_pressed"]
-[connection signal="pressed" from="Level1/TruckIntro/PrevTextButton" to="Level1/TruckIntro" method="_on_prev_text_button_pressed"]
 [connection signal="get_dest" from="Level1/TruckLore/TextureButton" to="." method="_on_texture_button_get_dest"]
 [connection signal="pressed" from="Level1/TruckLore/TextureButton" to="Level1/TruckLore" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Level1/TruckLore/TextureButton" to="Level1/TruckLore/TextureButton" method="_on_pressed"]
 [connection signal="pressed" from="Level1/TruckLore/NextTextButton" to="Level1/TruckLore" method="_on_next_text_button_pressed"]
 [connection signal="pressed" from="Level1/TruckLore/PrevTextButton" to="Level1/TruckLore" method="_on_prev_text_button_pressed"]
-[connection signal="get_dest" from="Level2/TruckIntro/TextureButton" to="." method="_on_texture_button_get_dest"]
-[connection signal="pressed" from="Level2/TruckIntro/TextureButton" to="Level2/TruckIntro" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Level2/TruckIntro/TextureButton" to="Level2/TruckIntro/TextureButton" method="_on_pressed"]
-[connection signal="pressed" from="Level2/TruckIntro/NextTextButton" to="Level2/TruckIntro" method="_on_next_text_button_pressed"]
-[connection signal="pressed" from="Level2/TruckIntro/PrevTextButton" to="Level2/TruckIntro" method="_on_prev_text_button_pressed"]
 [connection signal="get_dest" from="Level2/TruckLore/TextureButton" to="." method="_on_texture_button_get_dest"]
 [connection signal="pressed" from="Level2/TruckLore/TextureButton" to="Level2/TruckLore" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Level2/TruckLore/TextureButton" to="Level2/TruckLore/TextureButton" method="_on_pressed"]
 [connection signal="pressed" from="Level2/TruckLore/NextTextButton" to="Level2/TruckLore" method="_on_next_text_button_pressed"]
 [connection signal="pressed" from="Level2/TruckLore/PrevTextButton" to="Level2/TruckLore" method="_on_prev_text_button_pressed"]
-[connection signal="get_dest" from="Level3/TruckIntro/TextureButton" to="." method="_on_texture_button_get_dest"]
-[connection signal="pressed" from="Level3/TruckIntro/TextureButton" to="Level3/TruckIntro" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Level3/TruckIntro/TextureButton" to="Level3/TruckIntro/TextureButton" method="_on_pressed"]
-[connection signal="pressed" from="Level3/TruckIntro/NextTextButton" to="Level3/TruckIntro" method="_on_next_text_button_pressed"]
-[connection signal="pressed" from="Level3/TruckIntro/PrevTextButton" to="Level3/TruckIntro" method="_on_prev_text_button_pressed"]
 [connection signal="get_dest" from="Level3/TruckLore/TextureButton" to="." method="_on_texture_button_get_dest"]
 [connection signal="pressed" from="Level3/TruckLore/TextureButton" to="Level3/TruckLore" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Level3/TruckLore/TextureButton" to="Level3/TruckLore/TextureButton" method="_on_pressed"]
 [connection signal="pressed" from="Level3/TruckLore/NextTextButton" to="Level3/TruckLore" method="_on_next_text_button_pressed"]
 [connection signal="pressed" from="Level3/TruckLore/PrevTextButton" to="Level3/TruckLore" method="_on_prev_text_button_pressed"]
-[connection signal="get_dest" from="Level4/TruckIntro/TextureButton" to="." method="_on_texture_button_get_dest"]
-[connection signal="pressed" from="Level4/TruckIntro/TextureButton" to="Level4/TruckIntro" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Level4/TruckIntro/TextureButton" to="Level4/TruckIntro/TextureButton" method="_on_pressed"]
-[connection signal="pressed" from="Level4/TruckIntro/NextTextButton" to="Level4/TruckIntro" method="_on_next_text_button_pressed"]
-[connection signal="pressed" from="Level4/TruckIntro/PrevTextButton" to="Level4/TruckIntro" method="_on_prev_text_button_pressed"]
 [connection signal="get_dest" from="Level4/TruckLore/TextureButton" to="." method="_on_texture_button_get_dest"]
 [connection signal="pressed" from="Level4/TruckLore/TextureButton" to="Level4/TruckLore" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Level4/TruckLore/TextureButton" to="Level4/TruckLore/TextureButton" method="_on_pressed"]
 [connection signal="pressed" from="Level4/TruckLore/NextTextButton" to="Level4/TruckLore" method="_on_next_text_button_pressed"]
 [connection signal="pressed" from="Level4/TruckLore/PrevTextButton" to="Level4/TruckLore" method="_on_prev_text_button_pressed"]
-[connection signal="get_dest" from="Level5/TruckIntro/TextureButton" to="." method="_on_texture_button_get_dest"]
-[connection signal="pressed" from="Level5/TruckIntro/TextureButton" to="Level5/TruckIntro" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Level5/TruckIntro/TextureButton" to="Level5/TruckIntro/TextureButton" method="_on_pressed"]
-[connection signal="pressed" from="Level5/TruckIntro/NextTextButton" to="Level5/TruckIntro" method="_on_next_text_button_pressed"]
-[connection signal="pressed" from="Level5/TruckIntro/PrevTextButton" to="Level5/TruckIntro" method="_on_prev_text_button_pressed"]
 [connection signal="get_dest" from="Level5/TruckLore/TextureButton" to="." method="_on_texture_button_get_dest"]
 [connection signal="pressed" from="Level5/TruckLore/TextureButton" to="Level5/TruckLore" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Level5/TruckLore/TextureButton" to="Level5/TruckLore/TextureButton" method="_on_pressed"]
 [connection signal="pressed" from="Level5/TruckLore/NextTextButton" to="Level5/TruckLore" method="_on_next_text_button_pressed"]
 [connection signal="pressed" from="Level5/TruckLore/PrevTextButton" to="Level5/TruckLore" method="_on_prev_text_button_pressed"]
-[connection signal="get_dest" from="Level6/TruckIntro/TextureButton" to="." method="_on_texture_button_get_dest"]
-[connection signal="pressed" from="Level6/TruckIntro/TextureButton" to="Level6/TruckIntro" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Level6/TruckIntro/TextureButton" to="Level6/TruckIntro/TextureButton" method="_on_pressed"]
-[connection signal="pressed" from="Level6/TruckIntro/NextTextButton" to="Level6/TruckIntro" method="_on_next_text_button_pressed"]
-[connection signal="pressed" from="Level6/TruckIntro/PrevTextButton" to="Level6/TruckIntro" method="_on_prev_text_button_pressed"]
 [connection signal="get_dest" from="Level6/TruckLore/TextureButton" to="." method="_on_texture_button_get_dest"]
 [connection signal="pressed" from="Level6/TruckLore/TextureButton" to="Level6/TruckLore" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Level6/TruckLore/TextureButton" to="Level6/TruckLore/TextureButton" method="_on_pressed"]
 [connection signal="pressed" from="Level6/TruckLore/NextTextButton" to="Level6/TruckLore" method="_on_next_text_button_pressed"]
 [connection signal="pressed" from="Level6/TruckLore/PrevTextButton" to="Level6/TruckLore" method="_on_prev_text_button_pressed"]
-[connection signal="get_dest" from="Level7/TruckIntro/TextureButton" to="." method="_on_texture_button_get_dest"]
-[connection signal="pressed" from="Level7/TruckIntro/TextureButton" to="Level7/TruckIntro" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Level7/TruckIntro/TextureButton" to="Level7/TruckIntro/TextureButton" method="_on_pressed"]
-[connection signal="pressed" from="Level7/TruckIntro/NextTextButton" to="Level7/TruckIntro" method="_on_next_text_button_pressed"]
-[connection signal="pressed" from="Level7/TruckIntro/PrevTextButton" to="Level7/TruckIntro" method="_on_prev_text_button_pressed"]
 [connection signal="get_dest" from="Level7/TruckLore/TextureButton" to="." method="_on_texture_button_get_dest"]
 [connection signal="pressed" from="Level7/TruckLore/TextureButton" to="Level7/TruckLore" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Level7/TruckLore/TextureButton" to="Level7/TruckLore/TextureButton" method="_on_pressed"]
 [connection signal="pressed" from="Level7/TruckLore/NextTextButton" to="Level7/TruckLore" method="_on_next_text_button_pressed"]
 [connection signal="pressed" from="Level7/TruckLore/PrevTextButton" to="Level7/TruckLore" method="_on_prev_text_button_pressed"]
-[connection signal="get_dest" from="Level8/TruckIntro/TextureButton" to="." method="_on_texture_button_get_dest"]
-[connection signal="pressed" from="Level8/TruckIntro/TextureButton" to="Level8/TruckIntro" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Level8/TruckIntro/TextureButton" to="Level8/TruckIntro/TextureButton" method="_on_pressed"]
-[connection signal="pressed" from="Level8/TruckIntro/NextTextButton" to="Level8/TruckIntro" method="_on_next_text_button_pressed"]
-[connection signal="pressed" from="Level8/TruckIntro/PrevTextButton" to="Level8/TruckIntro" method="_on_prev_text_button_pressed"]
 [connection signal="get_dest" from="Level8/TruckLore/TextureButton" to="." method="_on_texture_button_get_dest"]
 [connection signal="pressed" from="Level8/TruckLore/TextureButton" to="Level8/TruckLore" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Level8/TruckLore/TextureButton" to="Level8/TruckLore/TextureButton" method="_on_pressed"]
