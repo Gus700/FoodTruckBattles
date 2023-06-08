@@ -10,6 +10,8 @@ var orderNum: int
 
 signal update_recipe(recipe: Array[String])
 signal all_orders_complete()
+signal DingGooded()
+signal DDHappyed()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -92,3 +94,6 @@ func _on_crafting_area_request_updated_order() -> void:
 func _on_completion_bell_pressed() -> void:
 	if nextOrdersContainer.get_child_count() == 0:
 		emit_signal("all_orders_complete")
+		emit_signal('DDHappyed')
+	else:
+		emit_signal('DingGooded')

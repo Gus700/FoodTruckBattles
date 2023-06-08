@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=96 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -62,6 +62,32 @@
 [ext_resource type="Texture2D" uid="uid://cwvvuudklxsg2" path="res://assets/UI_buttons/quit.png" id="59_8gd7u"]
 [ext_resource type="Texture2D" uid="uid://xfpftcj0ksoi" path="res://assets/UI_buttons/quit_pressed.png" id="60_w448p"]
 [ext_resource type="Texture2D" uid="uid://ddlgcvwnsslu3" path="res://assets/UI_buttons/quit_hover.png" id="61_gutjr"]
+[ext_resource type="Script" path="res://scripts/Ding&Del.gd" id="63_kluqc"]
+[ext_resource type="AudioStream" uid="uid://bsyrqr41ssy38" path="res://sounds/delburp1.wav" id="64_2ggfr"]
+[ext_resource type="AudioStream" uid="uid://bmycrw2ute85l" path="res://sounds/delburp2.wav" id="65_ckb2e"]
+[ext_resource type="AudioStream" uid="uid://ddfw1ws5i44j" path="res://sounds/delnoise1.wav" id="66_p64sg"]
+[ext_resource type="AudioStream" uid="uid://cfyhyj5nytikg" path="res://sounds/delnoise2.wav" id="67_djtyj"]
+[ext_resource type="AudioStream" uid="uid://uxe63m53eai2" path="res://sounds/delnoise3.wav" id="68_gi21h"]
+[ext_resource type="AudioStream" uid="uid://sf2t2tm47omu" path="res://sounds/delnoise4.wav" id="69_6ur3c"]
+[ext_resource type="AudioStream" uid="uid://ca808tqul86d1" path="res://sounds/delnoise5.wav" id="70_07k57"]
+[ext_resource type="AudioStream" uid="uid://dy17by5q1afu3" path="res://sounds/delnoise6.wav" id="71_ej1sf"]
+[ext_resource type="AudioStream" uid="uid://dj7hjue5bu8qu" path="res://sounds/delnoise7.wav" id="72_14dge"]
+[ext_resource type="AudioStream" uid="uid://c8i0v85gvj7q0" path="res://sounds/dinggood1.wav" id="73_18a67"]
+[ext_resource type="AudioStream" uid="uid://iwvq70por0tj" path="res://sounds/dinggood2.wav" id="74_p8a35"]
+[ext_resource type="AudioStream" uid="uid://jayg0bqhcbqc" path="res://sounds/dingsound1.wav" id="75_3esv5"]
+[ext_resource type="AudioStream" uid="uid://s3bagh0atyjb" path="res://sounds/dingsound2.wav" id="76_1i011"]
+[ext_resource type="AudioStream" uid="uid://tmlcwe1vuia3" path="res://sounds/dingmad1.wav" id="77_oic0b"]
+[ext_resource type="AudioStream" uid="uid://bfxhbsabhe7vo" path="res://sounds/dingmad2.wav" id="78_s2rc3"]
+[ext_resource type="AudioStream" uid="uid://cijbxavhg28nw" path="res://sounds/dingmad3.wav" id="79_0534g"]
+[ext_resource type="AudioStream" uid="uid://duq1fy432phug" path="res://sounds/dingsad1.wav" id="80_bb68m"]
+[ext_resource type="AudioStream" uid="uid://dfwriasvsv17t" path="res://sounds/dingsad2.wav" id="81_0rmen"]
+[ext_resource type="AudioStream" uid="uid://c3rxmc5l1mr71" path="res://sounds/dingsad3.wav" id="82_ud4w4"]
+[ext_resource type="AudioStream" uid="uid://4xybutdjdgqb" path="res://sounds/dingsad4.wav" id="83_2o3j2"]
+[ext_resource type="AudioStream" uid="uid://dtduawsegh55p" path="res://sounds/D&D Sad 1.wav" id="84_8jspv"]
+[ext_resource type="AudioStream" uid="uid://cuwt2r2dhcb4d" path="res://sounds/D&D Sad 2.wav" id="85_ff31p"]
+[ext_resource type="AudioStream" uid="uid://dcwmxwxupmlqc" path="res://sounds/D&D Sad 3.wav" id="86_k8shv"]
+[ext_resource type="AudioStream" uid="uid://d4aoqakq21ewc" path="res://sounds/D&D Yay 1.wav" id="87_ahqit"]
+[ext_resource type="AudioStream" uid="uid://hukd1wqo7s5f" path="res://sounds/D&D Yay 2.wav" id="88_miowe"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_gsada"]
 font_size = 26
@@ -69,6 +95,81 @@ font_size = 26
 [sub_resource type="LabelSettings" id="LabelSettings_dy1m6"]
 font_size = 26
 font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_m4hr1"]
+streams_count = 4
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("73_18a67")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("74_p8a35")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("75_3esv5")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("76_1i011")
+stream_3/weight = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_wman0"]
+streams_count = 7
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("77_oic0b")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("78_s2rc3")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("79_0534g")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("80_bb68m")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("81_0rmen")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("82_ud4w4")
+stream_5/weight = 1.0
+stream_6/stream = ExtResource("83_2o3j2")
+stream_6/weight = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_huw5r"]
+streams_count = 3
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("84_8jspv")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("85_ff31p")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("86_k8shv")
+stream_2/weight = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_alfn6"]
+streams_count = 2
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("87_ahqit")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("88_miowe")
+stream_1/weight = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_8qyr7"]
+streams_count = 9
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("64_2ggfr")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("65_ckb2e")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("66_p64sg")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("67_djtyj")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("68_gi21h")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("69_6ur3c")
+stream_5/weight = 1.0
+stream_6/stream = ExtResource("70_07k57")
+stream_6/weight = 1.0
+stream_7/stream = ExtResource("71_ej1sf")
+stream_7/weight = 1.0
+stream_8/stream = ExtResource("72_14dge")
+stream_8/weight = 1.0
 
 [node name="Level" type="Control"]
 layout_mode = 3
@@ -949,14 +1050,27 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
+[node name="Ding&Del" type="AudioStreamPlayer" parent="."]
+script = ExtResource("63_kluqc")
+dingGood = SubResource("AudioStreamRandomizer_m4hr1")
+dingBad = SubResource("AudioStreamRandomizer_wman0")
+DDS = SubResource("AudioStreamRandomizer_huw5r")
+DDH = SubResource("AudioStreamRandomizer_alfn6")
+del = SubResource("AudioStreamRandomizer_8qyr7")
+
+[connection signal="DDHappyed" from="Order Area" to="Ding&Del" method="on_DDHappyed_Recieved"]
+[connection signal="DingGooded" from="Order Area" to="Ding&Del" method="on_DingGooded_Recieved"]
 [connection signal="all_orders_complete" from="Order Area" to="." method="_on_order_area_all_orders_complete"]
 [connection signal="update_recipe" from="Order Area" to="Crafting Area" method="_on_order_area_update_recipe"]
+[connection signal="DelSounded" from="Crafting Area" to="Ding&Del" method="on_DelSounded_Recieved"]
 [connection signal="request_updated_order" from="Crafting Area" to="Order Area" method="_on_crafting_area_request_updated_order"]
 [connection signal="show_completion_feedback" from="Crafting Area" to="." method="_on_crafting_area_show_completion_feedback"]
 [connection signal="pressed" from="CompletionBell" to="Order Area" method="_on_completion_bell_pressed"]
 [connection signal="pressed" from="CompletionBell" to="Crafting Area" method="_on_completion_bell_pressed"]
 [connection signal="pressed" from="TrashCan" to="Crafting Area" method="_on_trash_can_pressed"]
+[connection signal="DDsadded" from="EnemyProgress" to="Ding&Del" method="on_DDSadded_Recieved"]
 [connection signal="game_over" from="EnemyProgress" to="." method="_on_enemy_progress_game_over"]
+[connection signal="DingBaded" from="CompletionFeedback" to="Ding&Del" method="on_DingBaded_Recieved"]
 [connection signal="draw" from="TutorialOverlay" to="." method="_on_tutorial_overlay_draw"]
 [connection signal="hidden" from="TutorialOverlay" to="." method="_on_tutorial_overlay_hidden"]
 [connection signal="pressed" from="TutorialOverlay/CloseTutorial" to="TutorialOverlay" method="_on_close_tutorial_pressed"]

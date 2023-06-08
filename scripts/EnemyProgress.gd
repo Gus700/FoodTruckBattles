@@ -5,6 +5,7 @@ extends Control
 @onready var progressBar :Node = $TextureRect/ProgressBar
 @onready var waitTimeUnit:float = (1 - progressBar.anchor_left) /timer.wait_time
 signal game_over()
+signal DDsadded
 
 
 # Called when the node enters the scene tree for the first time.
@@ -31,5 +32,6 @@ func unpauseTimer() -> void:
 
 func _on_timer_timeout() -> void:
 	emit_signal("game_over")
+	emit_signal('DDsadded')
 	print("over")
 	pass # Replace with function body.

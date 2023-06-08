@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://b2pbtif4x6b3"]
+[gd_scene load_steps=41 format=3 uid="uid://b2pbtif4x6b3"]
 
 [ext_resource type="Script" path="res://scripts/SceneManager/scene.gd" id="1_0noef"]
 [ext_resource type="Texture2D" uid="uid://0uovcm0xbouv" path="res://assets/loreScenes/photos/angel_food_locked.png" id="2_fmr6e"]
@@ -17,7 +17,27 @@
 [ext_resource type="Texture2D" uid="uid://dfkjhbkthdnhc" path="res://assets/loreScenes/full/deviled_food.png" id="12_lv7um"]
 [ext_resource type="Texture2D" uid="uid://bmh0n4fiiyjvg" path="res://assets/loreScenes/full/narrative_bubble.png" id="13_4q1tn"]
 [ext_resource type="Script" path="res://scripts/sfxTest.gd" id="15_s3rrk"]
+[ext_resource type="AudioStream" uid="uid://bsyrqr41ssy38" path="res://sounds/delburp1.wav" id="16_66pg6"]
 [ext_resource type="Texture2D" uid="uid://cgsks8f6ky7w4" path="res://assets/UI/mem_banner.png" id="16_83oq7"]
+[ext_resource type="AudioStream" uid="uid://bmycrw2ute85l" path="res://sounds/delburp2.wav" id="17_uvyxc"]
+[ext_resource type="AudioStream" uid="uid://ddfw1ws5i44j" path="res://sounds/delnoise1.wav" id="18_nkldj"]
+[ext_resource type="AudioStream" uid="uid://cfyhyj5nytikg" path="res://sounds/delnoise2.wav" id="19_kax1s"]
+[ext_resource type="AudioStream" uid="uid://uxe63m53eai2" path="res://sounds/delnoise3.wav" id="20_lfy0l"]
+[ext_resource type="AudioStream" uid="uid://sf2t2tm47omu" path="res://sounds/delnoise4.wav" id="21_rgvml"]
+[ext_resource type="AudioStream" uid="uid://ca808tqul86d1" path="res://sounds/delnoise5.wav" id="22_5sarh"]
+[ext_resource type="AudioStream" uid="uid://dy17by5q1afu3" path="res://sounds/delnoise6.wav" id="23_sw88n"]
+[ext_resource type="AudioStream" uid="uid://dj7hjue5bu8qu" path="res://sounds/delnoise7.wav" id="24_vpiva"]
+[ext_resource type="AudioStream" uid="uid://c8i0v85gvj7q0" path="res://sounds/dinggood1.wav" id="25_m7ksc"]
+[ext_resource type="AudioStream" uid="uid://iwvq70por0tj" path="res://sounds/dinggood2.wav" id="26_8tvyr"]
+[ext_resource type="AudioStream" uid="uid://tmlcwe1vuia3" path="res://sounds/dingmad1.wav" id="27_tukcw"]
+[ext_resource type="AudioStream" uid="uid://bfxhbsabhe7vo" path="res://sounds/dingmad2.wav" id="28_sovs3"]
+[ext_resource type="AudioStream" uid="uid://cijbxavhg28nw" path="res://sounds/dingmad3.wav" id="29_rs1c5"]
+[ext_resource type="AudioStream" uid="uid://duq1fy432phug" path="res://sounds/dingsad1.wav" id="30_1a8cl"]
+[ext_resource type="AudioStream" uid="uid://dfwriasvsv17t" path="res://sounds/dingsad2.wav" id="31_2ebsi"]
+[ext_resource type="AudioStream" uid="uid://c3rxmc5l1mr71" path="res://sounds/dingsad3.wav" id="32_16825"]
+[ext_resource type="AudioStream" uid="uid://4xybutdjdgqb" path="res://sounds/dingsad4.wav" id="33_055kb"]
+[ext_resource type="AudioStream" uid="uid://jayg0bqhcbqc" path="res://sounds/dingsound1.wav" id="34_duseo"]
+[ext_resource type="AudioStream" uid="uid://s3bagh0atyjb" path="res://sounds/dingsound2.wav" id="35_obwdj"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_os62y"]
 font_size = 33
@@ -306,6 +326,8 @@ metadata/_edit_use_anchors_ = true
 
 [node name="sfx" type="AudioStreamPlayer" parent="."]
 script = ExtResource("15_s3rrk")
+delSounds = Array[AudioStreamWAV]([ExtResource("16_66pg6"), ExtResource("17_uvyxc"), ExtResource("18_nkldj"), ExtResource("19_kax1s"), ExtResource("20_lfy0l"), ExtResource("21_rgvml"), ExtResource("22_5sarh"), ExtResource("23_sw88n"), ExtResource("24_vpiva")])
+dingSounds = Array[AudioStreamWAV]([ExtResource("25_m7ksc"), ExtResource("26_8tvyr"), ExtResource("27_tukcw"), ExtResource("28_sovs3"), ExtResource("29_rs1c5"), ExtResource("30_1a8cl"), ExtResource("31_2ebsi"), ExtResource("32_16825"), ExtResource("33_055kb"), ExtResource("34_duseo"), ExtResource("35_obwdj")])
 
 [node name="BigImgBackground" type="ColorRect" parent="."]
 layout_mode = 1

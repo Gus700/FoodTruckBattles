@@ -13,6 +13,7 @@ var isCorrect: bool = false
 
 signal request_updated_order
 signal show_completion_feedback(isCorrect: bool)
+signal DelSounded
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -85,4 +86,5 @@ func _on_completion_bell_pressed() -> void:
 	checkCorrectCompletion()
 
 func _on_trash_can_pressed() -> void:
+	emit_signal('DelSounded')
 	clearIngredients()
