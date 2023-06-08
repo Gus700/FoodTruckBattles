@@ -671,6 +671,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="TruckIntro"]
 autoplay = "truckIntroFloat"
+reset_on_save = false
 libraries = {
 "": SubResource("AnimationLibrary_nyn2w")
 }
