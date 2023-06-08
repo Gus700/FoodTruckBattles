@@ -67,6 +67,3 @@ ingrResource = null
 
 [node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer3" index="1"]
 ingrResource = null
-
-[node name="TruckIntro" parent="." index="9"]
-visible = false
