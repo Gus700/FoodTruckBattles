@@ -376,7 +376,7 @@ texture_hover = ExtResource("18_wa0i0")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("8_w7ok3")
-dest = "loreScene"
+dest = "Level3"
 metadata/_edit_use_anchors_ = true
 
 [node name="NextTextButton" type="TextureButton" parent="Level2/TruckLore"]
@@ -478,7 +478,7 @@ texture_hover = ExtResource("18_wa0i0")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("8_w7ok3")
-dest = "loreScene"
+dest = "Level4"
 metadata/_edit_use_anchors_ = true
 
 [node name="NextTextButton" type="TextureButton" parent="Level3/TruckLore"]
@@ -580,7 +580,7 @@ texture_hover = ExtResource("18_wa0i0")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("8_w7ok3")
-dest = "loreScene"
+dest = "Level5"
 metadata/_edit_use_anchors_ = true
 
 [node name="NextTextButton" type="TextureButton" parent="Level4/TruckLore"]
@@ -682,7 +682,7 @@ texture_hover = ExtResource("18_wa0i0")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("8_w7ok3")
-dest = "loreScene"
+dest = "Level6"
 metadata/_edit_use_anchors_ = true
 
 [node name="NextTextButton" type="TextureButton" parent="Level5/TruckLore"]
@@ -784,7 +784,7 @@ texture_hover = ExtResource("18_wa0i0")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("8_w7ok3")
-dest = "loreScene"
+dest = "Level7"
 metadata/_edit_use_anchors_ = true
 
 [node name="NextTextButton" type="TextureButton" parent="Level6/TruckLore"]
@@ -886,7 +886,7 @@ texture_hover = ExtResource("18_wa0i0")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("8_w7ok3")
-dest = "loreScene"
+dest = "Level8"
 metadata/_edit_use_anchors_ = true
 
 [node name="NextTextButton" type="TextureButton" parent="Level7/TruckLore"]
@@ -988,7 +988,7 @@ texture_hover = ExtResource("18_wa0i0")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("8_w7ok3")
-dest = "loreScene"
+dest = "Credits"
 metadata/_edit_use_anchors_ = true
 
 [node name="NextTextButton" type="TextureButton" parent="Level8/TruckLore"]
