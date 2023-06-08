@@ -1,5 +1,6 @@
 extends Control
 
+@export var timeNeeded: int = 120
 @onready var timer :Node = $Timer
 @onready var progressBar :Node = $TextureRect/ProgressBar
 @onready var waitTimeUnit:float = (1 - progressBar.anchor_left) /timer.wait_time
@@ -8,7 +9,7 @@ signal game_over()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	timer.wait_time = timeNeeded
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

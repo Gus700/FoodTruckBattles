@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://eddd6ar36cnd"]
+[gd_scene load_steps=65 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
@@ -55,6 +55,13 @@
 [ext_resource type="Texture2D" uid="uid://n1qvtvy44j54" path="res://assets/UI_buttons/back_pressed.png" id="53_wh1oq"]
 [ext_resource type="Texture2D" uid="uid://x4xs4uv8ivpj" path="res://assets/UI/end_graphic.png" id="53_xlcp5"]
 [ext_resource type="Texture2D" uid="uid://dvtn4u0004701" path="res://assets/UI_buttons/back_hover.png" id="54_brp1j"]
+[ext_resource type="Texture2D" uid="uid://chbgs4kodcuku" path="res://assets/UI_buttons/try_again.png" id="55_we2v5"]
+[ext_resource type="Texture2D" uid="uid://c505dqaphyqju" path="res://assets/UI_buttons/try_again_pressed.png" id="56_45bxu"]
+[ext_resource type="Texture2D" uid="uid://ct05rd43k0nir" path="res://assets/UI_buttons/try_again_hover.png" id="57_l6epl"]
+[ext_resource type="Script" path="res://scripts/SceneManager/ChangeSceneButton.gd" id="58_kbqwc"]
+[ext_resource type="Texture2D" uid="uid://cwvvuudklxsg2" path="res://assets/UI_buttons/quit.png" id="59_8gd7u"]
+[ext_resource type="Texture2D" uid="uid://xfpftcj0ksoi" path="res://assets/UI_buttons/quit_pressed.png" id="60_w448p"]
+[ext_resource type="Texture2D" uid="uid://ddlgcvwnsslu3" path="res://assets/UI_buttons/quit_hover.png" id="61_gutjr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_gsada"]
 font_size = 26
@@ -338,6 +345,7 @@ anchor_left = 0.319444
 anchor_top = 0.0123457
 anchor_right = 0.944444
 anchor_bottom = 0.111111
+timeNeeded = 10
 metadata/_edit_use_anchors_ = true
 
 [node name="CompletionFeedback" parent="." instance=ExtResource("30_6cca4")]
@@ -823,6 +831,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="TextureRect2" type="ColorRect" parent="GameOverScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.54902)
+
 [node name="TextureRect" type="TextureRect" parent="GameOverScreen"]
 layout_mode = 1
 anchors_preset = -1
@@ -854,6 +871,42 @@ text = "Congrats kid you have completed you duties for the day."
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+
+[node name="TryAgain" type="TextureButton" parent="GameOverScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.805556
+anchor_top = 0.851852
+anchor_right = 0.986389
+anchor_bottom = 0.979037
+offset_right = -0.32
+offset_bottom = -3.416
+texture_normal = ExtResource("55_we2v5")
+texture_pressed = ExtResource("56_45bxu")
+texture_hover = ExtResource("57_l6epl")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("58_kbqwc")
+dest = "LevelTutorial"
+metadata/_edit_use_anchors_ = true
+
+[node name="Quit" type="TextureButton" parent="GameOverScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0208333
+anchor_top = 0.851852
+anchor_right = 0.201667
+anchor_bottom = 0.979037
+offset_right = -0.32
+offset_bottom = -3.416
+texture_normal = ExtResource("59_8gd7u")
+texture_pressed = ExtResource("60_w448p")
+texture_hover = ExtResource("61_gutjr")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("58_kbqwc")
+dest = "MainMenu"
+metadata/_edit_use_anchors_ = true
 
 [node name="CompletionScreen" type="Control" parent="."]
 visible = false
