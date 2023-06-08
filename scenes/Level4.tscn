@@ -79,3 +79,6 @@ texture = ExtResource("4_w7rhe")
 
 [node name="backgroundImage" parent="TruckIntro" index="1"]
 texture = ExtResource("5_m5imn")
+
+[node name="TryAgain" parent="GameOverScreen" index="2"]
+dest = "Level4"

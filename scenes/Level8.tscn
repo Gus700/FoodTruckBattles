@@ -88,6 +88,9 @@ texture = ExtResource("4_6ctwv")
 [node name="backgroundImage" parent="TruckIntro" index="1"]
 texture = ExtResource("5_fixdc")
 
+[node name="TryAgain" parent="GameOverScreen" index="2"]
+dest = "Level8"
+
 [node name="Next" parent="CompletionScreen" index="2"]
 texture_normal = ExtResource("16_s58to")
 texture_pressed = ExtResource("17_eh11w")

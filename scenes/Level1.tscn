@@ -24,46 +24,55 @@ orderTypes = Array[Resource]([ExtResource("2_f55kl"), ExtResource("3_omugk"), Ex
 ingrResource = ExtResource("5_tpf02")
 
 [node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer" index="1"]
-ingrResource = ExtResource("6_o4j5l")
-
-[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer" index="2"]
 ingrResource = ExtResource("7_0dgun")
 
+[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer" index="2"]
+ingrResource = ExtResource("6_o4j5l")
+
 [node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="0"]
-ingrResource = null
+ingrResource = ExtResource("7_0dgun")
 
 [node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="1"]
-ingrResource = null
+ingrResource = ExtResource("5_tpf02")
 
 [node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer2" index="2"]
-ingrResource = null
+ingrResource = ExtResource("7_0dgun")
 
 [node name="SelectableIngredient" parent="Ingredients Area/LeftIngr/HBoxContainer3" index="0"]
-ingrResource = null
+ingrResource = ExtResource("6_o4j5l")
 
 [node name="SelectableIngredient2" parent="Ingredients Area/LeftIngr/HBoxContainer3" index="1"]
-ingrResource = null
+ingrResource = ExtResource("7_0dgun")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/LeftIngr/HBoxContainer3" index="2"]
+ingrResource = ExtResource("5_tpf02")
 
 [node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer" index="0"]
-ingrResource = ExtResource("8_8h0xc")
+ingrResource = ExtResource("13_7o5r7")
 
 [node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer" index="1"]
-ingrResource = ExtResource("9_ex30a")
+ingrResource = ExtResource("11_livbi")
 
 [node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer" index="2"]
-ingrResource = ExtResource("10_l8fju")
+ingrResource = ExtResource("9_ex30a")
 
 [node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer2" index="0"]
 ingrResource = ExtResource("11_livbi")
 
 [node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer2" index="1"]
-ingrResource = ExtResource("12_ky122")
+ingrResource = ExtResource("10_l8fju")
 
 [node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer2" index="2"]
-ingrResource = ExtResource("13_7o5r7")
+ingrResource = ExtResource("12_ky122")
 
 [node name="SelectableIngredient" parent="Ingredients Area/RightIngr/HBoxContainer3" index="0"]
-ingrResource = null
+ingrResource = ExtResource("8_8h0xc")
 
 [node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer3" index="1"]
-ingrResource = null
+ingrResource = ExtResource("12_ky122")
+
+[node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer3" index="2"]
+ingrResource = ExtResource("13_7o5r7")
+
+[node name="TryAgain" parent="GameOverScreen" index="2"]
+dest = "Level1"
