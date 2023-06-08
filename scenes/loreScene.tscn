@@ -230,6 +230,7 @@ grow_vertical = 2
 script = ExtResource("1_pjpxh")
 
 [node name="Level1" type="Control" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -248,7 +249,6 @@ texture = ExtResource("3_jr24d")
 expand_mode = 1
 
 [node name="TruckIntro" type="Control" parent="Level1"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -263,8 +263,6 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 2304.0
-offset_bottom = 1296.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_1id5g")
@@ -278,10 +276,9 @@ anchor_top = 0.0154321
 anchor_right = 1.0
 anchor_bottom = 0.225309
 offset_left = 312.0
-offset_top = 33.0
-offset_right = 2616.0
-offset_bottom = 305.0
-texture = ExtResource("4_nsa50")
+offset_top = 23.0
+offset_right = 312.0
+offset_bottom = 23.0
 expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
@@ -460,8 +457,6 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 2304.0
-offset_bottom = 1296.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("24_jkk0r")
@@ -475,9 +470,9 @@ anchor_top = 0.0154321
 anchor_right = 1.0
 anchor_bottom = 0.225309
 offset_left = 312.0
-offset_top = 33.0
-offset_right = 2616.0
-offset_bottom = 305.0
+offset_top = 23.0
+offset_right = 312.0
+offset_bottom = 23.0
 expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
@@ -836,6 +831,7 @@ texture = ExtResource("49_jewda")
 expand_mode = 1
 
 [node name="TruckIntro" type="Control" parent="Level4"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1030,7 +1026,6 @@ texture = ExtResource("35_s7tg4")
 expand_mode = 1
 
 [node name="TruckIntro" type="Control" parent="Level5"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1122,6 +1117,7 @@ libraries = {
 }
 
 [node name="TruckLore" type="Control" parent="Level5"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
