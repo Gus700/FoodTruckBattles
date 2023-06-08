@@ -3,3 +3,4 @@
 [ext_resource type="PackedScene" uid="uid://eddd6ar36cnd" path="res://scenes/Level.tscn" id="1_l7cft"]
 
 [node name="Level" instance=ExtResource("1_l7cft")]
+currentLevelName = "Level1"

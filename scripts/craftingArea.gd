@@ -72,8 +72,9 @@ func checkCorrectCompletion() ->void:
 # recieves global signal of ingredient button with the name of the selected ingredient
 func ingredient_selected (ingrName, ingrImg) -> void:
 	print("recieved ingredient selection: ", ingrName)
-	addIngredient(ingredientContainer, ingredientScene, ingrName, ingrImg)
-	checkSelectedIngr(ingrName)
+	if ingrName != "":
+		addIngredient(ingredientContainer, ingredientScene, ingrName, ingrImg)
+		checkSelectedIngr(ingrName)
 
 # recieves current order signal
 func _on_order_area_update_recipe(recipe) -> void:
