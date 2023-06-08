@@ -51,7 +51,6 @@ libraries = {
 [node name="Main Menu" parent="." instance=ExtResource("1_pqqtn")]
 
 [node name="FadeOverlay" type="TextureRect" parent="."]
-self_modulate = Color(1, 1, 1, 0)
 top_level = true
 z_index = 2
 custom_minimum_size = Vector2(1152, 648)
