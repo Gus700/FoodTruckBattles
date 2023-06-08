@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="BaseOrder" load_steps=2 format=3 uid="uid://blwnyyjemk5"]
+
+[ext_resource type="Script" path="res://scripts/baseOrder.gd" id="1_rhp2x"]
+
+[resource]
+script = ExtResource("1_rhp2x")
+recipe = Array[String]([])
