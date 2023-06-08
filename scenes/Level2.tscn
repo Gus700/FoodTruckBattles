@@ -18,7 +18,7 @@
 [ext_resource type="Resource" path="res://resourceData/ingredients/corn.tres" id="12_rhcwv"]
 
 [node name="Level" instance=ExtResource("1_yn5su")]
-currentLevelName = "Level3"
+currentLevelName = "Level2"
 
 [node name="Order Area" parent="." index="2"]
 orderTypes = Array[Resource]([ExtResource("2_u0qop"), ExtResource("3_l1nch")])
