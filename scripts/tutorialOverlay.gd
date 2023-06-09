@@ -1,6 +1,7 @@
 extends Control
 
 @onready var stepNodes = $Steps
+@onready var lastTutButton = $NextButton
 @onready var numSteps :int = stepNodes.get_child_count()
 var currStepIndx :int = 0
 var lastStepIndx :int
@@ -41,3 +42,11 @@ func _on_back_button_pressed() -> void:
 		print(currStepIndx)
 		stepNodes.get_child(currStepIndx).show()
 		stepNodes.get_child(lastStepIndx).hide()
+
+
+func _on_step_6_draw() -> void:
+	lastTutButton.hide()
+
+
+func _on_step_6_hidden() -> void:
+	lastTutButton.show()

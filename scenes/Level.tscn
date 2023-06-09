@@ -169,7 +169,7 @@ _data = {
 }
 
 [sub_resource type="LabelSettings" id="LabelSettings_dy1m6"]
-font_size = 26
+font_size = 39
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_m4hr1"]
@@ -997,6 +997,65 @@ position = Vector2(-151.375, -24.8125)
 scale = Vector2(0.400637, 0.438793)
 texture = ExtResource("39_nkydd")
 
+[node name="Step6" type="Control" parent="TutorialOverlay/Steps"]
+visible = false
+layout_mode = 1
+anchor_left = 0.763889
+anchor_top = 0.0987654
+anchor_right = 1.60417
+anchor_bottom = 0.266975
+metadata/_edit_use_anchors_ = true
+
+[node name="TextBoxImg" type="TextureRect" parent="TutorialOverlay/Steps/Step6"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.667353
+anchor_top = 3.59634
+anchor_right = 0.0392561
+anchor_bottom = 5.13762
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("46_aaugl")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="TutorialOverlay/Steps/Step6/TextBoxImg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 1.52588e-05
+offset_right = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("35_jmqed")
+theme_override_font_sizes/font_size = 20
+text = "Alright kid Ive taught you all you need to know, get out of here and get to cooking!"
+label_settings = SubResource("LabelSettings_dy1m6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HandImg" type="TextureRect" parent="TutorialOverlay/Steps/Step6"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.830576
+anchor_top = 1.54129
+anchor_right = -0.6188
+anchor_bottom = 2.85322
+rotation = -1.83259
+texture = ExtResource("33_1kdry")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="TimerBar" type="Sprite2D" parent="TutorialOverlay/Steps/Step6"]
+visible = false
+position = Vector2(-151.375, -24.8125)
+scale = Vector2(0.400637, 0.438793)
+texture = ExtResource("39_nkydd")
+
 [node name="CloseTutorial" type="TextureButton" parent="TutorialOverlay"]
 layout_mode = 1
 anchors_preset = -1
@@ -1281,6 +1340,8 @@ del = SubResource("AudioStreamRandomizer_8qyr7")
 [connection signal="animation_finished" from="TruckIntro/AnimationPlayer" to="TruckIntro" method="_on_animation_player_animation_finished"]
 [connection signal="draw" from="TutorialOverlay" to="." method="_on_tutorial_overlay_draw"]
 [connection signal="hidden" from="TutorialOverlay" to="." method="_on_tutorial_overlay_hidden"]
+[connection signal="draw" from="TutorialOverlay/Steps/Step6" to="TutorialOverlay" method="_on_step_6_draw"]
+[connection signal="hidden" from="TutorialOverlay/Steps/Step6" to="TutorialOverlay" method="_on_step_6_hidden"]
 [connection signal="pressed" from="TutorialOverlay/CloseTutorial" to="TutorialOverlay" method="_on_close_tutorial_pressed"]
 [connection signal="pressed" from="TutorialOverlay/NextButton" to="TutorialOverlay" method="_on_next_button_pressed"]
 [connection signal="pressed" from="TutorialOverlay/BackButton" to="TutorialOverlay" method="_on_back_button_pressed"]
