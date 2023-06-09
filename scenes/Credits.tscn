@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bh81fxcqoi63x"]
+[gd_scene load_steps=14 format=3 uid="uid://bh81fxcqoi63x"]
 
 [ext_resource type="Script" path="res://scripts/SceneManager/scene.gd" id="1_urrrw"]
 [ext_resource type="Script" path="res://scripts/SceneManager/ChangeSceneButton.gd" id="2_gry6h"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dvtn4u0004701" path="res://assets/UI_buttons/back_hover.png" id="5_ltvqi"]
 [ext_resource type="Texture2D" uid="uid://n1qvtvy44j54" path="res://assets/UI_buttons/back_pressed.png" id="5_mudjh"]
 [ext_resource type="Texture2D" uid="uid://ccfajvghfjihx" path="res://assets/UI/credits_banner.png" id="7_jhvg8"]
+[ext_resource type="Texture2D" uid="uid://d3nq28463n01v" path="res://assets/UI/credits.png" id="8_byiqt"]
 
 [sub_resource type="Animation" id="Animation_f3i7q"]
 resource_name = "FadeIn"
@@ -123,6 +124,21 @@ stretch_mode = 5
 script = ExtResource("2_gry6h")
 dest = "MainMenu"
 metadata/_edit_use_anchors_ = true
+
+[node name="credits" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.36
+anchor_top = 0.275
+anchor_right = 0.641
+anchor_bottom = 0.958
+offset_left = 0.279968
+offset_top = -0.199997
+offset_right = 0.567993
+offset_bottom = 0.215942
+texture = ExtResource("8_byiqt")
+expand_mode = 1
+stretch_mode = 4
 
 [node name="banner" type="TextureRect" parent="."]
 clip_contents = true
