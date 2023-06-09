@@ -74,6 +74,9 @@ ingrResource = ExtResource("12_ky122")
 [node name="SelectableIngredient3" parent="Ingredients Area/RightIngr/HBoxContainer3" index="2"]
 ingrResource = ExtResource("13_7o5r7")
 
+[node name="EnemyProgress" parent="." index="7"]
+timeNeeded = 110
+
 [node name="bg" parent="TruckIntro" index="0"]
 modulate = Color(0.290196, 0.145098, 0.243137, 1)
 

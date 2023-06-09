@@ -78,6 +78,9 @@ ingrResource = null
 [node name="SelectableIngredient2" parent="Ingredients Area/RightIngr/HBoxContainer3" index="1"]
 ingrResource = ExtResource("16_q7oad")
 
+[node name="EnemyProgress" parent="." index="7"]
+timeNeeded = 40
+
 [node name="TruckIntro" parent="." index="9"]
 textImgs = Array[Texture2D]([ExtResource("2_a7jf6"), ExtResource("3_0mg0p")])
 

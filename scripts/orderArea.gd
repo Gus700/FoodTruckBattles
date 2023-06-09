@@ -8,6 +8,7 @@ extends Control
 var requiredOrderNum: int
 var orderNum: int
 
+#signal sendIngredients(ingredients: Array[Resource])
 signal update_recipe(recipe: Array[String])
 signal all_orders_complete()
 signal DingGooded()
@@ -20,6 +21,7 @@ func _ready() -> void:
 	for orderC in getNextOrders(): #set all other orders
 		setOrderInfo(orderC)
 	emit_signal("update_recipe", getCurrOrder().getRecipe()) #send signal of current recipe needed
+	#emit_signal("sendIngredients",orderTypes)# send order types to ingredients area
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -36,6 +38,10 @@ func setOrderInfo(orderScene) -> void:
 	orderScene.setRecipe(randOrderType.recipe)
 
 func setRecipeTab(ingredients: Array[String]) -> void:
+	#var ingred: Array[String]
+	#for x in ingredients:
+	#	if not ingred.has(x):
+	#		ingred.append(x)
 	for string in ingredients:
 		recipeDisplay.text += string + "\n"
 
