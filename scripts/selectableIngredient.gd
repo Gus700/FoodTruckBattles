@@ -14,10 +14,6 @@ func _ready() -> void:
 	#animation.play("ingredientFloat")
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
 # when the button is pressed send signal of what ingredient was pressed
 func _on_ingredient_button_pressed() -> void:
 	GlobalSig.emit_signal("ingredient_selected", ingredientName, ingrButton.texture_normal)

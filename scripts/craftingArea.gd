@@ -19,10 +19,6 @@ signal DelSounded
 func _ready() -> void:
 	GlobalSig.ingredient_selected.connect(ingredient_selected) #connect gobal signal
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
 #___________________________________normal functions________________________________________________
 
 # add an ingredient Scene in the IngredientContainer

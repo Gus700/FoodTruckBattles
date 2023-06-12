@@ -1,7 +1,7 @@
 [gd_scene load_steps=111 format=3 uid="uid://eddd6ar36cnd"]
 
 [ext_resource type="Texture2D" uid="uid://ce2jy6qqbguns" path="res://assets/backgrounds/workstation.png" id="1_a7l8k"]
-[ext_resource type="Script" path="res://scripts/level.gd" id="1_ex6i6"]
+[ext_resource type="Script" path="res://scripts/Level.gd" id="1_uhv7e"]
 [ext_resource type="Texture2D" uid="uid://c3h8mxfu75l6o" path="res://assets/objects/cutting_board.png" id="2_bx5sw"]
 [ext_resource type="Texture2D" uid="uid://41c5yr5rkdgb" path="res://assets/backgrounds/grass.png" id="2_c56ox"]
 [ext_resource type="Script" path="res://scripts/orderArea.gd" id="2_ieeiu"]
@@ -254,7 +254,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ex6i6")
+script = ExtResource("1_uhv7e")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1

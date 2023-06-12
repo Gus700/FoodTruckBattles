@@ -23,9 +23,6 @@ func _ready() -> void:
 	emit_signal("update_recipe", getCurrOrder().getRecipe()) #send signal of current recipe needed
 	#emit_signal("sendIngredients",orderTypes)# send order types to ingredients area
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
 
 #__________________________________regular functions________________________________________________
 

@@ -12,10 +12,6 @@ func _ready() -> void:
 	pass
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
 #_____________________________________signal functions______________________________________________
 
 func _on_enemy_progress_game_over() -> void:
