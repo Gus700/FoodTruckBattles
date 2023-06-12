@@ -5,5 +5,5 @@
 
 [resource]
 script = ExtResource("1_45e6v")
-recipe = Array[String](["brownTortilla ", "clownPatty", "bbqSauce", "onion", "cilantro"])
+recipe = Array[String](["brownTortilla", "clownPatty", "bbqSauce", "onion", "cilantro"])
 mainTexture = ExtResource("1_2h4cl")
