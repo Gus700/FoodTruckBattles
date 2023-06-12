@@ -4,7 +4,7 @@ extends Control
 @onready var textBubbleNode = $textBubble
 @onready var challengeB = $ChallengeButton
 @onready var nextTextB = $NextTextButton
-@onready var prevTextB = $PrevTextButton
+@onready var prevTextB
 @onready var animNode = $AnimationPlayer
 var textBubIndex = 0
 
